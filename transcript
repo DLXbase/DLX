@@ -12,9 +12,20 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/reg.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:32:27 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg
+# -- Compiling architecture beh of reg
+# End time: 16:32:27 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/add4.vhd
 # QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:36:14 on Sep 28,2024
+# Start time: 16:32:33 on Oct 05,2024
 # vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/add4.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -22,1531 +33,340 @@ vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/add4
 # -- Loading package NUMERIC_STD
 # -- Compiling entity add4
 # -- Compiling architecture beh of add4
-# End time: 16:36:14 on Sep 28,2024, Elapsed time: 0:00:00
+# End time: 16:32:33 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/a.c-IRAM.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:32:34 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/a.c-IRAM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_textio
+# -- Compiling entity IRAM
+# -- Compiling architecture IRam_Bhe of IRAM
+# End time: 16:32:34 on Oct 05,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/reg.vhd
 # QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:36:21 on Sep 28,2024
+# Start time: 16:32:35 on Oct 05,2024
 # vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity reg
 # -- Compiling architecture beh of reg
-# End time: 16:36:22 on Sep 28,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/a.c-IRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:36:23 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/a.c-IRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_textio
-# -- Compiling entity IRAM
-# -- Compiling architecture IRam_Bhe of IRAM
-# End time: 16:36:23 on Sep 28,2024, Elapsed time: 0:00:00
+# End time: 16:32:36 on Oct 05,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/FU.vhd
 # QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:36:25 on Sep 28,2024
+# Start time: 16:32:37 on Oct 05,2024
 # vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/FU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity FU
 # -- Compiling architecture structural of FU
-# End time: 16:36:26 on Sep 28,2024, Elapsed time: 0:00:01
+# End time: 16:32:37 on Oct 05,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/iv.vhd
 # QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:03:38 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd 
+# Start time: 16:32:47 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/iv.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# ** Error: (vcom-11) Could not find work.alu_type.
-# ** Error (suppressible): /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(5): (vcom-1195) Cannot find expanded name "work.alu_type".
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(5): Unknown expanded name.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(7): VHDL Compiler exiting
-# End time: 19:03:38 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd
+# -- Compiling entity IV
+# -- Compiling architecture BEHAVIORAL of IV
+# End time: 16:32:47 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/ND2.vhd
 # QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:03:45 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd 
+# Start time: 16:32:48 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/ND2.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity is_zero
-# -- Compiling architecture beh of is_zero
-# End time: 19:03:45 on Sep 28,2024, Elapsed time: 0:00:00
+# -- Compiling entity AND2
+# -- Compiling architecture BEHAVIORAL of AND2
+# End time: 16:32:48 on Oct 05,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/mux21.vhd
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/reg.vhd
 # QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:03:47 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/mux21.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux21
-# -- Compiling architecture beh of mux21
-# End time: 19:03:47 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/reg.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:03:49 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/reg.vhd 
+# Start time: 16:32:49 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity reg
 # -- Compiling architecture beh of reg
-# End time: 19:03:49 on Sep 28,2024, Elapsed time: 0:00:00
+# End time: 16:32:50 on Oct 05,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/reg_file.vhd
 # QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:03:50 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd 
+# Start time: 16:32:50 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/reg_file.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
+# -- Loading package MATH_REAL
 # -- Loading package NUMERIC_STD
-# -- Compiling entity SHIFT2
-# -- Compiling architecture behavioral of SHIFT2
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd(14): near "sh2": (vcom-1576) expecting BEGIN.
-# End time: 19:03:50 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:04:19 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity SHIFT2
-# -- Compiling architecture behavioral of SHIFT2
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd(18): (vcom-1600) No feasible entries for subprogram "SHIFT_LEFT".
-#    Visible subprograms are:
-#       (explicit) NUMERIC_STD.SHIFT_LEFT[UNRESOLVED_UNSIGNED, NATURAL return UNRESOLVED_UNSIGNED] at vhdl_src/ieee/mti_numeric_std.vhd(1207)
-#       (explicit) NUMERIC_STD.SHIFT_LEFT[UNRESOLVED_SIGNED, NATURAL return UNRESOLVED_SIGNED] at vhdl_src/ieee/mti_numeric_std.vhd(1225)
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd(22): near "EOF": (vcom-1576) expecting ';'.
-# End time: 19:04:19 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:06:13 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity SHIFT2
-# -- Compiling architecture behavioral of SHIFT2
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd(18): (vcom-1604) No feasible entries for subprogram "SHIFT_LEFT" with expected return type "STD_LOGIC_VECTOR".
-#    Visible subprograms are:
-#       (explicit) NUMERIC_STD.SHIFT_LEFT[UNRESOLVED_UNSIGNED, NATURAL return UNRESOLVED_UNSIGNED] at vhdl_src/ieee/mti_numeric_std.vhd(1207)
-#       (explicit) NUMERIC_STD.SHIFT_LEFT[UNRESOLVED_SIGNED, NATURAL return UNRESOLVED_SIGNED] at vhdl_src/ieee/mti_numeric_std.vhd(1225)
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd(22): near "EOF": (vcom-1576) expecting ';'.
-# End time: 19:06:13 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:10:21 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity SHIFT2
-# -- Compiling architecture behavioral of SHIFT2
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd(26): near "EOF": (vcom-1576) expecting ';'.
-# End time: 19:10:21 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:10:39 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity SHIFT2
-# -- Compiling architecture behavioral of SHIFT2
-# End time: 19:10:40 on Sep 28,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:11:09 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity SHIFT2
-# -- Compiling architecture behavioral of SHIFT2
-# End time: 19:11:09 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/reg.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:11:14 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/reg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity reg
-# -- Compiling architecture beh of reg
-# End time: 19:11:14 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/mux21.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:11:17 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/mux21.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity mux21
-# -- Compiling architecture beh of mux21
-# End time: 19:11:17 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:11:19 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity is_zero
-# -- Compiling architecture beh of is_zero
-# End time: 19:11:19 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:11:22 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity EXU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(9): (vcom-1136) Unknown identifier "TYPE_OP".
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(21): VHDL Compiler exiting
-# End time: 19:11:22 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:11:28 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
 # -- Loading package STD_LOGIC_UNSIGNED
-# ** Error: (vcom-11) Could not find work.alu_type.
-# ** Error (suppressible): /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(5): (vcom-1195) Cannot find expanded name "work.alu_type".
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(5): Unknown expanded name.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(7): VHDL Compiler exiting
-# End time: 19:11:29 on Sep 28,2024, Elapsed time: 0:00:01
-# Errors: 3, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:11:34 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity EXU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(9): (vcom-1136) Unknown identifier "TYPE_OP".
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(21): VHDL Compiler exiting
-# End time: 19:11:35 on Sep 28,2024, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:11:40 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# ** Error: (vcom-11) Could not find work.alu_type.
-# ** Error (suppressible): /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(5): (vcom-1195) Cannot find expanded name "work.alu_type".
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(5): Unknown expanded name.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(7): VHDL Compiler exiting
-# End time: 19:11:40 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:13:57 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity EXU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(9): (vcom-1136) Unknown identifier "TYPE_OP".
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(21): VHDL Compiler exiting
-# End time: 19:13:57 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu_type.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:14:46 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu_type.vhd 
-# -- Loading package STANDARD
-# -- Compiling package alu_type
-# End time: 19:14:46 on Sep 28,2024, Elapsed time: 0:00:00
+# -- Compiling entity reg_file
+# -- Compiling architecture beh of reg_file
+# End time: 16:32:51 on Oct 05,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/sign_extend.vhd
 # QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:14:49 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd 
+# Start time: 16:32:51 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/sign_extend.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package alu_type
-# -- Compiling entity ALU
-# -- Compiling architecture BEHAVIOR of ALU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(28): Target type ieee.std_logic_1164.STD_LOGIC in variable assignment is different from expression type Integer.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(30): Target type ieee.std_logic_1164.STD_LOGIC in variable assignment is different from expression type Integer.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(42): (vcom-1136) Unknown identifier "SGE".
-# ** Error (suppressible): /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(42): (vcom-1937) Choice in CASE statement alternative must be locally static.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(43): Expecting a type name, found generic "N" instead.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(43): near "-": (vcom-1576) expecting ']'.
-# End time: 19:14:49 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:15:00 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity EXU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(9): (vcom-1136) Unknown identifier "TYPE_OP".
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(21): VHDL Compiler exiting
-# End time: 19:15:00 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu_type.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:15:05 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu_type.vhd 
-# -- Loading package STANDARD
-# -- Compiling package alu_type
-# End time: 19:15:05 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:15:09 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package alu_type
-# -- Compiling entity ALU
-# -- Compiling architecture BEHAVIOR of ALU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(28): Target type ieee.std_logic_1164.STD_LOGIC in variable assignment is different from expression type Integer.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(30): Target type ieee.std_logic_1164.STD_LOGIC in variable assignment is different from expression type Integer.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(42): (vcom-1136) Unknown identifier "SGE".
-# ** Error (suppressible): /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(42): (vcom-1937) Choice in CASE statement alternative must be locally static.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(43): Expecting a type name, found generic "N" instead.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(43): near "-": (vcom-1576) expecting ']'.
-# End time: 19:15:09 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:16:07 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package alu_type
-# -- Compiling entity ALU
-# -- Compiling architecture BEHAVIOR of ALU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(42): (vcom-1136) Unknown identifier "SGE".
-# ** Error (suppressible): /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(42): (vcom-1937) Choice in CASE statement alternative must be locally static.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(43): Expecting a type name, found generic "N" instead.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(43): near "-": (vcom-1576) expecting ']'.
-# End time: 19:16:07 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 4, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:16:50 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package alu_type
-# -- Compiling entity ALU
-# -- Compiling architecture BEHAVIOR of ALU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(42): (vcom-1136) Unknown identifier "SGE".
-# ** Error (suppressible): /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(42): (vcom-1937) Choice in CASE statement alternative must be locally static.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(43): Expecting a type name, found generic "N" instead.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(43): near "-": (vcom-1576) expecting ']'.
-# End time: 19:16:50 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 4, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu_type.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:16:56 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu_type.vhd 
-# -- Loading package STANDARD
-# -- Compiling package alu_type
-# End time: 19:16:56 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:16:59 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package alu_type
-# -- Compiling entity ALU
-# -- Compiling architecture BEHAVIOR of ALU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(43): Expecting a type name, found generic "N" instead.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(43): near "-": (vcom-1576) expecting ']'.
-# End time: 19:16:59 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:17:54 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package alu_type
-# -- Compiling entity ALU
-# -- Compiling architecture BEHAVIOR of ALU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(49): Expecting a type name, found generic "N" instead.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd(49): near "-": (vcom-1576) expecting ']'.
-# End time: 19:17:54 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:18:21 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package STD_LOGIC_UNSIGNED
-# -- Loading package alu_type
-# -- Compiling entity ALU
-# -- Compiling architecture BEHAVIOR of ALU
-# End time: 19:18:21 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:28:43 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(39): near ")": (vcom-1576) expecting FUNCTION or PROCEDURE or IMPURE or PURE.
-# End time: 19:28:44 on Sep 28,2024, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:29:27 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(63): (vcom-1031) Formal generic "FILE_PATH" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(63): (vcom-1031) Formal generic "FILE_PATH_INIT" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(73): Cannot read output "LMD_LATCH_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(83): Cannot read output "ALU_REG_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(93): Cannot read output "RT_REG_out".
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(59): (vcom-1152) Index value 4 is out of index range 3 downto 0 of ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(95): VHDL Compiler exiting
-# End time: 19:29:27 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 0
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:29:27 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(63): (vcom-1031) Formal generic "FILE_PATH" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(63): (vcom-1031) Formal generic "FILE_PATH_INIT" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(73): Cannot read output "LMD_LATCH_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(83): Cannot read output "ALU_REG_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(93): Cannot read output "RT_REG_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(59): (vcom-1152) Index value 4 is out of index range 3 downto 0 of ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(95): VHDL Compiler exiting
-# End time: 19:29:27 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/reg.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:29:30 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/reg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity reg
-# -- Compiling architecture beh of reg
-# End time: 19:29:30 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:29:31 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(14): near ")": (vcom-1576) expecting FUNCTION or PROCEDURE or IMPURE or PURE.
-# End time: 19:29:31 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:30:09 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(23): near "WORD_SIZEâ": Identifier may not contain non-graphic character.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(23): near "WORD_SIZEâ": Identifier may not contain non-graphic character.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(23): (vcom-1136) Unknown identifier "WORD_SIZEâˆ’1".
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(23): (vcom-1591) Bad expression in left bound of range expression.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(23): Type error in range expression.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(24): near "WORD_SIZEâ": Identifier may not contain non-graphic character.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(24): near "WORD_SIZEâ": Identifier may not contain non-graphic character.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(24): (vcom-1136) Unknown identifier "WORD_SIZEâˆ’1".
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(24): (vcom-1591) Bad expression in left bound of range expression.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(24): Type error in range expression.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(26): VHDL Compiler exiting
-# End time: 19:30:09 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 10, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:31:41 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(23): near "â": Identifier may not contain non-graphic character.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(23): near "â": Identifier may not contain non-graphic character.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(23): near "â": (vcom-1576) expecting ')'.
-# End time: 19:31:42 on Sep 28,2024, Elapsed time: 0:00:01
-# Errors: 3, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:32:24 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(23): near "â": Identifier may not contain non-graphic character.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(23): near "â": Identifier may not contain non-graphic character.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(23): near "â": (vcom-1576) expecting ')'.
-# End time: 19:32:24 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:33:40 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(23): near "â": Identifier may not contain non-graphic character.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(23): near "â": Identifier may not contain non-graphic character.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(23): near "â": (vcom-1576) expecting ')'.
-# End time: 19:33:40 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:43:03 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(63): (vcom-1031) Formal generic "FILE_PATH" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(63): (vcom-1031) Formal generic "FILE_PATH_INIT" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(73): Cannot read output "LMD_LATCH_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(83): Cannot read output "ALU_REG_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(93): Cannot read output "RT_REG_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(59): (vcom-1152) Index value 4 is out of index range 3 downto 0 of ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(95): VHDL Compiler exiting
-# End time: 19:43:03 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:43:08 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(23): near "â": Identifier may not contain non-graphic character.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(23): near "â": Identifier may not contain non-graphic character.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(23): near "â": (vcom-1576) expecting ')'.
-# End time: 19:43:08 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:44:43 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(25): near ")": (vcom-1576) expecting IDENTIFIER.
-# End time: 19:44:43 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:45:24 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(51): (vcom-1581) No feasible entries for infix operator '='.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(51): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(53): Illegal target for signal assignment.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(53): (vcom-1136) Unknown identifier "INOUT_DATA".
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(55): (vcom-1136) Unknown identifier "INOUT_DATA".
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(62): near "EOF": (vcom-1576) expecting ';'.
-# End time: 19:45:24 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:46:13 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(53): Illegal target for signal assignment.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(53): (vcom-1136) Unknown identifier "INOUT_DATA".
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(55): (vcom-1136) Unknown identifier "INOUT_DATA".
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(62): near "EOF": (vcom-1576) expecting ';'.
-# End time: 19:46:13 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 4, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:47:28 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(53): (vcom-1600) No feasible entries for subprogram "TO_SIGNED".
-#    Visible subprograms are:
-#       (explicit) NUMERIC_STD.TO_SIGNED[INTEGER, NATURAL return UNRESOLVED_SIGNED] at vhdl_src/ieee/mti_numeric_std.vhd(1472)
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(53): (vcom-1583) Illegal type converson from 'unknown' to 'ieee.std_logic_1164.STD_LOGIC_VECTOR' (operand type is not known).
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(62): near "EOF": (vcom-1576) expecting ';'.
-# End time: 19:47:29 on Sep 28,2024, Elapsed time: 0:00:01
-# Errors: 3, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:48:00 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(53): (vcom-1600) No feasible entries for subprogram "TO_SIGNED".
-#    Visible subprograms are:
-#       (explicit) NUMERIC_STD.TO_SIGNED[INTEGER, NATURAL return UNRESOLVED_SIGNED] at vhdl_src/ieee/mti_numeric_std.vhd(1472)
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(53): (vcom-1583) Illegal type converson from 'unknown' to 'ieee.std_logic_1164.STD_LOGIC_VECTOR' (operand type is not known).
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(61): VHDL Compiler exiting
-# End time: 19:48:00 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:48:24 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(53): (vcom-1583) Illegal type converson from 'std.STANDARD.INTEGER' to 'ieee.NUMERIC_STD.SIGNED' (numeric to array).
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(61): VHDL Compiler exiting
-# End time: 19:48:24 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:50:52 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(53): (vcom-1600) No feasible entries for subprogram "TO_SIGNED".
-#    Visible subprograms are:
-#       (explicit) NUMERIC_STD.TO_SIGNED[INTEGER, NATURAL return UNRESOLVED_SIGNED] at vhdl_src/ieee/mti_numeric_std.vhd(1472)
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(53): (vcom-1583) Illegal type converson from 'unknown' to 'ieee.std_logic_1164.STD_LOGIC_VECTOR' (operand type is not known).
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(61): VHDL Compiler exiting
-# End time: 19:50:52 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:57:54 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(55): (vcom-1600) No feasible entries for subprogram "TO_SIGNED".
-#    Visible subprograms are:
-#       (explicit) NUMERIC_STD.TO_SIGNED[INTEGER, NATURAL return UNRESOLVED_SIGNED] at vhdl_src/ieee/mti_numeric_std.vhd(1472)
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(55): (vcom-1583) Illegal type converson from 'unknown' to 'ieee.std_logic_1164.STD_LOGIC_VECTOR' (operand type is not known).
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(63): VHDL Compiler exiting
-# End time: 19:57:54 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:58:59 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(47): (vcom-1078) Identifier "unsigned" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.std_logic_arith.UNSIGNED (type declaration)
-#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(54): (vcom-1078) Identifier "unsigned" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.std_logic_arith.UNSIGNED (type declaration)
-#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(54): (vcom-1583) Illegal type converson from 'unknown' to 'ieee.std_logic_1164.STD_LOGIC_VECTOR' (operand type is not known).
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(56): (vcom-1078) Identifier "signed" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.std_logic_arith.SIGNED (type declaration)
-#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(62): VHDL Compiler exiting
-# End time: 19:58:59 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 4, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 19:59:54 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(47): (vcom-1078) Identifier "unsigned" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.std_logic_arith.UNSIGNED (type declaration)
-#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(54): (vcom-1078) Identifier "signed" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.std_logic_arith.SIGNED (type declaration)
-#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(56): (vcom-1078) Identifier "signed" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.std_logic_arith.SIGNED (type declaration)
-#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(62): VHDL Compiler exiting
-# End time: 19:59:54 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:00:14 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(47): (vcom-1078) Identifier "unsigned" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.std_logic_arith.UNSIGNED (type declaration)
-#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(54): (vcom-1078) Identifier "unsigned" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.std_logic_arith.UNSIGNED (type declaration)
-#         ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(54): (vcom-1583) Illegal type converson from 'unknown' to 'ieee.std_logic_1164.STD_LOGIC_VECTOR' (operand type is not known).
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(56): (vcom-1078) Identifier "signed" is not directly visible.
-#    Potentially visible declarations are:
-#         ieee.std_logic_arith.SIGNED (type declaration)
-#         ieee.NUMERIC_STD.SIGNED (subtype declaration)
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(62): VHDL Compiler exiting
-# End time: 20:00:14 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 4, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:01:16 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(54): (vcom-1600) No feasible entries for subprogram "TO_UNSIGNED".
-#    Visible subprograms are:
-#       (explicit) NUMERIC_STD.TO_UNSIGNED[NATURAL, NATURAL return UNRESOLVED_UNSIGNED] at vhdl_src/ieee/mti_numeric_std.vhd(1464)
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(54): (vcom-1583) Illegal type converson from 'unknown' to 'ieee.std_logic_1164.STD_LOGIC_VECTOR' (operand type is not known).
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(62): VHDL Compiler exiting
-# End time: 20:01:16 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:03:48 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(54): (vcom-1600) No feasible entries for subprogram "TO_UNSIGNED".
-#    Visible subprograms are:
-#       (explicit) NUMERIC_STD.TO_UNSIGNED[NATURAL, NATURAL return UNRESOLVED_UNSIGNED] at vhdl_src/ieee/mti_numeric_std.vhd(1464)
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(54): (vcom-1583) Illegal type converson from 'unknown' to 'ieee.std_logic_1164.STD_LOGIC_VECTOR' (operand type is not known).
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(62): VHDL Compiler exiting
-# End time: 20:03:49 on Sep 28,2024, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:04:40 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(54): (vcom-1600) No feasible entries for subprogram "TO_INTEGER".
-#    Visible subprograms are:
-#       (explicit) NUMERIC_STD.TO_INTEGER[UNRESOLVED_UNSIGNED return NATURAL] at vhdl_src/ieee/mti_numeric_std.vhd(1449)
-#       (explicit) NUMERIC_STD.TO_INTEGER[UNRESOLVED_SIGNED return INTEGER] at vhdl_src/ieee/mti_numeric_std.vhd(1457)
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(54): (vcom-1583) Illegal type converson from 'unknown' to 'ieee.std_logic_1164.STD_LOGIC_VECTOR' (operand type is not known).
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(62): VHDL Compiler exiting
-# End time: 20:04:41 on Sep 28,2024, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:07:28 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# End time: 20:07:28 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:07:58 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(63): (vcom-1031) Formal generic "FILE_PATH" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(63): (vcom-1031) Formal generic "FILE_PATH_INIT" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(73): Cannot read output "LMD_LATCH_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(83): Cannot read output "ALU_REG_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(93): Cannot read output "RT_REG_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(59): (vcom-1152) Index value 4 is out of index range 3 downto 0 of ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(95): VHDL Compiler exiting
-# End time: 20:07:58 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:09:36 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH_INIT" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(75): Cannot read output "LMD_LATCH_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(85): Cannot read output "ALU_REG_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(95): Cannot read output "RT_REG_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(61): (vcom-1152) Index value 4 is out of index range 3 downto 0 of ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(97): VHDL Compiler exiting
-# End time: 20:09:37 on Sep 28,2024, Elapsed time: 0:00:01
-# Errors: 6, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 20:11:26 on Sep 28,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH_INIT" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(75): Cannot read output "LMD_LATCH_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(85): Cannot read output "ALU_REG_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(95): Cannot read output "RT_REG_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(97): VHDL Compiler exiting
-# End time: 20:11:26 on Sep 28,2024, Elapsed time: 0:00:00
-# Errors: 5, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:02:11 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# End time: 16:02:11 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:02:14 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH_INIT" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(75): Cannot read output "LMD_LATCH_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(84): near "Y": (vcom-1576) expecting ',' or ')'.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(87): Statement cannot be labeled.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(95): Cannot read output "RT_REG_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(97): VHDL Compiler exiting
-# End time: 16:02:14 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:18:19 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# End time: 16:18:19 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:18:20 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH_INIT" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(75): Cannot read output "LMD_LATCH_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(84): near "Y": (vcom-1576) expecting ',' or ')'.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(87): Statement cannot be labeled.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(95): Cannot read output "RT_REG_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(97): VHDL Compiler exiting
-# End time: 16:18:21 on Sep 29,2024, Elapsed time: 0:00:01
-# Errors: 6, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:18:45 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# End time: 16:18:45 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:18:46 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH_INIT" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(75): Cannot read output "LMD_LATCH_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(84): near "Y": (vcom-1576) expecting ',' or ')'.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(87): Statement cannot be labeled.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(95): Cannot read output "RT_REG_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(97): VHDL Compiler exiting
-# End time: 16:18:46 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:19:44 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(57): near ")": syntax error
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(68): Statement cannot be labeled.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(76): Cannot read output "LMD_LATCH_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(85): near "Y": (vcom-1576) expecting ',' or ')'.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(88): Statement cannot be labeled.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(96): Cannot read output "RT_REG_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(98): VHDL Compiler exiting
-# End time: 16:19:45 on Sep 29,2024, Elapsed time: 0:00:01
-# Errors: 6, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:33:19 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH_INIT" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(75): Cannot read output "LMD_LATCH_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(84): near "Y": (vcom-1576) expecting ',' or ')'.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(87): Statement cannot be labeled.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(95): Cannot read output "RT_REG_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(97): VHDL Compiler exiting
-# End time: 16:33:19 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 5, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:36:19 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# End time: 16:36:19 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:36:22 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH_INIT" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(75): Cannot read output "LMD_LATCH_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(84): near "Y": (vcom-1576) expecting ',' or ')'.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(87): Statement cannot be labeled.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(95): Cannot read output "RT_REG_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(97): VHDL Compiler exiting
-# End time: 16:36:22 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 5, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:36:37 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH_INIT" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(75): Cannot read output "LMD_LATCH_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(84): near "Y": (vcom-1576) expecting ',' or ')'.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(87): Statement cannot be labeled.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(95): Cannot read output "RT_REG_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(97): VHDL Compiler exiting
-# End time: 16:36:38 on Sep 29,2024, Elapsed time: 0:00:01
-# Errors: 5, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:36:40 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH_INIT" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(75): Cannot read output "LMD_LATCH_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(84): near "Y": (vcom-1576) expecting ',' or ')'.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(87): Statement cannot be labeled.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(95): Cannot read output "RT_REG_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(97): VHDL Compiler exiting
-# End time: 16:36:40 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 5, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:39:08 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# End time: 16:39:08 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:39:11 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH_INIT" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(75): Cannot read output "LMD_LATCH_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(84): near "Y": (vcom-1576) expecting ',' or ')'.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(87): Statement cannot be labeled.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(95): Cannot read output "RT_REG_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(97): VHDL Compiler exiting
-# End time: 16:39:11 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 5, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/FU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:40:50 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/FU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity FU
-# -- Compiling architecture structural of FU
-# End time: 16:40:50 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/a.c-IRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:40:53 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/a.c-IRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_textio
-# -- Compiling entity IRAM
-# -- Compiling architecture IRam_Bhe of IRAM
-# End time: 16:40:53 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/FU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:40:54 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/FU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity FU
-# -- Compiling architecture structural of FU
-# End time: 16:40:54 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:41:04 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# End time: 16:41:04 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:41:05 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH_INIT" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(75): Cannot read output "LMD_LATCH_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(84): near "Y": (vcom-1576) expecting ',' or ')'.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(87): Statement cannot be labeled.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(95): Cannot read output "RT_REG_out".
-# 	VHDL 2008 allows reading outputs.
-# 	This facility is enabled by compiling with -2008.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(97): VHDL Compiler exiting
-# End time: 16:41:05 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 5, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:41:54 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# End time: 16:41:54 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:41:55 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH_INIT" has OPEN or no actual associated with it.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(84): near "Y": (vcom-1576) expecting ',' or ')'.
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(87): Statement cannot be labeled.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(97): VHDL Compiler exiting
-# End time: 16:41:55 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:42:28 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH_INIT" has OPEN or no actual associated with it.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(97): VHDL Compiler exiting
-# End time: 16:42:28 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:44:05 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(42): (vcom-1136) Unknown identifier "test".
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd(62): VHDL Compiler exiting
-# End time: 16:44:05 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:44:25 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# End time: 16:44:26 on Sep 29,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:44:29 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH_INIT" has OPEN or no actual associated with it.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(97): VHDL Compiler exiting
-# End time: 16:44:29 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:47:18 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# End time: 16:47:18 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:47:20 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH_INIT" has OPEN or no actual associated with it.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(97): VHDL Compiler exiting
-# End time: 16:47:21 on Sep 29,2024, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:48:09 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# End time: 16:48:09 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:48:11 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH_INIT" has OPEN or no actual associated with it.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(97): VHDL Compiler exiting
-# End time: 16:48:12 on Sep 29,2024, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:48:42 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(65): (vcom-1031) Formal generic "FILE_PATH_INIT" has OPEN or no actual associated with it.
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd(97): VHDL Compiler exiting
-# End time: 16:48:42 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:52:22 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# End time: 16:52:22 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:52:25 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package std_logic_textio
-# -- Compiling entity RWMEM
-# -- Compiling architecture beh of RWMEM
-# End time: 16:52:25 on Sep 29,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 16:52:27 on Sep 29,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_textio
-# -- Compiling entity MU
-# -- Compiling architecture structural of MU
-# End time: 16:52:27 on Sep 29,2024, Elapsed time: 0:00:00
+# -- Compiling entity sign_extend
+# -- Compiling architecture beh of sign_extend
+# End time: 16:32:51 on Oct 05,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/DU.vhd
 # QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 13:00:23 on Sep 30,2024
+# Start time: 16:32:52 on Oct 05,2024
 # vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/DU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity DU
 # -- Compiling architecture struct of DU
-# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/DU.vhd(134): (vcom-1136) Unknown identifier "PC_NXT".
-# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/DU.vhd(143): VHDL Compiler exiting
-# End time: 13:00:23 on Sep 30,2024, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/DU.vhd
+# End time: 16:32:53 on Oct 05,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu_type.vhd
 # QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 13:01:51 on Sep 30,2024
-# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/DU.vhd 
+# Start time: 16:33:03 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu_type.vhd 
+# -- Loading package STANDARD
+# -- Compiling package alu_type
+# End time: 16:33:03 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:33:04 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity DU
-# -- Compiling architecture struct of DU
-# End time: 13:01:51 on Sep 30,2024, Elapsed time: 0:00:00
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package alu_type
+# -- Compiling entity ALU
+# -- Compiling architecture BEHAVIOR of ALU
+# End time: 16:33:04 on Oct 05,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:33:07 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity is_zero
+# -- Compiling architecture beh of is_zero
+# End time: 16:33:07 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/mux21.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:33:08 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/mux21.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux21
+# -- Compiling architecture beh of mux21
+# End time: 16:33:08 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/reg.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:33:09 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg
+# -- Compiling architecture beh of reg
+# End time: 16:33:09 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:33:09 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHIFT2
+# -- Compiling architecture behavioral of SHIFT2
+# End time: 16:33:10 on Oct 05,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:33:10 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity EXU
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(9): (vcom-1136) Unknown identifier "TYPE_OP".
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(21): VHDL Compiler exiting
+# End time: 16:33:11 on Oct 05,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:34:52 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity EXU
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(9): (vcom-1136) Unknown identifier "alu_type".
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(21): VHDL Compiler exiting
+# End time: 16:34:52 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu_type.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:35:07 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu_type.vhd 
+# -- Loading package STANDARD
+# -- Compiling package alu_type
+# End time: 16:35:07 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:35:07 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity EXU
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(9): (vcom-1136) Unknown identifier "alu_type".
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(21): VHDL Compiler exiting
+# End time: 16:35:08 on Oct 05,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:35:15 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package alu_type
+# -- Compiling entity ALU
+# -- Compiling architecture BEHAVIOR of ALU
+# End time: 16:35:15 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/mux21.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:35:18 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/mux21.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux21
+# -- Compiling architecture beh of mux21
+# End time: 16:35:18 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:35:19 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity is_zero
+# -- Compiling architecture beh of is_zero
+# End time: 16:35:19 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/reg.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:35:20 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg
+# -- Compiling architecture beh of reg
+# End time: 16:35:20 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:35:21 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHIFT2
+# -- Compiling architecture behavioral of SHIFT2
+# End time: 16:35:21 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:35:22 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity EXU
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(9): (vcom-1136) Unknown identifier "alu_type".
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(21): VHDL Compiler exiting
+# End time: 16:35:22 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:35:47 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity EXU
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(9): (vcom-1136) Unknown identifier "aluOp".
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(21): VHDL Compiler exiting
+# End time: 16:35:48 on Oct 05,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:36:11 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity EXU
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(9): (vcom-1136) Unknown identifier "alu_type".
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(21): VHDL Compiler exiting
+# End time: 16:36:11 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:38:43 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(3): (vcom-1136) Unknown identifier "alu_type".
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(5): VHDL Compiler exiting
+# End time: 16:38:43 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:39:30 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity EXU
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(10): (vcom-1136) Unknown identifier "alu_type".
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(22): VHDL Compiler exiting
+# End time: 16:39:31 on Oct 05,2024, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
