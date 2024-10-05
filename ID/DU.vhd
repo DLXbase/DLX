@@ -8,7 +8,7 @@ entity DU is
 			J_EN, WR_EN, A_EN, B_EN, IMM_EN, RT_EN, is_R_type:	In	std_logic;    --control signals from CU
 			BR_EN: in std_logic;  									--Signals wether there is a branch taken in EX stage
 			clk, rst :	In	std_logic;     
-			NPC_IN, IR, DATAIN, RT_IN, BTA_OR_NPC:	in 	std_logic_vector(N-1 downto 0);  --Incoming data from registers. RT_IN comes from the WB stage, BTA_OR_NPC comes from the EX stage. 
+			NPC_IN, IR, DATAIN, ADDR_IN, BTA_OR_NPC:	in 	std_logic_vector(N-1 downto 0);  --Incoming data from registers. RT_IN comes from the WB stage, BTA_OR_NPC comes from the EX stage. 
 			A,B,IMM,RT_OUT,NPC_OUT,PC_NXT : OUT 	std_logic_vector(N-1 downto 0));     --output registers. 
 	end DU;
 
@@ -73,7 +73,7 @@ begin
 	RF_instance: reg_file
 	generic map(NBIT => 32)
 	port map(clk=> clk ,rst=>rst, wr_en=>wr_en,
-			add_rd1 => IR(25 downto 21), add_rd2 =>IR (20 downto 16), add_wr => RT_IN, datain => DATAIN, 
+			add_rd1 => IR(25 downto 21), add_rd2 =>IR (20 downto 16), add_wr => ADDR_IN, datain => DATAIN, 
 			out1=>A_nxt, out2 => B_nxt);
 	-- Rwad addresses come from IR, Write address is buffered from the WB stage. 
 	

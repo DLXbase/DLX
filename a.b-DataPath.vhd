@@ -9,6 +9,9 @@ entity DATAPATH is
 		CW : in std_logic_vector(17 downto 0);
 		ALU_FUNC : in TYPE_OP;
 		from_IRAM : in std_logic_vector(N-1 downto 0); --output of iram
+		from_DRAM : in std_logic_vector(N-1 downto 0); --output of dram
+		addr_to_DRAM : out std_logic_vector(N-1 downto 0); --input address for dram
+		data_to_DRAM : out std_logic_vector(N-1 downto 0); --input data for dram
 		to_IRAM : out std_logic_vector(N-1 downto 0); --input for iram 
 		IR: out std_logic_vector(N-1 downto 0);
 		PC_to_IRAM : out std_logic_vector(N-1 downto 0)
@@ -22,7 +25,7 @@ signal pc_nxt_s, pc4_s, npc_reg1_s, ireg_s: std_logic_vector(N-1 downto 0); --fe
 signal b_en_s, b_addr_s, imm_reg_s, npc_reg2_s, a_reg_s, b_reg_s, rt_reg1_s : std_logic_vector(N-1 downto 0); --decode
 signal alu_out_s, rt_reg2_s, npc_reg3_s : std_logic_vector(N-1 downto 0); --execute
 signal lmd_out_s, alu_out2_s, rt_reg3_s, npc_reg4_s : std_logic_vector(N-1 downto 0); --memory
-signal wb_s : std_logic_vector(N-1 downto 0); --write back
+signal wb_data_s wb_addr_s : std_logic_vector(N-1 downto 0); --write back
 
 --components
 component FU
@@ -45,7 +48,7 @@ component DU
 			J_EN, WR_EN, A_EN, B_EN, IMM_EN, RT_EN, is_R_type:	In	std_logic;
 			BR_EN: in std_logic;  									
 			clk, rst :	In	std_logic;     
-			NPC_IN, IR, DATAIN, RT_IN, BTA_OR_NPC:	in 	std_logic_vector(N-1 downto 0);   
+			NPC_IN, IR, DATAIN, ADDR_IN, BTA_OR_NPC:	in 	std_logic_vector(N-1 downto 0);   
 			A,B,IMM,RT_OUT,NPC_OUT,PC_NXT : OUT 	std_logic_vector(N-1 downto 0)
 			);
 
@@ -134,8 +137,8 @@ begin
 			rst => RST,
 			NPC_IN => npc_reg1_s,
 			IR => ireg_s,
-			DATAIN => wb_s,
-			RT_IN => rt_reg3_s,
+			DATAIN => wb_data_s,
+			ADDR_IN => wb_addr_s,
 			BTA_OR_NPC => b_addr_s,
 			A => a_reg_s,
 			B => b_reg_s,
@@ -171,7 +174,26 @@ begin
 			CLK => CLK,
 			RST => RST,
 			CW => CW(3) & CW(7) & CW(12), --LMD & ALU_OUT & RT
-			
+			ALU_RESULT => alu_out_s,
+			RT_REG_in => rt_reg2_s,
+			NPC_REG_in => npc_reg3_s,
+			LMD_LATCH_in => from_DRAM,
+			LMD_LATCH_out => lmd_out_s,
+			ALU_REG_out => alu_out2_s,
+			RT_REG_out => rt_reg3_s,
+			NPC_REG_out => npc_reg4_s
+		);
+
+	WB_STAGE : WBU
+		generic map (N => N)
+		port map (
+			ALU_OUT => alu_out2_s,
+			LOAD => lmd_out_s,
+			NPC_REG_in => npc_reg4_s,
+			RT_REG_in => rt_reg3_s,
+			CW => CW(2) & CW(1), --JAL_EN & WBMUX
+			RF_ADDR => wb_addr_s,
+			RG_DATA => wb_data_s
 		);
 
 end STRUCTURAL;
