@@ -7,6 +7,8 @@ entity FU is
 		RST : in std_logic;
 		CW : in std_logic_vector(2 downto 0);
 		IN_ID : in std_logic_vector(N-1 downto 0);
+		from_IRAM : in std_logic_vector(N-1 downto 0); --output of iram
+		to_IRAM : out std_logic_vector(N-1 downto 0); --input for iram 
 		IREG_out : out std_logic_vector(N-1 downto 0);
 		NPC_out : out std_logic_vector(N-1 downto 0);
 		PC_4out : out std_logic_vector(N-1 downto 0) 
@@ -15,7 +17,7 @@ end FU;
 
 architecture structural of FU is
 	--signals
-	signal pc_out_s, pc_4out_s, im_out_s : std_logic_vector(N-1 downto 0);
+	signal pc_out_s, pc_4out_s : std_logic_vector(N-1 downto 0);
 
 	--components
 	component reg
@@ -25,16 +27,16 @@ architecture structural of FU is
         	Y: out std_logic_vector(N-1 downto 0));
 	end component;
 
-	component IRAM
-		generic (
-    		RAM_DEPTH : integer := 48;
-    		I_SIZE : integer := 32);
-  		port (
-    		Rst  : in  std_logic;
-    		Addr : in  std_logic_vector(I_SIZE - 1 downto 0);
-    		Dout : out std_logic_vector(I_SIZE - 1 downto 0)
-    		);
-	end component;
+--	component IRAM
+--		generic (
+--    		RAM_DEPTH : integer := 48;
+--    		I_SIZE : integer := 32);
+--  		port (
+--    		Rst  : in  std_logic;
+--    		Addr : in  std_logic_vector(I_SIZE - 1 downto 0);
+--    		Dout : out std_logic_vector(I_SIZE - 1 downto 0)
+--    		);
+--	end component;
 
 	component add4
 		generic ( NBIT: integer:= 32);           
@@ -43,7 +45,7 @@ architecture structural of FU is
 	end component;
 
 	begin
-
+	to_IRAM <= pc_out_s;
 	--port maps
 	PC_REG : reg
 		generic map(N => N)
@@ -61,12 +63,12 @@ architecture structural of FU is
 			res => pc_4out_s
 		);
 
-	IRmem : IRAM
-		port map (
-			Rst => RST,
-			Addr => pc_out_s,
-			Dout => im_out_s					
-		);
+--	IRmem : IRAM
+--		port map (
+--			Rst => RST,
+--			Addr => pc_out_s,
+--			Dout => im_out_s					
+--		);
 
 	NPC_REG : reg
 		generic map(N => N)
@@ -84,7 +86,7 @@ architecture structural of FU is
 			clk => CLK,
 			rst => RST,
 			en => CW(0),
-			A => im_out_s,
+			A => from_IRAM,
 			Y => IREG_out
 		);
 

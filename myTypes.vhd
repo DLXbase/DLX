@@ -46,10 +46,10 @@ package myTypes is
     constant ITYPE_SW : std_logic_vector(OP_CODE_SIZE - 1 downto 0) :=  "001101";
 
 --J type instruction -> OPCODE field
-    constant JTYPE_J : std_logic_vector(OP_CODE_SIZE - 1 downto 0) :=  "010000";
+    constant JTYPE_J : std_logic_vector(OP_CODE_SIZE - 1 downto 0) :=  "010000"; 
     constant JTYPE_JAL : std_logic_vector(OP_CODE_SIZE - 1 downto 0) :=  "010001";
 
-    constant NOP : std_logic_vector(OP_CODE_SIZE - 1 downto 0) :=  "100000";
+    constant NOP : std_logic_vector(OP_CODE_SIZE - 1 downto 0) :=  "100000";  
 end myTypes;
 
 
