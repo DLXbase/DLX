@@ -9,7 +9,7 @@ entity DLX is
     );       -- ALU_OPC_SIZE if explicit ALU Op Code Word Size
   port (
     Clk : in std_logic;
-    Rst : in std_logic);                -- Active Low
+    Rst : in std_logic);                -- Active HIGH
 end DLX;
 
 
@@ -37,49 +37,74 @@ architecture dlx_rtl of DLX is
       Dout : out std_logic_vector(IR_SIZE - 1 downto 0));
   end component;
 
-  -- Data Ram (MISSING!You must include it in your final project!)
+  -- Data Ram 
+  component RWMEM is
+    generic(
+      --FILE_PATH: string;           -- RAM output data file
+      FILE_PATH_INIT: string;      -- RAM initialization data file
+      WORD_SIZE: natural := 32;    -- Number of bits per word
+      ENTRIES: natural := 128     -- Number of lines in the ROM
+      --DATA_DELAY: natural := 2     -- Delay (in # of clock cycles)
+    );
+    
+    port (
+      CLK             : in std_logic;
+      RST             : in std_logic;
+      ADDRESS         : in std_logic_vector(WORD_SIZE - 1 downto 0);
+      ENABLE          : in std_logic;
+      READNOTWRITE    : in std_logic;
+      --DATA_READY      : out std_logic;
+    IN_DATA 		: in std_logic_vector((2*WORD_SIZE) - 1 downto 0);
+      OUT_DATA 		: out std_logic_vector((2*WORD_SIZE) - 1 downto 0)
+    );
+  end component;
 
   -- Datapath (MISSING!You must include it in your final project!)
+
+
   
   -- Control Unit
-  component dlx_cu
+	component dlx_cu 
   generic (
-    MICROCODE_MEM_SIZE :     integer := 10;  -- Microcode Memory Size
+    MICROCODE_MEM_SIZE :     integer := 10;  -- Microcode Memory Size (NUMBER OF INSTRUCTIONS)
     FUNC_SIZE          :     integer := 11;  -- Func Field Size for R-Type Ops
     OP_CODE_SIZE       :     integer := 6;  -- Op Code Size
-    --ALU_OPC_SIZE       :     integer := 6;  -- ALU Op Code Word Size
+    -- ALU_OPC_SIZE       :     integer := 6;  -- ALU Op Code Word Size
     IR_SIZE            :     integer := 32;  -- Instruction Register Size    
-    CW_SIZE            :     integer := 15);  -- Control Word Size
+    CW_SIZE            :     integer := 20);  -- Control Word Size
   port (
     Clk                : in  std_logic;  -- Clock
     Rst                : in  std_logic;  -- Reset:Active-Low
     -- Instruction Register
-    IR_IN              : in  std_logic_vector(IR_SIZE - 1 downto 0);
+    IR_IN              : in  std_logic_vector(IR_SIZE - 1 downto 0);   --IR must be taken from the IRAM and not the IR_REG for timing reasons. 
     -- IF Control Signal
-    IR_LATCH_EN        : out std_logic;  -- Instruction Register Latch Enable
-    NPC_LATCH_EN       : out std_logic;
+    IR_EN        : out std_logic;  -- Instruction Register Enable
+    NPC_EN       : out std_logic;                                       -- NextProgramCounter Register Latch Enable
     -- ID Control Signals
-    RegA_LATCH_EN      : out std_logic;  -- Register A Latch Enable
-    RegB_LATCH_EN      : out std_logic;  -- Register B Latch Enable
-    RegIMM_LATCH_EN    : out std_logic;  -- Immediate Register Latch Enable
+    RegA_EN      : out std_logic;  -- Register A Latch Enable
+    RegB_EN      : out std_logic;  -- Register B Latch Enable
+    RegIMM_EN    : out std_logic;  -- Immediate Register Latch Enable
+    RT_REG_EN          : out std_logic;
+    IS_R_TYPE          : out std_logic;  --To understand which bytes encode the Target Register
+    J_EN               : out std_logic;
     -- EX Control Signals
-    MUXA_SEL           : out std_logic;  -- MUX-A Sel
-    MUXB_SEL           : out std_logic;  -- MUX-B Sel
+    MUXA_SEL           : out std_logic;  -- A/NPC Sel
+    MUXB_SEL           : out std_logic;  -- B/IMM Sel
     ALU_OUTREG_EN      : out std_logic;  -- ALU Output Register Enable
-    EQ_COND            : out std_logic;  -- Branch if (not) Equal to Zero
+    BEQZ_OR_BNEZ       : out std_logic;  -- to configure the zero(?) block. Works different if it's a BEQZ or BNEZ. 
+    SH2_EN             : out std_logic;  -- IMM is shifted by 2 if it's a branch to compute the BTA. 
     -- ALU Operation Code
-    ALU_OPCODE         : out aluOp; -- choose between implicit or exlicit coding, like std_logic_vector(ALU_OPC_SIZE -1 downto 0);
+    ALU_OPCODE         : out aluOp; -- choose between implicit or exlicit coding, like std_logic_vector(ALU_OPC_SIZE -1 downto 0);    
     -- MEM Control Signals
     DRAM_WE            : out std_logic;  -- Data RAM Write Enable
-    LMD_LATCH_EN       : out std_logic;  -- LMD Register Latch Enable
-    JUMP_EN            : out std_logic;  -- JUMP Enable Signal for PC input MUX
-    PC_LATCH_EN        : out std_logic;  -- Program Counte Latch Enable
+    LMD_EN       : out std_logic;  -- LMD Register Latch Enable
     -- WB Control signals
     WB_MUX_SEL         : out std_logic;  -- Write Back MUX Sel
-    RF_WE              : out std_logic);  -- Register File Write Enable
-
+    RF_WE              : out std_logic;  -- Register File Write Enable
+    JAL_EN             : out std_logic; -- needed to write NPC on R31
+    -- PC enable 
+    PC_EN : out std_logic); 
   end component;
-
 
   ----------------------------------------------------------------
   -- Signals Declaration
@@ -96,23 +121,34 @@ architecture dlx_rtl of DLX is
   signal PC_BUS : std_logic_vector(PC_SIZE -1 downto 0);
 
   -- Control Unit Bus signals
-  signal IR_LATCH_EN_i : std_logic;
-  signal NPC_LATCH_EN_i : std_logic;
-  signal RegA_LATCH_EN_i : std_logic;
-  signal RegB_LATCH_EN_i : std_logic;
-  signal RegIMM_LATCH_EN_i : std_logic;
-  signal EQ_COND_i : std_logic;
-  signal JUMP_EN_i : std_logic;
-  signal ALU_OPCODE_i : aluOp;
-  signal MUXA_SEL_i : std_logic;
-  signal MUXB_SEL_i : std_logic;
-  signal ALU_OUTREG_EN_i : std_logic;
-  signal DRAM_WE_i : std_logic;
-  signal LMD_LATCH_EN_i : std_logic;
-  signal PC_LATCH_EN_i : std_logic;
-  signal WB_MUX_SEL_i : std_logic;
-  signal RF_WE_i : std_logic;
+	signal IR_IN  : std_logic_vector(IR_SIZE - 1 downto 0);
+	--IF
+	signal IR_EN        : std_logic;  -- Instruction Register Enable
+	signal NPC_EN       : std_logic; 
+	--ID
+	signal RegA_EN      :  std_logic;  -- Register A Latch Enable
+	signal RegB_EN      :  std_logic;  -- Register B Latch Enable
+	signal RegIMM_EN    :  std_logic;  -- Immediate Register Latch Enable
+	signal RT_REG_EN    :  std_logic;
+	signal IS_R_TYPE     :  std_logic;  --To understand which bytes encode the Target Register
+	signal J_EN         :  std_logic;
+	--EX
+	signal MUXA_SEL           : std_logic;  
+	signal MUXB_SEL           :  std_logic;  
+	signal ALU_OUTREG_EN      : std_logic;  
+	signal BEQZ_OR_BNEZ       :  std_logic;  
+	signal SH2_EN             : std_logic; 
 
+	signal ALU_OPCODE         :  aluOp; -- choose between implicit or exlicit coding, like std_logic_vector(ALU_OPC_SIZE -1 downto 0);    
+    -- MEM 
+	signal DRAM_WE            :  std_logic;  -- Data RAM Write Enable
+	signal LMD_EN       :  std_logic;  -- LMD Register Latch Enable
+	-- WB
+	signal WB_MUX_SEL         :  std_logic;  -- Write Back MUX Sel
+	signal RF_WE              :  std_logic;  -- Register File Write Enable
+	signal JAL_EN             :  std_logic; -- needed to write NPC on R31
+  --PC
+	signal PC_EN :  std_logic;
 
   -- Data Ram Bus signals
 
