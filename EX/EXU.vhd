@@ -6,15 +6,9 @@ entity EXU is
 	generic (N: integer := 32);
 	Port(CLK : in std_logic;
 		RST : in std_logic;
-<<<<<<< HEAD
-		CW : in std_logic_vector(3 downto 0);
-		ALU_FUNC : in alu_type;
-		NPC : in std_logic_vector(N-1 downto 0);
-=======
 		CW : in std_logic_vector(6 downto 0);
 		ALU_FUNC : in TYPE_OP;
 		NPC_REG : in std_logic_vector(N-1 downto 0);
->>>>>>> c5d1c5adf916c83112a951261e6cc6ceb1277b4f
 		A_REG : in std_logic_vector(N-1 downto 0);
 		B_REG : in std_logic_vector(N-1 downto 0);
 		RT_REG : in std_logic_vector(N-1 downto 0);
