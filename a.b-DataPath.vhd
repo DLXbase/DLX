@@ -160,8 +160,18 @@ begin
 			PC_4 => pc4_s,
 			ZERO => b_es_s,
 			BRANCH_ADDR => b_addr_s,
-			ALU_OUT => ,
-			RT_REG_OUT => 
+			ALU_OUT => alu_out_s,
+			RT_REG_OUT => rt_reg2_s,
+			NPC_OUT => npc_reg3_s
+		);
+
+	MEM_STAGE : MU
+		generic map (N => N)
+		port map (
+			CLK => CLK,
+			RST => RST,
+			CW => CW(3) & CW(7) & CW(12), --LMD & ALU_OUT & RT
+			
 		);
 
 end STRUCTURAL;
