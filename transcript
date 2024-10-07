@@ -382,3 +382,421 @@ vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.
 # ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(9): near "<": (vcom-1576) expecting IDENTIFIER.
 # End time: 16:45:46 on Oct 05,2024, Elapsed time: 0:00:01
 # Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:48:10 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity EXU
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(10): (vcom-1136) Unknown identifier "TYPE_OP".
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(23): VHDL Compiler exiting
+# End time: 16:48:10 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:48:28 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity EXU
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(10): (vcom-1136) Unknown identifier "alu_type".
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(23): VHDL Compiler exiting
+# End time: 16:48:28 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:49:02 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity EXU
+# -- Compiling architecture structural of EXU
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(39): (vcom-1136) Unknown identifier "TYPE_OP".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(84): Signal "out_cmp_s" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(84): Cannot assign to object "PC_4" of mode IN.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(88): Signal [mode IN port] "ALU_FUNC" is type work.alu_type.aluOp; expecting type (error).
+# ** Error (suppressible): /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(92): (vcom-1141) Identifier "iszero" does not identify a component declaration.
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(129): VHDL Compiler exiting
+# End time: 16:49:02 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:49:34 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity EXU
+# -- Compiling architecture structural of EXU
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(84): Signal "out_cmp_s" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(84): Cannot assign to object "PC_4" of mode IN.
+# ** Error (suppressible): /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(92): (vcom-1141) Identifier "iszero" does not identify a component declaration.
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(129): VHDL Compiler exiting
+# End time: 16:49:34 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:51:20 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity EXU
+# -- Compiling architecture structural of EXU
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(85): Cannot assign to object "PC_4" of mode IN.
+# ** Error (suppressible): /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(93): (vcom-1141) Identifier "iszero" does not identify a component declaration.
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(130): VHDL Compiler exiting
+# End time: 16:51:20 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:52:54 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity EXU
+# -- Compiling architecture structural of EXU
+# ** Error (suppressible): /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(93): (vcom-1141) Identifier "iszero" does not identify a component declaration.
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(130): VHDL Compiler exiting
+# End time: 16:52:54 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:53:13 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity EXU
+# -- Compiling architecture structural of EXU
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(95): (vcom-1484) Unknown formal identifier "BEQZ_OR_BENZ".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(96): (vcom-1035) Formal port "BEQZ_OR_BNEZ" has OPEN or no actual associated with it.
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(130): VHDL Compiler exiting
+# End time: 16:53:14 on Oct 05,2024, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:56:02 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity EXU
+# -- Compiling architecture structural of EXU
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(95): (vcom-1484) Unknown formal identifier "BEQZ_OR_BENZ".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(96): (vcom-1035) Formal port "BEQZ_OR_BNEZ" has OPEN or no actual associated with it.
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(130): VHDL Compiler exiting
+# End time: 16:56:02 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:56:05 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity is_zero
+# -- Compiling architecture beh of is_zero
+# End time: 16:56:06 on Oct 05,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:56:08 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity EXU
+# -- Compiling architecture structural of EXU
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(95): (vcom-1484) Unknown formal identifier "BEQZ_OR_BENZ".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(96): (vcom-1035) Formal port "BEQZ_OR_BNEZ" has OPEN or no actual associated with it.
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(130): VHDL Compiler exiting
+# End time: 16:56:08 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:56:42 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity EXU
+# -- Compiling architecture structural of EXU
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(95): (vcom-1484) Unknown formal identifier "BEQZ_OR_BENZ".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(96): (vcom-1035) Formal port "BEQZ_OR_BNEZ" has OPEN or no actual associated with it.
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd(130): VHDL Compiler exiting
+# End time: 16:56:42 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:58:28 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity EXU
+# -- Compiling architecture structural of EXU
+# End time: 16:58:29 on Oct 05,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/reg.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:58:37 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg
+# -- Compiling architecture beh of reg
+# End time: 16:58:37 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:58:38 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling entity MU
+# -- Compiling architecture structural of MU
+# End time: 16:58:38 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/mux21.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:58:43 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/mux21.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux21
+# -- Compiling architecture beh of mux21
+# End time: 16:58:43 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/WBU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:58:44 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/WBU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity WBU
+# -- Compiling architecture STRUCTURAL of WBU
+# End time: 16:58:44 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:58:49 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DATAPATH
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(10): (vcom-1136) Unknown identifier "TYPE_OP".
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(19): VHDL Compiler exiting
+# End time: 16:58:49 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:59:43 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DATAPATH
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(10): (vcom-1136) Unknown identifier "aluOP".
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(19): VHDL Compiler exiting
+# End time: 16:59:43 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:00:29 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity DATAPATH
+# -- Compiling architecture STRUCTURAL of DATAPATH
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(29): near "wb_addr_s": (vcom-1576) expecting ':'.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(117): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(141): (vcom-1136) Unknown identifier "wb_data_s".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(142): (vcom-1136) Unknown identifier "wb_addr_s".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(136): Signal "b_en_s" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(165): (vcom-1136) Unknown identifier "b_es_s".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(166): (vcom-1484) Unknown formal identifier "BRANCH_ADDR".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(177): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(196): (vcom-1136) Unknown identifier "wb_addr_s".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(197): (vcom-1136) Unknown identifier "wb_data_s".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(197): (vcom-1484) Unknown formal identifier "RG_DATA".
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(200): VHDL Compiler exiting
+# End time: 17:00:29 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 11, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:00:57 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity DATAPATH
+# -- Compiling architecture STRUCTURAL of DATAPATH
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(117): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(136): Signal "b_en_s" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(165): (vcom-1136) Unknown identifier "b_es_s".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(166): (vcom-1484) Unknown formal identifier "BRANCH_ADDR".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(177): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(197): (vcom-1484) Unknown formal identifier "RG_DATA".
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(200): VHDL Compiler exiting
+# End time: 17:00:58 on Oct 05,2024, Elapsed time: 0:00:01
+# Errors: 6, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:02:08 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity DATAPATH
+# -- Compiling architecture STRUCTURAL of DATAPATH
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(117): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(136): Signal "b_en_s" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(166): (vcom-1484) Unknown formal identifier "BRANCH_ADDR".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(177): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(197): (vcom-1484) Unknown formal identifier "RG_DATA".
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(200): VHDL Compiler exiting
+# End time: 17:02:08 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:02:27 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity DATAPATH
+# -- Compiling architecture STRUCTURAL of DATAPATH
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(117): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(136): Signal "b_en_s" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(157): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(177): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(197): (vcom-1484) Unknown formal identifier "RG_DATA".
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(200): VHDL Compiler exiting
+# End time: 17:02:27 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:03:36 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity DATAPATH
+# -- Compiling architecture STRUCTURAL of DATAPATH
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(118): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(158): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(166): Signal "b_en_s" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(178): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(198): (vcom-1484) Unknown formal identifier "RG_DATA".
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(201): VHDL Compiler exiting
+# End time: 17:03:36 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:04:33 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity EXU
+# -- Compiling architecture structural of EXU
+# End time: 17:04:33 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:04:53 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity DATAPATH
+# -- Compiling architecture STRUCTURAL of DATAPATH
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(118): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(158): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(178): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(198): (vcom-1484) Unknown formal identifier "RG_DATA".
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(201): VHDL Compiler exiting
+# End time: 17:04:53 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:05:18 on Oct 05,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity DATAPATH
+# -- Compiling architecture STRUCTURAL of DATAPATH
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(118): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(158): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(178): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(196): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(201): VHDL Compiler exiting
+# End time: 17:05:18 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:54:27 on Oct 07,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity DATAPATH
+# -- Compiling architecture STRUCTURAL of DATAPATH
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(118): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(158): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(178): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(196): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(201): VHDL Compiler exiting
+# End time: 10:54:27 on Oct 07,2024, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:54:29 on Oct 07,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity DATAPATH
+# -- Compiling architecture STRUCTURAL of DATAPATH
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(118): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(158): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(178): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(196): (vcom-1436) Actual expression (infix expression) of formal "CW" is not globally static.
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(201): VHDL Compiler exiting
+# End time: 10:54:29 on Oct 07,2024, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0

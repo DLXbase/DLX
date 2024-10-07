@@ -1,5 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use work.alu_type.all;
 
 entity DATAPATH is
 	generic(N : integer := 32);
@@ -7,7 +8,7 @@ entity DATAPATH is
 		CLK : in std_logic;
 		RST : in std_logic;
 		CW : in std_logic_vector(17 downto 0);
-		ALU_FUNC : in TYPE_OP;
+		ALU_FUNC : in aluOP;
 		from_IRAM : in std_logic_vector(N-1 downto 0); --output of iram
 		from_DRAM : in std_logic_vector(N-1 downto 0); --output of dram
 		addr_to_DRAM : out std_logic_vector(N-1 downto 0); --input address for dram
@@ -22,10 +23,11 @@ architecture STRUCTURAL of DATAPATH is
 
 --signals
 signal pc_nxt_s, pc4_s, npc_reg1_s, ireg_s: std_logic_vector(N-1 downto 0); --fetch
-signal b_en_s, b_addr_s, imm_reg_s, npc_reg2_s, a_reg_s, b_reg_s, rt_reg1_s : std_logic_vector(N-1 downto 0); --decode
+signal b_addr_s, imm_reg_s, npc_reg2_s, a_reg_s, b_reg_s, rt_reg1_s : std_logic_vector(N-1 downto 0); --decode
+signal b_en_s : std_logic;
 signal alu_out_s, rt_reg2_s, npc_reg3_s : std_logic_vector(N-1 downto 0); --execute
 signal lmd_out_s, alu_out2_s, rt_reg3_s, npc_reg4_s : std_logic_vector(N-1 downto 0); --memory
-signal wb_data_s wb_addr_s : std_logic_vector(N-1 downto 0); --write back
+signal wb_data_s, wb_addr_s : std_logic_vector(N-1 downto 0); --write back
 
 --components
 component FU
@@ -59,14 +61,14 @@ component EXU
 	Port(CLK : in std_logic;
 		RST : in std_logic;
 		CW : in std_logic_vector(3 downto 0);
-		ALU_FUNC : in TYPE_OP;
+		ALU_FUNC : in aluOp;
 		NPC_REG : in std_logic_vector(N-1 downto 0);
 		A_REG : in std_logic_vector(N-1 downto 0);
 		B_REG : in std_logic_vector(N-1 downto 0);
 		RT_REG : in std_logic_vector(N-1 downto 0);
 		IMM_REG : in std_logic_vector(N-1 downto 0);
 		PC_4 :in std_logic_vector(N-1 downto 0);
-		ZERO : out std_logic_vector(N-1 downto 0);
+		ZERO : out std_logic;
 		BRANC_ADDR : out std_logic_vector(N-1 downto 0);
 		ALU_OUT : out std_logic_vector(N-1 downto 0);
 		RT_REG_OUT : out std_logic_vector(N-1 downto 0);
@@ -161,8 +163,8 @@ begin
 			RT_REG => rt_reg1_s,
 			IMM_REG => imm_reg_s,
 			PC_4 => pc4_s,
-			ZERO => b_es_s,
-			BRANCH_ADDR => b_addr_s,
+			ZERO => b_en_s,
+			BRANC_ADDR => b_addr_s,
 			ALU_OUT => alu_out_s,
 			RT_REG_OUT => rt_reg2_s,
 			NPC_OUT => npc_reg3_s
@@ -193,7 +195,7 @@ begin
 			RT_REG_in => rt_reg3_s,
 			CW => CW(2) & CW(1), --JAL_EN & WBMUX
 			RF_ADDR => wb_addr_s,
-			RG_DATA => wb_data_s
+			RF_DATA => wb_data_s
 		);
 
 end STRUCTURAL;
