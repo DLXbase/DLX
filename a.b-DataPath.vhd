@@ -105,7 +105,12 @@ Port (ALU_OUT:	In	std_logic_vector(N-1 downto 0);
 	  );
 end component;
 
-
+signal cw_FU: std_logic_vector(3 downto 0); 
+signal cw_DU: std_logic_vector(6 downto 0);
+signal cw_EXU: std_logic_vector(6 downto 0);
+signal cw_MU: std_logic_vector();
+signal cw_WBU: std_logic_vector();
+ 
 
 begin
 
