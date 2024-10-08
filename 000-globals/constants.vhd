@@ -1,11 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
---alu operations
-package alu_type is
-	type aluOp is (ADD, SUB, MULT, BITAND, BITOR, BITXOR, FUNCLSL, FUNCLSR, FUNCRSL, FUNCRR, SGE, SLE, SNE, aluNOP);
-end alu_type;
-
 --constants
 package constants is 
 	constant WORD_SIZE: integer := 32; 
