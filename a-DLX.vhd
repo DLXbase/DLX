@@ -4,9 +4,10 @@ use work.myTypes.all;
 
 entity DLX is
   generic (
-    IR_SIZE      : integer := 32;       -- Instruction Register Size
-    PC_SIZE      : integer := 32       -- Program Counter Size
-    );       -- ALU_OPC_SIZE if explicit ALU Op Code Word Size
+        IR_SIZE      : integer := 32;       -- Instruction Register Size
+        PC_SIZE      : integer := 32       -- Program Counter Size
+		N : integer := 32    
+	);       -- ALU_OPC_SIZE if explicit ALU Op Code Word Size
   port (
     Clk : in std_logic;
     Rst : in std_logic);                -- Active Low
@@ -28,9 +29,9 @@ architecture dlx_rtl of DLX is
   
   --Instruction Ram
   component IRAM
---     generic (
---       RAM_DEPTH : integer;
---       I_SIZE    : integer);
+     generic (
+       RAM_DEPTH : integer := 48;
+       IR_SIZE    : integer := 32);
     port (
       Rst  : in  std_logic;
       Addr : in  std_logic_vector(PC_SIZE - 1 downto 0);
@@ -54,49 +55,70 @@ architecture dlx_rtl of DLX is
       ENABLE          : in std_logic;
       READNOTWRITE    : in std_logic;
       --DATA_READY      : out std_logic;
-    IN_DATA 		: in std_logic_vector((2*WORD_SIZE) - 1 downto 0);
+      IN_DATA 		: in std_logic_vector((2*WORD_SIZE) - 1 downto 0);
       OUT_DATA 		: out std_logic_vector((2*WORD_SIZE) - 1 downto 0)
     );
   end entity RWMEM;
 
   -- Datapath (MISSING!You must include it in your final project!)
+	component DATAPATH
+		generic(N : integer := 32);
+		port(
+			CLK : in std_logic;
+			RST : in std_logic;
+			CW : in std_logic_vector(17 downto 0);
+			ALU_FUNC : in aluOP;
+			from_IRAM : in std_logic_vector(N-1 downto 0); --output of iram
+			from_DRAM : in std_logic_vector(N-1 downto 0); --output of dram
+			addr_to_DRAM : out std_logic_vector(N-1 downto 0); --input address for dram
+			data_to_DRAM : out std_logic_vector(N-1 downto 0); --input data for dram
+			to_IRAM : out std_logic_vector(N-1 downto 0); --input for iram 
+			IR: out std_logic_vector(N-1 downto 0);
+			PC_to_IRAM : out std_logic_vector(N-1 downto 0)
+		);
+	end component;
   
   -- Control Unit
   component dlx_cu
   generic (
-    MICROCODE_MEM_SIZE :     integer := 10;  -- Microcode Memory Size
+    MICROCODE_MEM_SIZE :     integer := 33;  -- Microcode Memory Size (NUMBER OF INSTRUCTIONS)
     FUNC_SIZE          :     integer := 11;  -- Func Field Size for R-Type Ops
     OP_CODE_SIZE       :     integer := 6;  -- Op Code Size
-    --ALU_OPC_SIZE       :     integer := 6;  -- ALU Op Code Word Size
+    -- ALU_OPC_SIZE       :     integer := 6;  -- ALU Op Code Word Size
     IR_SIZE            :     integer := 32;  -- Instruction Register Size    
-    CW_SIZE            :     integer := 15);  -- Control Word Size
+    CW_SIZE            :     integer := 20);  -- Control Word Size
   port (
     Clk                : in  std_logic;  -- Clock
     Rst                : in  std_logic;  -- Reset:Active-Low
     -- Instruction Register
-    IR_IN              : in  std_logic_vector(IR_SIZE - 1 downto 0);
+    IR_IN              : in  std_logic_vector(IR_SIZE - 1 downto 0);   --IR must be taken from the IRAM and not the IR_REG for timing reasons. 
     -- IF Control Signal
-    IR_LATCH_EN        : out std_logic;  -- Instruction Register Latch Enable
-    NPC_LATCH_EN       : out std_logic;
+    IR_EN        : out std_logic;  -- Instruction Register Enable
+    NPC_EN       : out std_logic;                                       -- NextProgramCounter Register Latch Enable
     -- ID Control Signals
-    RegA_LATCH_EN      : out std_logic;  -- Register A Latch Enable
-    RegB_LATCH_EN      : out std_logic;  -- Register B Latch Enable
-    RegIMM_LATCH_EN    : out std_logic;  -- Immediate Register Latch Enable
+    RegA_EN      : out std_logic;  -- Register A Latch Enable
+    RegB_EN      : out std_logic;  -- Register B Latch Enable
+    RegIMM_EN    : out std_logic;  -- Immediate Register Latch Enable
+	RT_REG_EN          : out std_logic;
+	IS_R_TYPE          : out std_logic;  --To understand which bytes encode the Target Register
+	J_EN               : out std_logic;
     -- EX Control Signals
-    MUXA_SEL           : out std_logic;  -- MUX-A Sel
-    MUXB_SEL           : out std_logic;  -- MUX-B Sel
+    MUXA_SEL           : out std_logic;  -- A/NPC Sel
+    MUXB_SEL           : out std_logic;  -- B/IMM Sel
     ALU_OUTREG_EN      : out std_logic;  -- ALU Output Register Enable
-    EQ_COND            : out std_logic;  -- Branch if (not) Equal to Zero
+    BEQZ_OR_BNEZ       : out std_logic;  -- to configure the zero(?) block. Works different if it's a BEQZ or BNEZ. 
+	SH2_EN             : out std_logic;  -- IMM is shifted by 2 if it's a branch to compute the BTA. 
     -- ALU Operation Code
-    ALU_OPCODE         : out aluOp; -- choose between implicit or exlicit coding, like std_logic_vector(ALU_OPC_SIZE -1 downto 0);
+    ALU_OPCODE         : out aluOp; -- choose between implicit or exlicit coding, like std_logic_vector(ALU_OPC_SIZE -1 downto 0);    
     -- MEM Control Signals
     DRAM_WE            : out std_logic;  -- Data RAM Write Enable
-    LMD_LATCH_EN       : out std_logic;  -- LMD Register Latch Enable
-    JUMP_EN            : out std_logic;  -- JUMP Enable Signal for PC input MUX
-    PC_LATCH_EN        : out std_logic;  -- Program Counte Latch Enable
+    LMD_EN       : out std_logic;  -- LMD Register Latch Enable
     -- WB Control signals
     WB_MUX_SEL         : out std_logic;  -- Write Back MUX Sel
-    RF_WE              : out std_logic);  -- Register File Write Enable
+    RF_WE              : out std_logic;  -- Register File Write Enable
+    JAL_EN             : out std_logic; -- needed to write NPC on R31
+	-- PC enable 
+    PC_EN : out std_logic);
 
   end component;
 
@@ -114,6 +136,9 @@ architecture dlx_rtl of DLX is
 
   -- Datapath Bus signals
   signal PC_BUS : std_logic_vector(PC_SIZE -1 downto 0);
+  signal DRAM_addr : std_logic_vector(N-1 downto 0);
+  signal DRAM_data : std_logic_vector(N-1 downto 0);
+  signal LMD_s : std_logic_vector(N-1 downto 0);
 
   -- Control Unit Bus signals
   signal IR_LATCH_EN_i : std_logic;
