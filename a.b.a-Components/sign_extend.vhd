@@ -1,5 +1,6 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
+use work.constants.all; 
 
 -- EXTEND 16 BIT VECTOR TO 32 BIT WHILE MAINTAINING THE SIGN
 entity sign_extend is

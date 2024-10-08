@@ -1,7 +1,8 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
-use IEEE.std_logic_unsigned.all;
+--use IEEE.std_logic_unsigned.all;
 use IEEE.std_logic_arith.all;
+use ieee.numeric_std.all; 
 use WORK.alu_type.all;
 
 entity ALU is
@@ -20,34 +21,35 @@ begin
 
 P_ALU: process (FUNC, DATA1, DATA2)
   -- complete all the requested function
-  variable tmp_sub : std_logic_vector(N-1 downto 0);
-  variable zero:std_logic;
+  variable tmp_sub : integer;
+  variable zero: integer;
   begin
-	tmp_sub := DATA1-DATA2;
+	tmp_sub := to_integer (sigend(DATA1)-signed(DATA2));
 	if (tmp_sub = 0) then
-		zero := '1';
+		zero := 1;
 	else
-		zero := '0';
+		zero := 0;
 	end if;
     case FUNC is
-	when ADD 	=> OUTALU <= DATA1 + DATA2; 
-	when SUB 	=> OUTALU <= DATA1 - DATA2;
-	--when MULT 	=> OUTALU <= DATA1(N/2-1 DOWNTO 0) * DATA2(N/2-1 DOWNTO 0);
+	when ADD 	=> OUTALU <= std_logic_vector(signed(DATA1) + signed (DATA2)); 
+	when SUB 	=> OUTALU <= std_logic_vector(signed(DATA1) - signed (DATA2));
+	when MULT 	=> OUTALU <= std_logic_vector(signed(DATA1(N/2-1 DOWNTO 0)) * signed(DATA2(N/2-1 DOWNTO 0)));
 	when BITAND 	=> OUTALU <= DATA1 AND DATA2 ; -- bitwise operations
 	when BITOR 	=> OUTALU <= DATA1 OR DATA2;
 	when BITXOR 	=> OUTALU <=  DATA1 XOR DATA2;
     
 	when FUNCLSL 	=> OUTALU <= (DATA1(n-2 DOWNTO 0)&"0" ); -- logical shift left, HELP: use the concatenation operator &  
 	when FUNCLSR 	=> OUTALU <= ("0"&DATA1(N-1 DOWNTO 1)) ;-- logical shift right
+	
 	when SGE 		=> 
-						if tmp_sub(N-1) = '1' then
-							OUTALU <= x"1";
+						if tmp_sub < 0 then
+							OUTALU <= OUTALU <= std_logic_vector(to_unsigned(1, N));
 						else
 							OUTALU <= (others => '0');
 						end if;
 	when SLE		=> 
 						if tmp_sub(N-1) = '1' then
-							if zero = '0' then
+							if zero = '0' then OUTALU <= std_logic_vector(to_unsigned(1, N));
 								OUTALU <= (others => '0');
 							else
 								OUTALU <= x"1";					
