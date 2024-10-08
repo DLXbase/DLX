@@ -58,7 +58,7 @@ begin
     for addr_value in 0 to RAM_DEPTH - 1 loop
       Addr <= std_logic_vector(to_unsigned(addr_value, I_SIZE));
       wait for 10 ns;
-      report "Address: " & integer'image(addr_value) & " Data: " & std_logic_vector'image(Dout);
+      --report "Address: " & integer'image(addr_value) & " Data: " & std_logic_vector'image(Dout);
     end loop;
 
     -- Stop simulation
