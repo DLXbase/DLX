@@ -8,7 +8,7 @@ entity DATAPATH is
 	port(
 		CLK : in std_logic;
 		RST : in std_logic;
-		CW : in std_logic_vector(17 downto 0);
+		--CW : in std_logic_vector(17 downto 0);
 		ALU_FUNC : in aluOP;
 		from_IRAM : in std_logic_vector(N-1 downto 0); --output of iram (IRAM_DOut)
 		from_DRAM : in std_logic_vector(N-1 downto 0); --output of dram
@@ -31,9 +31,9 @@ entity DATAPATH is
 		BEQZ_OR_BNEZ : in std_logic;  -- to configure the zero(?) block. Works different if it's a BEQZ or BNEZ.
 		SH2_EN       : in std_logic;  -- IMM is shifted by 2 if it's a branch to compute the BTA.
 		-- ALU Operation Code
-		ALU_OPCODE   : in aluOp;      -- ALU Operation Code
+		--ALU_OPCODE   : in aluOp;      -- ALU Operation Code????? C'è già
 		-- MEM Control Signals
-		DRAM_WE      : in std_logic;  -- Data RAM Write Enable
+		--DRAM_WE      : in std_logic;  -- Data RAM Write Enable --NON SERVE QUA
 		LMD_EN       : in std_logic;  -- LMD Register Latch Enable
 		-- WB Control Signals
 		WB_MUX_SEL   : in std_logic;  -- Write Back MUX Sel
@@ -46,7 +46,7 @@ entity DATAPATH is
 		data_to_DRAM : out std_logic_vector(N-1 downto 0); --input data for dram
 		to_IRAM : out std_logic_vector(N-1 downto 0); --input for iram (PC)
 		IR: out std_logic_vector(N-1 downto 0);
-		PC_to_IRAM : out std_logic_vector(N-1 downto 0)
+		--PC_to_IRAM : out std_logic_vector(N-1 downto 0)
 	);
 end DATAPATH;
 

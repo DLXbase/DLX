@@ -52,7 +52,7 @@ architecture dlx_rtl of DLX is
       CLK             : in std_logic;
       RST             : in std_logic;
       ADDRESS         : in std_logic_vector(WORD_SIZE - 1 downto 0);
-      ENABLE          : in std_logic;
+      --ENABLE          : in std_logic;
       READNOTWRITE    : in std_logic;
       --DATA_READY      : out std_logic;
       IN_DATA 		: in std_logic_vector((2*WORD_SIZE) - 1 downto 0);
@@ -62,20 +62,50 @@ architecture dlx_rtl of DLX is
 
   -- Datapath (MISSING!You must include it in your final project!)
 	component DATAPATH
-		generic(N : integer := 32);
-		port(
-			CLK : in std_logic;
-			RST : in std_logic;
-			CW : in std_logic_vector(17 downto 0);
-			ALU_FUNC : in aluOP;
-			from_IRAM : in std_logic_vector(N-1 downto 0); --output of iram
-			from_DRAM : in std_logic_vector(N-1 downto 0); --output of dram
-			addr_to_DRAM : out std_logic_vector(N-1 downto 0); --input address for dram
-			data_to_DRAM : out std_logic_vector(N-1 downto 0); --input data for dram
-			to_IRAM : out std_logic_vector(N-1 downto 0); --input for iram 
-			IR: out std_logic_vector(N-1 downto 0);
-			PC_to_IRAM : out std_logic_vector(N-1 downto 0)
-		);
+		generic(N : integer := WORD_SIZE);
+	port(
+		CLK : in std_logic;
+		RST : in std_logic;
+		--CW : in std_logic_vector(17 downto 0);
+		ALU_FUNC : in aluOP;
+		from_IRAM : in std_logic_vector(N-1 downto 0); --output of iram (IRAM_DOut)
+		from_DRAM : in std_logic_vector(N-1 downto 0); --output of dram
+
+		--CONTROL SIGNALS
+        -- FETCH STAGE (useless)
+		IR_EN        : in std_logic;  -- Instruction Register Enable
+		NPC_EN       : in std_logic;  -- NextProgramCounter Register Latch Enable
+		-- ID Control Signals
+		RegA_EN      : in std_logic;  -- Register A Latch Enable
+		RegB_EN      : in std_logic;  -- Register B Latch Enable
+		RegIMM_EN    : in std_logic;  -- Immediate Register Latch Enable
+		RT_REG_EN    : in std_logic;
+		IS_R_TYPE    : in std_logic;  -- To understand which bytes encode the Target Register
+		J_EN         : in std_logic;
+		-- EX Control Signals
+		MUXA_SEL     : in std_logic;  -- A/NPC Sel
+		MUXB_SEL     : in std_logic;  -- B/IMM Sel
+		ALU_OUTREG_EN: in std_logic;  -- ALU Output Register Enable
+		BEQZ_OR_BNEZ : in std_logic;  -- to configure the zero(?) block. Works different if it's a BEQZ or BNEZ.
+		SH2_EN       : in std_logic;  -- IMM is shifted by 2 if it's a branch to compute the BTA.
+		-- ALU Operation Code
+		--ALU_OPCODE   : in aluOp;      -- ALU Operation Code
+		-- MEM Control Signals
+		--DRAM_WE      : in std_logic;  -- Data RAM Write Enable
+		LMD_EN       : in std_logic;  -- LMD Register Latch Enable
+		-- WB Control Signals
+		WB_MUX_SEL   : in std_logic;  -- Write Back MUX Sel
+		RF_WE        : in std_logic;  -- Register File Write Enable
+		JAL_EN       : in std_logic;  -- needed to write NPC on R31
+		-- PC enable 
+		PC_EN        : in std_logic;
+	
+		addr_to_DRAM : out std_logic_vector(N-1 downto 0); --input address for dram
+		data_to_DRAM : out std_logic_vector(N-1 downto 0); --input data for dram
+		to_IRAM : out std_logic_vector(N-1 downto 0); --input for iram (PC)
+		IR: out std_logic_vector(N-1 downto 0);
+		--PC_to_IRAM : out std_logic_vector(N-1 downto 0) --c'è già (to_IRAM)
+	);
 	end component;
   
   -- Control Unit
@@ -128,14 +158,14 @@ architecture dlx_rtl of DLX is
   ----------------------------------------------------------------
   
   -- Instruction Register (IR) and Program Counter (PC) declaration
-  signal IR : std_logic_vector(IR_SIZE - 1 downto 0);
-  signal PC : std_logic_vector(PC_SIZE - 1 downto 0);
+  signal IR_s : std_logic_vector(IR_SIZE - 1 downto 0);
+  signal PC_s : std_logic_vector(PC_SIZE - 1 downto 0);
 
   -- Instruction Ram Bus signals
   signal IRam_DOut : std_logic_vector(IR_SIZE - 1 downto 0);
 
   -- Datapath Bus signals
-  signal PC_BUS : std_logic_vector(PC_SIZE -1 downto 0);
+  --signal PC_BUS : std_logic_vector(PC_SIZE -1 downto 0);
 
   -- Control Unit Bus signals
   signal IR_EN_i : std_logic;
@@ -186,7 +216,32 @@ architecture dlx_rtl of DLX is
 		port map(
 			CLK => CLK,
 			RST => RST,
-		
+      ALU_FUNC => ALU_OPCODE_i,
+      from_IRAM => IRam_DOut,
+      from_DRAM => LMD_s,
+      IR_EN => IR_EN_i,
+      NPC_EN => NPC_EN_i,
+      RegA_EN => RegA_EN_i,
+      RegB_EN => RegB_EN_i,
+      RegIMM_EN => RegIMM_EN_i,
+      RT_REG_EN => RT_REG_EN_i,
+      IS_R_TYPE => IS_R_TYPE_i,
+      J_EN => J_EN_i,
+      MUXA_SEL => MUXA_SEL_i,
+      MUXB_SEL => MUXB_SEL_i,
+      ALU_OUTREG_EN => ALU_OUTREG_EN_i,
+      BEQZ_OR_BNEZ => BEQZ_OR_BNEZ_i,
+      SH2_EN => SH2_EN_i,
+      --DRAM_WE => DRAM_WE_i,
+      LMD_EN => LMD_EN_i,
+      WB_MUX_SEL => WB_MUX_SEL_i,
+      RF_WE => RF_WE_i,
+      JAL_EN => JAL_EN_i,
+      PC_EN => PC_EN_i,
+      addr_to_DRAM => DRAM_addr,
+      data_to_DRAM => DRAM_data,
+      to_IRAM => PC_s,
+      IR => IR_s
 		);
 
     -- Control Unit Instantiation
@@ -210,14 +265,30 @@ architecture dlx_rtl of DLX is
           JUMP_EN         => JUMP_EN_i,
           PC_LATCH_EN     => PC_LATCH_EN_i,
           WB_MUX_SEL      => WB_MUX_SEL_i,
-          RF_WE           => RF_WE_i);
+          RF_WE           => RF_WE_i,
+          JAL_EN          => JAL_EN_i,
+          PC_EN           => PC_EN_i
+          );
 
     -- Instruction Ram Instantiation
     IRAM_I: IRAM
       port map (
           Rst  => Rst,
-          Addr => PC,
+          Addr => PC_s,
           Dout => IRam_DOut);
+
+    DRAM_I : DRAM
+      generic map(FILE_PATH_INIT => )
+      port map(
+        CLK => CLK,
+        RST => RST,
+        ADDRESS => DRAM_addr,
+        --ENABLE => DRAM_WE_i,
+        READNOTWRITE => DRAM_WE_i,
+        IN_DATA => DRAM_data,
+        OUT_DATA => LMD_s
+      );
+        
 
     
     

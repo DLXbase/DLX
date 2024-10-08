@@ -18,7 +18,7 @@ entity RWMEM is
     CLK             : in std_logic;
     RST             : in std_logic;
     ADDRESS         : in std_logic_vector(WORD_SIZE - 1 downto 0);
-    ENABLE          : in std_logic;
+    --ENABLE          : in std_logic;
     READNOTWRITE    : in std_logic;
     --DATA_READY      : out std_logic;
 	IN_DATA 		: in std_logic_vector((2*WORD_SIZE) - 1 downto 0);
@@ -49,13 +49,13 @@ architecture beh of RWMEM is
       		end loop;
 			file_close(mem_fp);
 		elsif CLK = '1' and CLK'event then
-			if ENABLE = '1' then
+			--if ENABLE = '1' then
 				if READNOTWRITE = '1'then
 					OUT_DATA <= std_logic_vector(to_unsigned(DRAM_mem(to_integer(unsigned(ADDRESS))), OUT_DATA'length));
 				else
 					DRAM_mem(to_integer(unsigned(ADDRESS))) <= to_integer(signed(IN_DATA));
 				end if;
-			end if;
+			--end if;
 		end if; 
 	end process MEM_PROC;
 
