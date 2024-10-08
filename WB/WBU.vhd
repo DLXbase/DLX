@@ -1,15 +1,16 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
+use work.constants.all; 
 
 
 -- mux 
 entity WBU is
-  	generic ( N: integer:= 32);           
+  	generic ( N: integer:= WORD_SIZE);           
 	Port (ALU_OUT:	In	std_logic_vector(N-1 downto 0);	
 		  LOAD:    in std_logic_vector (N-1 downto 0); 
           NPC_REG_in:  in std_logic_vector(N-1 downto 0);
           RT_REG_in: in std_logic_vector(N-1 downto 0);
-          CW : in std_logic_vector(1 downto 0); --'JAL' & 'WB_mux'
+          IS_JAL, ALUOUT_OR_LOAD: in std_logic; 
           RF_ADDR : out std_logic_vector(N-1 downto 0);
           RF_DATA : out std_logic_vector(N-1 downto 0)
           );
@@ -33,7 +34,7 @@ begin
         port map (
             A => ALU_OUT,
             B => LOAD,
-            sel => CW(0),
+            sel => ALUOUT_OR_LOAD,
             muxout => alu_lmd_s
         );
 
@@ -42,7 +43,7 @@ begin
         port map (
             A => x"1F", --31 in hexadecimal
             B => RT_REG_in,
-            sel => CW(1),
+            sel => IS_JAL,
             muxout => RF_ADDR
         );
 
@@ -51,7 +52,7 @@ begin
         port map (
             A => NPC_REG_in, --31 in hexadecimal
             B => alu_lmd_s,
-            sel => CW(1),
+            sel => IS_JAL,
             muxout => RF_DATA
         );
 end STRUCTURAL;

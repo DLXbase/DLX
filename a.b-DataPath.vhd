@@ -1,19 +1,50 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use work.alu_type.all;
+use work.constants.all; 
 
 entity DATAPATH is
-	generic(N : integer := 32);
+	generic(N : integer := WORD_SIZE);
 	port(
 		CLK : in std_logic;
 		RST : in std_logic;
 		CW : in std_logic_vector(17 downto 0);
 		ALU_FUNC : in aluOP;
-		from_IRAM : in std_logic_vector(N-1 downto 0); --output of iram
+		from_IRAM : in std_logic_vector(N-1 downto 0); --output of iram (IRAM_DOut)
 		from_DRAM : in std_logic_vector(N-1 downto 0); --output of dram
+
+		--CONTROL SIGNALS
+        -- FETCH STAGE (useless)
+		IR_EN        : in std_logic;  -- Instruction Register Enable
+		NPC_EN       : in std_logic;  -- NextProgramCounter Register Latch Enable
+		-- ID Control Signals
+		RegA_EN      : in std_logic;  -- Register A Latch Enable
+		RegB_EN      : in std_logic;  -- Register B Latch Enable
+		RegIMM_EN    : in std_logic;  -- Immediate Register Latch Enable
+		RT_REG_EN    : in std_logic;
+		IS_R_TYPE    : in std_logic;  -- To understand which bytes encode the Target Register
+		J_EN         : in std_logic;
+		-- EX Control Signals
+		MUXA_SEL     : in std_logic;  -- A/NPC Sel
+		MUXB_SEL     : in std_logic;  -- B/IMM Sel
+		ALU_OUTREG_EN: in std_logic;  -- ALU Output Register Enable
+		BEQZ_OR_BNEZ : in std_logic;  -- to configure the zero(?) block. Works different if it's a BEQZ or BNEZ.
+		SH2_EN       : in std_logic;  -- IMM is shifted by 2 if it's a branch to compute the BTA.
+		-- ALU Operation Code
+		ALU_OPCODE   : in aluOp;      -- ALU Operation Code
+		-- MEM Control Signals
+		DRAM_WE      : in std_logic;  -- Data RAM Write Enable
+		LMD_EN       : in std_logic;  -- LMD Register Latch Enable
+		-- WB Control Signals
+		WB_MUX_SEL   : in std_logic;  -- Write Back MUX Sel
+		RF_WE        : in std_logic;  -- Register File Write Enable
+		JAL_EN       : in std_logic;  -- needed to write NPC on R31
+		-- PC enable 
+		PC_EN        : in std_logic;
+	
 		addr_to_DRAM : out std_logic_vector(N-1 downto 0); --input address for dram
 		data_to_DRAM : out std_logic_vector(N-1 downto 0); --input data for dram
-		to_IRAM : out std_logic_vector(N-1 downto 0); --input for iram 
+		to_IRAM : out std_logic_vector(N-1 downto 0); --input for iram (PC)
 		IR: out std_logic_vector(N-1 downto 0);
 		PC_to_IRAM : out std_logic_vector(N-1 downto 0)
 	);
@@ -29,38 +60,37 @@ signal alu_out_s, rt_reg2_s, npc_reg3_s : std_logic_vector(N-1 downto 0); --exec
 signal lmd_out_s, alu_out2_s, rt_reg3_s, npc_reg4_s : std_logic_vector(N-1 downto 0); --memory
 signal wb_data_s, wb_addr_s : std_logic_vector(N-1 downto 0); --write back
 
+
 --components
 component FU
-	generic (N: integer := 32);
+	generic (N: integer := WORD_SIZE);
 	Port(CLK : in std_logic;
 		RST : in std_logic;
-		CW : in std_logic_vector(2 downto 0);
+		PC_EN, NPC_EN, IR_EN : in std_logic;    --control word signals
 		IN_ID : in std_logic_vector(N-1 downto 0);
 		from_IRAM : in std_logic_vector(N-1 downto 0); --output of iram
 		to_IRAM : out std_logic_vector(N-1 downto 0); --input for iram 
 		IREG_out : out std_logic_vector(N-1 downto 0);
 		NPC_out : out std_logic_vector(N-1 downto 0);
-		PC_4out : out std_logic_vector(N-1 downto 0) 
-);
+		PC_4out : out std_logic_vector(N-1 downto 0) );
 end component;
 
 component DU
-	generic (N: integer := 32); 
+	generic (N: integer := WORD_SIZE); 
 	Port (	--PC: in std_logic_vector(N-1 downto 0);
-			J_EN, WR_EN, A_EN, B_EN, IMM_EN, RT_EN, is_R_type:	In	std_logic;
-			BR_EN: in std_logic;  									
+			J_EN, WR_EN, A_EN, B_EN, IMM_EN, RT_EN, is_R_type:	In	std_logic;    --control signals from CU
+			BR_EN: in std_logic;  									--Signals wether there is a branch taken in EX stage
 			clk, rst :	In	std_logic;     
-			NPC_IN, IR, DATAIN, ADDR_IN, BTA_OR_NPC:	in 	std_logic_vector(N-1 downto 0);   
-			A,B,IMM,RT_OUT,NPC_OUT,PC_NXT : OUT 	std_logic_vector(N-1 downto 0)
-			);
+			NPC_IN, IR, DATAIN, ADDR_IN, BTA_OR_NPC:	in 	std_logic_vector(N-1 downto 0);  --Incoming data from registers. RT_IN comes from the WB stage, BTA_OR_NPC comes from the EX stage. 
+			A,B,IMM,RT_OUT,NPC_OUT,PC_NXT : OUT 	std_logic_vector(N-1 downto 0)); 
 
 end component;
 
 component EXU
-	generic (N: integer := 32);
+	generic (N: integer := WORD_SIZE);
 	Port(CLK : in std_logic;
 		RST : in std_logic;
-		CW : in std_logic_vector(6 downto 0);
+		MUXA_SEL,MUXB_SEL,ZERO_SEL,ALUOUT_EN,SHIFT2_EN: in std_logic; 
 		ALU_FUNC : in aluOp;
 		NPC_REG : in std_logic_vector(N-1 downto 0);
 		A_REG : in std_logic_vector(N-1 downto 0);
@@ -77,54 +107,45 @@ component EXU
 end component;
 
 component MU
-	generic (N: integer := 32);
+	generic (N: integer := WORD_SIZE);
 	port(
-		CLK: in std_logic;
-		RST : in std_logic;
-		CW : in std_logic_vector(2 downto 0);
-		ALU_RESULT : in std_logic_vector(N-1 downto 0);
-		RT_REG_in : in std_logic_vector(N-1 downto 0);
-		NPC_REG_in : in std_logic_vector(N-1 downto 0);
-		LMD_LATCH_in : in std_logic_vector(N-1 downto 0);
-		LMD_LATCH_out : out std_logic_vector(N-1 downto 0);
-		ALU_REG_out : out std_logic_vector(N-1 downto 0);
-		RT_REG_out : out std_logic_vector(N-1 downto 0);
-		NPC_REG_out : out std_logic_vector(N-1 downto 0)
-  	);
-end component;
-
-component WBU
-generic ( N: integer:= 32);           
-Port (ALU_OUT:	In	std_logic_vector(N-1 downto 0);	
-	  LOAD:    in std_logic_vector (N-1 downto 0); 
-	  NPC_REG_in:  in std_logic_vector(N-1 downto 0);
-	  RT_REG_in: in std_logic_vector(N-1 downto 0);
-	  CW : in std_logic_vector(1 downto 0); --'JAL' & 'WB_mux'
-	  RF_ADDR : out std_logic_vector(N-1 downto 0);
-	  RF_DATA : out std_logic_vector(N-1 downto 0)
+	CLK: in std_logic;
+	RST : in std_logic;
+	LMD_EN: in std_logic; 
+	ALU_RESULT : in std_logic_vector(N-1 downto 0);
+	RT_REG_in : in std_logic_vector(N-1 downto 0);
+	NPC_REG_in : in std_logic_vector(N-1 downto 0);
+	LMD_LATCH_in : in std_logic_vector(N-1 downto 0);
+	LMD_LATCH_out : out std_logic_vector(N-1 downto 0);
+	ALU_REG_out : out std_logic_vector(N-1 downto 0);
+	RT_REG_out : out std_logic_vector(N-1 downto 0);
+	NPC_REG_out : out std_logic_vector(N-1 downto 0)
 	  );
 end component;
 
-signal cw_FU: std_logic_vector(2 downto 0); 
---signal cw_DU: std_logic_vector(6 downto 0);
-signal cw_EXU: std_logic_vector(6 downto 0);
-signal cw_MU: std_logic_vector(2 downto 0);
-signal cw_WBU: std_logic_vector(1 downto 0);
- 
+component WBU
+	generic ( N: integer:= WORD_SIZE);           
+	Port (ALU_OUT:	In	std_logic_vector(N-1 downto 0);	
+		  LOAD:    in std_logic_vector (N-1 downto 0); 
+          NPC_REG_in:  in std_logic_vector(N-1 downto 0);
+          RT_REG_in: in std_logic_vector(N-1 downto 0);
+          IS_JAL, ALUOUT_OR_LOAD: in std_logic; 
+          RF_ADDR : out std_logic_vector(N-1 downto 0);
+          RF_DATA : out std_logic_vector(N-1 downto 0)
+          );
+end component;
 
-begin
-	cw_FU <= '1' & CW(17) & CW(16); --PC & IR & NPC
-	cw_EXU <= CW(12) & CW(7) & CW(16) & CW(6) & CW(8) & CW(9) & CW(5); --RT & ALU_OUT & NPC & BEQZ/BENZ & B & A & SH2EN
-	cw_MU <= CW(3) & CW(7) & CW(12); --LMD & ALU_OUT & RT
-	cw_WBU <= CW(2) & CW(1);
-	
+
+begin	
 --port map
 	F_STAGE : FU
 		generic map(N => N)
 		port map(
 			CLK => CLK,
 			RST => RST,
-			CW => cw_FU, --PC & IR & NPC
+			IR_EN => IR_EN,
+			PC_EN => PC_EN,
+			NPC_EN => NPC_EN,
 			IN_ID => pc_nxt_s,
 			from_IRAM => from_IRAM,
 			to_IRAM => to_IRAM,
@@ -136,13 +157,13 @@ begin
 	D_STAGE : DU
 		generic map(N => N)
 		port map(
-			J_EN => CW(10),
-			WR_EN => CW(1), --RF_EN
-			A_EN => CW(15),
-			B_EN => CW(14),
-			IMM_EN => CW(13),
-			RT_EN => CW(12),
-			is_R_type => CW(11),
+			J_EN => J_EN,
+			WR_EN => RF_WE, --RF_EN
+			A_EN => RegA_EN,
+			B_EN => RegB_EN,
+			IMM_EN => RegIMM_EN,
+			RT_EN => RT_REG_EN,
+			is_R_type => IS_R_TYPE,
 			BR_EN => b_en_s, --from exectute to decode
 			clk => CLK,
 			rst => RST,
@@ -164,7 +185,11 @@ begin
 		port map(
 			CLK => CLK,
 			RST => RST,
-			CW => cw_EXU, --RT & ALU_OUT & NPC & BEQZ/BENZ & B & A & SH2EN
+			MUXA_SEL => MUXA_SEL,
+			MUXB_SEL => MUXB_SEL,
+			ZERO_SEL => BEQZ_OR_BNEZ,
+			ALUOUT_EN => ALU_OUTREG_EN,
+			SHIFT2_EN => SH2_EN,
 			ALU_FUNC => ALU_FUNC,
 			NPC_REG => npc_reg2_s,
 			A_REG => a_reg_s,
@@ -184,7 +209,7 @@ begin
 		port map (
 			CLK => CLK,
 			RST => RST,
-			CW => cw_MU, --LMD & ALU_OUT & RT
+			LMD_EN => LMD_EN, 
 			ALU_RESULT => alu_out_s,
 			RT_REG_in => rt_reg2_s,
 			NPC_REG_in => npc_reg3_s,
@@ -202,7 +227,8 @@ begin
 			LOAD => lmd_out_s,
 			NPC_REG_in => npc_reg4_s,
 			RT_REG_in => rt_reg3_s,
-			CW => cw_WBU, --JAL_EN & WBMUX
+			IS_JAL => JAL_EN, 
+			ALUOUT_OR_LOAD => WB_MUX_SEL, 
 			RF_ADDR => wb_addr_s,
 			RF_DATA => wb_data_s
 		);

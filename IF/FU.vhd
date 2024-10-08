@@ -1,11 +1,13 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use work.constants.all; 
+
 
 entity FU is
-	generic (N: integer := 32);
+	generic (N: integer := WORD_SIZE);
 	Port(CLK : in std_logic;
 		RST : in std_logic;
-		CW : in std_logic_vector(2 downto 0);
+		PC_EN, NPC_EN, IR_EN : in std_logic;    --control word signals
 		IN_ID : in std_logic_vector(N-1 downto 0);
 		from_IRAM : in std_logic_vector(N-1 downto 0); --output of iram
 		to_IRAM : out std_logic_vector(N-1 downto 0); --input for iram 
@@ -51,7 +53,7 @@ architecture structural of FU is
 		generic map(N => N)
 		port map(clk => CLK,
 				rst => RST,
-				en => CW(2),
+				en => PC_EN,
 				A => IN_ID,
 				Y => pc_out_s
 		);
@@ -75,7 +77,7 @@ architecture structural of FU is
 		port map (
 			clk => CLK,
 			rst => RST,
-			en => CW(1),
+			en => NPC_EN,
 			A => pc_4out_s,
 			Y => NPC_out
 		);
@@ -85,7 +87,7 @@ architecture structural of FU is
 		port map (
 			clk => CLK,
 			rst => RST,
-			en => CW(0),
+			en => IR_EN,
 			A => from_IRAM,
 			Y => IREG_out
 		);

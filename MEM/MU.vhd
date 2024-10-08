@@ -1,14 +1,15 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use std.textio.all;
-use ieee.std_logic_textio.all;
+use work.constants.all; 
+
 
 entity MU is
-  generic (N: integer := 32);
+  generic (N: integer := WORD_SIZE);
   port(
   CLK: in std_logic;
   RST : in std_logic;
-  CW : in std_logic_vector(2 downto 0);
+  LMD_EN: in std_logic; 
   ALU_RESULT : in std_logic_vector(N-1 downto 0);
   RT_REG_in : in std_logic_vector(N-1 downto 0);
   NPC_REG_in : in std_logic_vector(N-1 downto 0);
@@ -69,12 +70,12 @@ begin
 --		OUT_DATA => DRAM_out
 --	);
 
-  LMD_LATCH : reg
+  LMD_REG : reg
 	generic map (N => N)
 	port map (
 		clk => CLK,
 		rst => RST,
-		en => CW(2),
+		en => LMD_EN,
 		A => LMD_LATCH_in,
 		Y => LMD_LATCH_out
 	);
@@ -84,7 +85,7 @@ begin
 	port map (
 		clk => CLK,
 		rst => RST,
-		en => CW(1),
+		en => '1',
 		A => ALU_RESULT,
 		Y => ALU_REG_out
 	);
@@ -94,7 +95,7 @@ begin
 	port map (
 		clk => CLK,
 		rst => RST,
-		en => CW(0),
+		en => '1',
 		A => RT_REG_in,
 		Y => RT_REG_out
 	);

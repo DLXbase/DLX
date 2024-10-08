@@ -3,11 +3,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.math_real.all;
 use ieee.numeric_std.all;
 use IEEE.std_logic_unsigned.all;
+use work.constants.all; 
 
 entity reg_file is
-  GENERIC (NBIT: integer:=32;
-           NREG: integer:=32;
-           NADDR: integer:= 5);
+  GENERIC (NBIT: integer:=WORD_SIZE;
+           NREG: integer:= RF_SIZE;
+           NADDR: integer:= RF_ADDR_SIZE);
   Port (clk,rst,wr_en: in std_logic; 
         add_rd1: in std_logic_vector(NADDR-1 downto 0);
         add_rd2: in std_logic_vector(NADDR-1 downto 0);

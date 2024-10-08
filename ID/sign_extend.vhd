@@ -3,7 +3,7 @@ use IEEE.std_logic_1164.all;
 
 -- EXTEND 16 BIT VECTOR TO 32 BIT WHILE MAINTAINING THE SIGN
 entity sign_extend is
-  	generic ( NBIT: integer:= 16);           
+  	generic ( NBIT: integer:= WORD_SIZE/2);           
 	Port (A:	In	std_logic_vector(NBIT-1 downto 0);	
 	      res:	Out	std_logic_vector ((2*NBIT)-1 downto 0));
 end sign_extend;

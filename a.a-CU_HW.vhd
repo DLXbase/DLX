@@ -6,15 +6,17 @@ use ieee.numeric_std.all;
 use work.alu_type.all;
 --use ieee.numeric_std.all;
 use work.all;
+--constants
+use work.constants.all; 
 
 entity dlx_cu is
   generic (
     MICROCODE_MEM_SIZE :     integer := 33;  -- Microcode Memory Size (NUMBER OF INSTRUCTIONS)
-    FUNC_SIZE          :     integer := 11;  -- Func Field Size for R-Type Ops
-    OP_CODE_SIZE       :     integer := 6;  -- Op Code Size
+    FUNC_SIZE          :     integer := FUNC_FIELD_SIZE;  -- Func Field Size for R-Type Ops
+    OP_CODE_SIZE       :     integer := OPCODE_SIZE;  -- Op Code Size
     -- ALU_OPC_SIZE       :     integer := 6;  -- ALU Op Code Word Size
-    IR_SIZE            :     integer := 32;  -- Instruction Register Size    
-    CW_SIZE            :     integer := 20);  -- Control Word Size
+    IR_SIZE            :     integer := WORD_SIZE;  -- Instruction Register Size    
+    CW_SIZE            :     integer := CONTROL_WORD_SIZE);  -- Control Word Size
   port (
     Clk                : in  std_logic;  -- Clock
     Rst                : in  std_logic;  -- Reset:Active-Low
@@ -82,18 +84,18 @@ architecture dlx_cu_hw of dlx_cu is
                                   --add extra mux to write on R31
                                   "11"   &        "101101"     &           "00000"                &   "00"   &     "001", -- 22 |  I type: JAKL
 								  
-								  "11"   &        "000000"     &           "00000"                &   "00"   &     "000", -- 23 | NOP
-								  "11"   &        "000000"     &           "00000"                &   "00"   &     "000", -- 24 | NOP
-								  "11"   &        "000000"     &           "00000"                &   "00"   &     "000", -- 25 | NOP
-								  "11"   &        "000000"     &           "00000"                &   "00"   &     "000", -- 26 | NOP
-								  "11"   &        "000000"     &           "00000"                &   "00"   &     "000", -- 27 | NOP
-								  "11"   &        "000000"     &           "00000"                &   "00"   &     "000", -- 28 | NOP
-								  "11"   &        "000000"     &           "00000"                &   "00"   &     "000", -- 29 | NOP
-								  "11"   &        "000000"     &           "00000"                &   "00"   &     "000", -- 30 | NOP
-								  "11"   &        "000000"     &           "00000"                &   "00"   &     "000", -- 31 | NOP
+                                  "11"   &        "000000"     &           "00000"                &   "00"   &     "000", -- 23 | NOP
+                                  "11"   &        "000000"     &           "00000"                &   "00"   &     "000", -- 24 | NOP
+                                  "11"   &        "000000"     &           "00000"                &   "00"   &     "000", -- 25 | NOP
+                                  "11"   &        "000000"     &           "00000"                &   "00"   &     "000", -- 26 | NOP
+                                  "11"   &        "000000"     &           "00000"                &   "00"   &     "000", -- 27 | NOP
+                                  "11"   &        "000000"     &           "00000"                &   "00"   &     "000", -- 28 | NOP
+                                  "11"   &        "000000"     &           "00000"                &   "00"   &     "000", -- 29 | NOP
+                                  "11"   &        "000000"     &           "00000"                &   "00"   &     "000", -- 30 | NOP
+                                  "11"   &        "000000"     &           "00000"                &   "00"   &     "000", -- 31 | NOP
                                   "11"   &        "000000"     &           "00000"                &   "00"   &     "000" -- 32 | NOP
 								  
-									              );
+									                  );
                                 
                                 
   signal IR_opcode : std_logic_vector(OP_CODE_SIZE -1 downto 0);  -- OpCode part of IR
@@ -102,10 +104,10 @@ architecture dlx_cu_hw of dlx_cu is
 
 
   -- control word is shifted to the correct stage
-  signal cw1 : std_logic_vector(CW_SIZE -1  downto 0); -- IF+ID
-  signal cw2 : std_logic_vector(CW_SIZE - 1 - 2 - 6  downto 0); -- EX
-  signal cw3 : std_logic_vector(CW_SIZE - 1 - 2 - 6 -5 downto 0); -- MEM
-  signal cw4 : std_logic_vector(CW_SIZE - 1 - 2 - 6 - 5 -2 downto 0); -- WB
+  signal cw_FU_DU : std_logic_vector(CW_SIZE - 1  downto 0); -- IF+ID
+  signal cw_EXU : std_logic_vector(CW_SIZE - 1 - 2 - 6  downto 0); -- EX
+  signal cw_MEM : std_logic_vector(CW_SIZE - 1 - 2 - 6 -5 downto 0); -- MEM
+  signal cw_WB : std_logic_vector(CW_SIZE - 1 - 2 - 6 - 5 -2 downto 0); -- WB
 
   signal aluOpcode_i: aluOp := aluNOP; -- ALUOP defined in package
   signal aluOpcode1: aluOp := aluNOP;
@@ -115,40 +117,40 @@ architecture dlx_cu_hw of dlx_cu is
  
 begin  -- dlx_cu_rtl
 
-  IR_opcode(5 downto 0) <= IR_IN(31 downto 26);
-  IR_func(10 downto 0)  <= IR_IN(FUNC_SIZE - 1 downto 0);
+  IR_opcode(OP_CODE_SIZE - 1 downto 0) <= IR_IN(31 downto 26);
+  IR_func(FUNC_SIZE-1 downto 0)  <= IR_IN(FUNC_SIZE - 1 downto 0);
 
   cw <= cw_mem(to_integer(unsigned(IR_opcode)));
 
 
   -- stage one control signals
-  IR_EN  <= cw1(CW_SIZE - 1);
-  NPC_EN <= cw1(CW_SIZE - 2);
+  IR_EN  <= cw_FU_DU(CW_SIZE - 1);
+  NPC_EN <= cw_FU_DU(CW_SIZE - 2);
   
   -- stage two control signals
-  RegA_EN   <= cw1(CW_SIZE - 3);
-  RegB_EN   <= cw1(CW_SIZE - 4);
-  RegIMM_EN <= cw1(CW_SIZE - 5);
-  RT_REG_EN <= cw1(CW_SIZE - 6);
-  IS_R_TYPE <= cw1(CW_SIZE - 7);
-  J_EN      <= cw1(CW_SIZE - 8);
+  RegA_EN   <= cw_FU_DU(CW_SIZE - 3);
+  RegB_EN   <= cw_FU_DU(CW_SIZE - 4);
+  RegIMM_EN <= cw_FU_DU(CW_SIZE - 5);
+  RT_REG_EN <= cw_FU_DU(CW_SIZE - 6);
+  IS_R_TYPE <= cw_FU_DU(CW_SIZE - 7);
+  J_EN      <= cw_FU_DU(CW_SIZE - 8);
   
   -- stage three control signals
-  MUXA_SEL      <= cw2(CW_SIZE - 9);
-  MUXB_SEL      <= cw2(CW_SIZE - 10);
-  ALU_OUTREG_EN <= cw2(CW_SIZE - 11);
-  BEQZ_OR_BNEZ  <= cw2(CW_SIZE - 12);
-  SH2_EN        <= cw2(CW_SIZE - 13);
+  MUXA_SEL      <= cw_EXU(CW_SIZE - 9);
+  MUXB_SEL      <= cw_EXU(CW_SIZE - 10);
+  ALU_OUTREG_EN <= cw_EXU(CW_SIZE - 11);
+  BEQZ_OR_BNEZ  <= cw_EXU(CW_SIZE - 12);
+  SH2_EN        <= cw_EXU(CW_SIZE - 13);
   
   -- stage four control signals
-  DRAM_WE      <= cw3(CW_SIZE - 14);
-  LMD_EN       <= cw3(CW_SIZE - 15);
+  DRAM_WE      <= cw_MEM(CW_SIZE - 14);
+  LMD_EN       <= cw_MEM(CW_SIZE - 15);
 
   
   -- stage five control signals
-  WB_MUX_SEL <= cw4(CW_SIZE - 16);
-  RF_WE      <= cw4(CW_SIZE - 17);
-  JAL_EN     <= cw4(CW_SIZE -18); 
+  WB_MUX_SEL <= cw_WB(CW_SIZE - 16);
+  RF_WE      <= cw_WB(CW_SIZE - 17);
+  JAL_EN     <= cw_WB(CW_SIZE -18); 
 
 
   --PC_enabling signal 
@@ -159,18 +161,18 @@ begin  -- dlx_cu_rtl
   CW_PIPE: process (Clk, Rst)
   begin  -- process Clk
     if Rst = '1' then                   -- asynchronous reset (active low)
-      cw1 <= (others => '0');
-      cw2 <= (others => '0');
-      cw3 <= (others => '0');
-      cw4 <= (others => '0');
+      cw_FU_DU <= (others => '0');
+      cw_EXU <= (others => '0');
+      cw_MEM <= (others => '0');
+      cw_WB <= (others => '0');
       aluOpcode1 <= aluNOP;
       aluOpcode2 <= aluNOP;
       aluOpcode3 <= aluNOP;
     elsif Clk'event and Clk = '1' then  -- rising clock edge
-      cw1 <= cw;
-      cw2 <= cw1(CW_SIZE - 1 - 2 -6 downto 0);
-      cw3 <= cw2(CW_SIZE - 1 - 2 -6 -5 downto 0);
-      cw4 <= cw3(CW_SIZE - 1 - 2 -6 -5 -2 downto 0);
+      cw_FU_DU <= cw;
+      cw_EXU <= cw_FU_DU(CW_SIZE - 1 - 2 -6 downto 0);
+      cw_MEM <= cw_EXU(CW_SIZE - 1 - 2 -6 -5 downto 0);
+      cw_WB <= cw_MEM(CW_SIZE - 1 - 2 -6 -5 -2 downto 0);
       
       aluOpcode1 <= aluOpcode_i;
       aluOpcode2 <= aluOpcode1;

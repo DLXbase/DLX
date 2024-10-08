@@ -1,12 +1,13 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.alu_type.all;
+use work.constants.all; 
 
 entity EXU is
-	generic (N: integer := 32);
+	generic (N: integer := WORD_SIZE);
 	Port(CLK : in std_logic;
 		RST : in std_logic;
-		CW : in std_logic_vector(6 downto 0);
+		MUXA_SEL,MUXB_SEL,ZERO_SEL,ALUOUT_EN,SHIFT2_EN: in std_logic; 
 		ALU_FUNC : in aluOp;
 		NPC_REG : in std_logic_vector(N-1 downto 0);
 		A_REG : in std_logic_vector(N-1 downto 0);
@@ -68,16 +69,16 @@ begin
 
 	EXU_SHIFT: shift2 
 			   generic map(N=>N)
-			   port map( A=>IMM_REG, Y=>out_shift_s, en=>CW(0));
+			   port map( A=>IMM_REG, Y=>out_shift_s, en=>SHIFT2_EN);
 
 	MUXA: mux21
 			generic map(NBIT=>N)
-			port map(A=>A_REG, B=>NPC_REG, sel=>CW(1), muxout=>op_1_s);
+			port map(A=>A_REG, B=>NPC_REG, sel=>MUXA_SEL, muxout=>op_1_s);
 
 
 	MUXB: mux21
 			generic map(NBIT=>N)
-			port map(A=>B_REG, B=>IMM_REG, sel=>CW(2), muxout=>op_2_s);
+			port map(A=>B_REG, B=>IMM_REG, sel=>MUXA_SEL, muxout=>op_2_s);
 
 
 	MUX3: mux21
@@ -92,7 +93,7 @@ begin
 
 	EXU_CMPZ: is_zero
 			generic map(NBIT=>N)
-			port map(A=>A_REG, BEQZ_OR_BNEZ => CW(3), res=>out_cmp_s
+			port map(A=>A_REG, BEQZ_OR_BNEZ => ZERO_SEL, res=>out_cmp_s
 			);
 
 	NPC_REG_3: reg --JAL NPC reg
@@ -100,7 +101,7 @@ begin
 			port map(
 				clk => CLK,
 				rst => RST,
-				en => CW(4),
+				en => '1',  -- this reg is always working
 				A => NPC_REG,
 				Y => NPC_OUT
 			);
@@ -110,7 +111,7 @@ begin
 			port map(
 				clk => CLK,
 				rst => RST,
-				en => CW(5),
+				en => ALUOUT_EN,
 				A => alu_out_s,
 				Y => ALU_OUT
 			);
@@ -120,7 +121,7 @@ begin
 		port map(
 			clk => CLK,
 			rst => RST,
-			en => CW(6),
+			en => '1',   -- this reg is always working
 			A => RT_REG,
 			Y => RT_REG_OUT
 		);

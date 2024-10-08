@@ -1,9 +1,10 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
+use work.constants.all; 
 
 -- inputs and outputs are on N bits, defined through generic map
 entity DU is
-	generic (N: integer := 32); 
+	generic (N: integer := WORD_SIZE); 
 	Port (	--PC: in std_logic_vector(N-1 downto 0);
 			J_EN, WR_EN, A_EN, B_EN, IMM_EN, RT_EN, is_R_type:	In	std_logic;    --control signals from CU
 			BR_EN: in std_logic;  									--Signals wether there is a branch taken in EX stage
@@ -24,9 +25,9 @@ architecture struct of DU is
 
 	--reg_file read is not synchronous
   component reg_file is
-  GENERIC (NBIT: integer:=32;
-           NREG: integer:=32;
-           NADDR: integer:= 5);
+  GENERIC (NBIT: integer:=WORD_SIZE;
+           NREG: integer:=RF_SIZE;
+           NADDR: integer:= RF_ADDR_SIZE);
     Port (clk,rst,wr_en: in std_logic; 
         add_rd1: in std_logic_vector(NADDR-1 downto 0);
         add_rd2: in std_logic_vector(NADDR-1 downto 0);
@@ -38,7 +39,7 @@ architecture struct of DU is
 
 	--extend immediate from 16 to 32 bits
 	component sign_extend is
-	  	generic ( NBIT: integer:= 16);           
+	  	generic ( NBIT: integer:= WORD_SIZE/2);           
 		Port (A:	In	std_logic_vector(NBIT-1 downto 0);	
 			  res:	Out	std_logic_vector ((2*NBIT)-1 downto 0));
 	end component;
@@ -65,7 +66,7 @@ architecture struct of DU is
 
 --internal signals
 	signal A_nxt, B_nxt, IMM_nxt, JTA: std_logic_vector (N-1 downto 0); 
-	signal RT_nxt: std_logic_vector (4 downto 0); 
+	signal RT_nxt: std_logic_vector (RF_ADDR_SIZE-1 downto 0); 
 	signal BR_EN_NEG, J_SEL: std_logic; 
 
 begin 
@@ -102,14 +103,14 @@ begin
 			 Y => IMM);    
 
 	RT_source_mux: mux21 --this mux decides which bits of IR determine the Target Register (for Rtype it's 15:11, for I type it's 20:16)
-	generic map(NBIT=>5) --5 bits
+	generic map(NBIT=>RF_ADDR_SIZE) --5 bits
 	port map(A => IR(15 downto 11),    --R_type (sel = 1)
 			 B => IR (20 downto 16),   --I_type (sel = 0)
 			 sel => is_R_type, 
 			 muxout => RT_nxt);
 
 	RT_reg_inst: reg 
-	generic map(N=>5) --5 bits
+	generic map(N=>RF_ADDR_SIZE) --5 bits
 	port map(clk => clk ,rst => rst, en => RT_EN,
 			 A => RT_nxt, 
 			 Y => RT_out); 

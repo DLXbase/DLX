@@ -136,30 +136,40 @@ architecture dlx_rtl of DLX is
 
   -- Datapath Bus signals
   signal PC_BUS : std_logic_vector(PC_SIZE -1 downto 0);
-  signal DRAM_addr : std_logic_vector(N-1 downto 0);
-  signal DRAM_data : std_logic_vector(N-1 downto 0);
-  signal LMD_s : std_logic_vector(N-1 downto 0);
 
   -- Control Unit Bus signals
-  signal IR_LATCH_EN_i : std_logic;
-  signal NPC_LATCH_EN_i : std_logic;
-  signal RegA_LATCH_EN_i : std_logic;
-  signal RegB_LATCH_EN_i : std_logic;
-  signal RegIMM_LATCH_EN_i : std_logic;
-  signal EQ_COND_i : std_logic;
-  signal JUMP_EN_i : std_logic;
+  signal IR_EN_i : std_logic;
+  signal NPC_EN_i : std_logic;
+
+  signal RegA_EN_i : std_logic;
+  signal RegB_EN_i : std_logic;
+  signal RegIMM_EN_i : std_logic;
+  signal RT_REG_EN_i : std_logic;
+  signal IS_R_TYPE_i : std_logic;
+  signal J_EN_i : std_logic;
+
   signal ALU_OPCODE_i : aluOp;
+
   signal MUXA_SEL_i : std_logic;
   signal MUXB_SEL_i : std_logic;
   signal ALU_OUTREG_EN_i : std_logic;
+  signal BEQZ_OR_BNEZ_i : std_logic;
+  signal SH2_EN_i : std_logic;
+
   signal DRAM_WE_i : std_logic;
-  signal LMD_LATCH_EN_i : std_logic;
-  signal PC_LATCH_EN_i : std_logic;
+  signal LMD_EN_i : std_logic;
+
   signal WB_MUX_SEL_i : std_logic;
   signal RF_WE_i : std_logic;
+  signal JAL_EN_i : std_logic;
+
+  signal PC_EN_i : std_logic;
 
 
   -- Data Ram Bus signals
+  signal DRAM_addr : std_logic_vector(N-1 downto 0);
+  signal DRAM_data : std_logic_vector(N-1 downto 0);
+  signal LMD_s : std_logic_vector(N-1 downto 0);
 
 
   begin  -- DLX
@@ -169,39 +179,15 @@ architecture dlx_rtl of DLX is
     -- TO BE REMOVED AS SOON AS THE DATAPATH IS INSERTED!!!!!
     -- a proper connection must be made here if more than one
     -- instruction must be executed
-    PC_BUS <= (others => '0'); 
+    --------PC_BUS <= (others => '0'); 
 
-
-    -- purpose: Instruction Register Process
-    -- type   : sequential
-    -- inputs : Clk, Rst, IRam_DOut, IR_LATCH_EN_i
-    -- outputs: IR_IN_i
-    IR_P: process (Clk, Rst)
-    begin  -- process IR_P
-      if Rst = '0' then                 -- asynchronous reset (active low)
-        IR <= (others => '0');
-      elsif Clk'event and Clk = '1' then  -- rising clock edge
-        if (IR_LATCH_EN_i = '1') then
-          IR <= IRam_DOut;
-        end if;
-      end if;
-    end process IR_P;
-
-
-    -- purpose: Program Counter Process
-    -- type   : sequential
-    -- inputs : Clk, Rst, PC_BUS
-    -- outputs: IRam_Addr
-    PC_P: process (Clk, Rst)
-    begin  -- process PC_P
-      if Rst = '0' then                 -- asynchronous reset (active low)
-        PC <= (others => '0');
-      elsif Clk'event and Clk = '1' then  -- rising clock edge
-        if (PC_LATCH_EN_i = '1') then
-          PC <= PC_BUS;
-        end if;
-      end if;
-    end process PC_P;
+	DATAPATH_I : DATAPATH
+		generic map (N => N)
+		port map(
+			CLK => CLK,
+			RST => RST,
+		
+		);
 
     -- Control Unit Instantiation
     CU_I: dlx_cu

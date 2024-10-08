@@ -2,18 +2,21 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use work.alu_type.all;
 use work.myTypes.all;
+use ieee.numeric_std.all;
 
 entity TBEXU is
 end TBEXU;
 
 architecture TEST of TBEXU is
-
+ 
+    constant N: integer := 32; 
+    
     component EXU
         generic (N: integer := 32);
         Port(CLK : in std_logic;
             RST : in std_logic;
             CW : in std_logic_vector(6 downto 0);
-            ALU_FUNC : in aluOp;
+            ALU_FUNC : in work.alu_type.aluOp;
             NPC_REG : in std_logic_vector(N-1 downto 0);
             A_REG : in std_logic_vector(N-1 downto 0);
             B_REG : in std_logic_vector(N-1 downto 0);
@@ -32,7 +35,7 @@ architecture TEST of TBEXU is
         signal CLK_S        : std_logic;
         signal RST_S        : std_logic;
         signal CW_S         : std_logic_vector(6 downto 0);
-        signal ALU_FUNC_S   : aluOp;
+        signal ALU_FUNC_S   : work.alu_type.aluOp;
         signal NPC_REG_S    : std_logic_vector(N-1 downto 0);
         signal A_REG_S      : std_logic_vector(N-1 downto 0);
         signal B_REG_S      : std_logic_vector(N-1 downto 0);
@@ -51,7 +54,7 @@ begin
 
      -- DUT instance
      UUT: entity work.EXU
-     generic map (N => 32) -- Assuming 32-bit configuration
+     generic map (N => N) -- Assuming 32-bit configuration
      port map (
          -- Inputs
          CLK         => CLK_S,
@@ -77,34 +80,34 @@ begin
 	--clk process
 	process
 	begin
-		CLK <= '1';			
+		CLK_S <= '1';			
 		wait for 1 ns;
-		CLK <= '0';
+		CLK_S <= '0';
 		wait for 1 ns;
 	end process;
 
     --reset 
-	rst <= '1' after 2 ns, '0' after 10 ns;
+	RST_S <= '1' after 2 ns, '0' after 10 ns;
 
     --operands value
     A_REG_S <= std_logic_vector(to_unsigned(10, 32));
     B_REG_S <= std_logic_vector(to_unsigned(20, 32));
-    IMM_REG <= std_logic_vector(to_unsigned(50, 32));
+    IMM_REG_S <= std_logic_vector(to_unsigned(50, 32));
 
     --NPC value (must check it is simply transfered to output with 1 cc delay)
-    NPC_REG <= std_logic_vector(to_unsigned(8, 32));
+    NPC_REG_S <= std_logic_vector(to_unsigned(8, 32));
 
-    PC_4 <= NPC_REG - 4; 
+    PC_4_S <= std_logic_vector(unsigned(NPC_REG_S) - 4);
 
     --RT REG (must check it is simply transfered to output with 1 cc delay)
-    RT_REG <= <= std_logic_vector(to_unsigned(2, 5));
+    RT_REG_S <= std_logic_vector(to_unsigned(2, 32));
 		
     --instruction
 	process
 	begin
 	    --Control word for RTYPE. 
 		CW_S <= "11100";	
-        ALU_FUNC <= ADD; 		
+        ALU_FUNC_S <= ADD; 		
         wait for 2 ns; 
 		wait; 
 	end process;
