@@ -37,7 +37,27 @@ architecture dlx_rtl of DLX is
       Dout : out std_logic_vector(IR_SIZE - 1 downto 0));
   end component;
 
-  -- Data Ram (MISSING!You must include it in your final project!)
+  -- Data Ram 
+    component RWMEM 
+    generic(
+      --FILE_PATH: string;           -- RAM output data file
+      FILE_PATH_INIT: string;      -- RAM initialization data file
+      WORD_SIZE: natural := 32;    -- Number of bits per word
+      ENTRIES: natural := 128     -- Number of lines in the ROM
+      --DATA_DELAY: natural := 2     -- Delay (in # of clock cycles)
+    );
+    
+    port (
+      CLK             : in std_logic;
+      RST             : in std_logic;
+      ADDRESS         : in std_logic_vector(WORD_SIZE - 1 downto 0);
+      ENABLE          : in std_logic;
+      READNOTWRITE    : in std_logic;
+      --DATA_READY      : out std_logic;
+    IN_DATA 		: in std_logic_vector((2*WORD_SIZE) - 1 downto 0);
+      OUT_DATA 		: out std_logic_vector((2*WORD_SIZE) - 1 downto 0)
+    );
+  end entity RWMEM;
 
   -- Datapath (MISSING!You must include it in your final project!)
   
