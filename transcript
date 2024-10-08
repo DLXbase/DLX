@@ -800,3 +800,47 @@ vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-Dat
 # ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(201): VHDL Compiler exiting
 # End time: 10:54:29 on Oct 07,2024, Elapsed time: 0:00:00
 # Errors: 4, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:22:59 on Oct 07,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity DATAPATH
+# -- Compiling architecture STRUCTURAL of DATAPATH
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(112): near ")": syntax error
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(119): Illegal target for signal assignment.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(119): (vcom-1136) Unknown identifier "cw_WBU".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(205): (vcom-1136) Unknown identifier "cw_WBU".
+# ** Error (suppressible): /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(167): (vcom-1272) Length of formal "CW" is 4; length of actual is 7.
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(210): VHDL Compiler exiting
+# End time: 22:23:00 on Oct 07,2024, Elapsed time: 0:00:01
+# Errors: 5, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:23:29 on Oct 07,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity DATAPATH
+# -- Compiling architecture STRUCTURAL of DATAPATH
+# ** Error (suppressible): /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(167): (vcom-1272) Length of formal "CW" is 4; length of actual is 7.
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd(210): VHDL Compiler exiting
+# End time: 22:23:29 on Oct 07,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 22:24:52 on Oct 07,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Compiling entity DATAPATH
+# -- Compiling architecture STRUCTURAL of DATAPATH
+# End time: 22:24:53 on Oct 07,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

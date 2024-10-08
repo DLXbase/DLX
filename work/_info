@@ -161,47 +161,67 @@ R30
 R12
 R13
 Edatapath
-w1728140714
+Z31 w1728332684
 R15
 R3
 R4
-!i122 129
+!i122 132
 R0
-8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
-F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
+Z32 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
+Z33 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
 l0
 L5 1
 VDfQe`UN[R:`7oGm6WT<6e2
 !s100 QDbYS77akGmG=JlBhQ^O<1
 R7
 32
-!s110 1728291269
+Z34 !s110 1728332693
 !i10b 1
-!s108 1728291269.000000
-!s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd|
+Z35 !s108 1728332692.000000
+Z36 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd|
 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd|
 !i113 0
 R12
 R13
+Astructural
+R15
+R3
+R4
+DEx4 work 8 datapath 0 22 DfQe`UN[R:`7oGm6WT<6e2
+!i122 132
+l115
+L22 189
+VB`c_04`>@U^dB9EMl7:Zb1
+!s100 ^jTkc>Tdg]<4nn2D?SCle1
+R7
+32
+R34
+!i10b 1
+R35
+R36
+Z37 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd|
+!i113 0
+R12
+R13
 Edu
-Z31 w1727694093
+Z38 w1727694093
 R3
 R4
 !i122 93
 R0
-Z32 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/DU.vhd
-Z33 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/DU.vhd
+Z39 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/DU.vhd
+Z40 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/DU.vhd
 l0
 L5 1
 V?UMR1N=KaT>>EEna_XJH_2
 !s100 z7GbmWoaho:ohkH@oeGe50
 R7
 32
-Z34 !s110 1728138773
+Z41 !s110 1728138773
 !i10b 1
-Z35 !s108 1728138772.000000
-Z36 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/DU.vhd|
-Z37 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/DU.vhd|
+Z42 !s108 1728138772.000000
+Z43 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/DU.vhd|
+Z44 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/DU.vhd|
 !i113 0
 R12
 R13
@@ -216,34 +236,34 @@ VfUJDMzLIOnHT;K]CBmF:l2
 !s100 bhUl=5mOiC51hKV9MX_AX1
 R7
 32
-R34
+R41
 !i10b 1
-R35
-R36
-R37
+R42
+R43
+R44
 !i113 0
 R12
 R13
 Eexu
-Z38 w1728140660
+Z45 w1728140660
 R15
 R3
 R4
 !i122 125
 R0
-Z39 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
-Z40 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+Z46 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
+Z47 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
 l0
 L5 1
 V77jiD^HjCMh;LPj>W@[?13
 !s100 n2eKnAV9]eLf_7X7m0<Q]3
 R7
 32
-Z41 !s110 1728140673
+Z48 !s110 1728140673
 !i10b 1
-Z42 !s108 1728140673.000000
-Z43 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd|
-Z44 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd|
+Z49 !s108 1728140673.000000
+Z50 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd|
+Z51 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd|
 !i113 0
 R12
 R13
@@ -259,33 +279,33 @@ VPCF8C57N]NAcF9EN2N[AO3
 !s100 6@i9jz[5IRLif;?21jH6S3
 R7
 32
-R41
+R48
 !i10b 1
-R42
-R43
-R44
+R49
+R50
+R51
 !i113 0
 R12
 R13
 Efu
-Z45 w1727692907
+Z52 w1727692907
 R3
 R4
 !i122 87
 R0
-Z46 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/FU.vhd
-Z47 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/FU.vhd
+Z53 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/FU.vhd
+Z54 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/FU.vhd
 l0
 L4 1
 V;Ic]Gk4U?Dn[:1mXANfG=3
 !s100 mThm=fnXD3B930h2XL=WR2
 R7
 32
-Z48 !s110 1728138757
+Z55 !s110 1728138757
 !i10b 1
-Z49 !s108 1728138757.000000
-Z50 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/FU.vhd|
-Z51 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/FU.vhd|
+Z56 !s108 1728138757.000000
+Z57 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/FU.vhd|
+Z58 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/FU.vhd|
 !i113 0
 R12
 R13
@@ -300,40 +320,40 @@ VFRb2<cbJS]KC_:36kjJ]d1
 !s100 ]T?4Yikh`VM_U0MQ2nJN]0
 R7
 32
-R48
+R55
 !i10b 1
-R49
-R50
-R51
+R56
+R57
+R58
 !i113 0
 R12
 R13
 Eiram
-Z52 w1726481706
-Z53 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+Z59 w1726481706
+Z60 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
 R16
 R3
 R4
 !i122 85
 R0
-Z54 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/a.c-IRAM.vhd
-Z55 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/a.c-IRAM.vhd
+Z61 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/a.c-IRAM.vhd
+Z62 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/a.c-IRAM.vhd
 l0
 L11 1
 VP=6f>F`M_a[G`RL:2H[L;0
 !s100 lCk^O12_GA:9f080R9PQ?1
 R7
 32
-Z56 !s110 1728138754
+Z63 !s110 1728138754
 !i10b 1
-Z57 !s108 1728138754.000000
-Z58 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/a.c-IRAM.vhd|
-Z59 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/a.c-IRAM.vhd|
+Z64 !s108 1728138754.000000
+Z65 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/a.c-IRAM.vhd|
+Z66 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/a.c-IRAM.vhd|
 !i113 0
 R12
 R13
 Airam_bhe
-R53
+R60
 R16
 R3
 R4
@@ -345,33 +365,33 @@ V17dAVg2PQoWYm:<20L`^e1
 !s100 7;ioSOeO^<F?oXo00Na]X1
 R7
 32
-R56
+R63
 !i10b 1
-R57
-R58
-R59
+R64
+R65
+R66
 !i113 0
 R12
 R13
 Eis_zero
-Z60 w1728139393
+Z67 w1728139393
 R3
 R4
 !i122 112
 R0
-Z61 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd
-Z62 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd
+Z68 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd
+Z69 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd
 l0
 L5 1
 VN^:TaJMT1bMGWBS^C?FGR2
 !s100 JPQ@OaFUYKmJ=8N_On4?:1
 R7
 32
-Z63 !s110 1728140166
+Z70 !s110 1728140166
 !i10b 1
-Z64 !s108 1728140165.000000
-Z65 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd|
-Z66 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd|
+Z71 !s108 1728140165.000000
+Z72 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd|
+Z73 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd|
 !i113 0
 R12
 R13
@@ -386,33 +406,33 @@ VhKhm5la=CH^[SNO?n3Bb^1
 !s100 m?egnBOb2>_]jFfL;bXgZ2
 R7
 32
-R63
+R70
 !i10b 1
-R64
-R65
-R66
+R71
+R72
+R73
 !i113 0
 R12
 R13
 Eiv
-Z67 w1727534045
+Z74 w1727534045
 R3
 R4
 !i122 88
 R0
-Z68 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/iv.vhd
-Z69 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/iv.vhd
+Z75 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/iv.vhd
+Z76 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/iv.vhd
 l0
 L5 1
 V7f4c?QORFEE`z0dJU>ef92
 !s100 XFe=EZ6>ohg7V9@b6Vf:M0
 R7
 32
-Z70 !s110 1728138767
+Z77 !s110 1728138767
 !i10b 1
-Z71 !s108 1728138767.000000
-Z72 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/iv.vhd|
-Z73 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/iv.vhd|
+Z78 !s108 1728138767.000000
+Z79 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/iv.vhd|
+Z80 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/iv.vhd|
 !i113 0
 R12
 R13
@@ -427,39 +447,39 @@ VeSk=`lcP0DEGdC4hmi8R_1
 !s100 ;J^zC_0h[fL`g;]S_6Z:S1
 R7
 32
-R70
+R77
 !i10b 1
-R71
-R72
-R73
+R78
+R79
+R80
 !i113 0
 R12
 R13
 Emu
+R67
 R60
-R53
 R3
 R4
 !i122 117
 R0
-Z74 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-Z75 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
+Z81 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
+Z82 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
 l0
 L6 1
 V=XAUa97_k]6X<O;M46W312
 !s100 9KYKiLg?Y<O0cQIB9FTfc1
 R7
 32
-Z76 !s110 1728140318
+Z83 !s110 1728140318
 !i10b 1
-Z77 !s108 1728140318.000000
-Z78 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd|
-Z79 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd|
+Z84 !s108 1728140318.000000
+Z85 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd|
+Z86 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd|
 !i113 0
 R12
 R13
 Astructural
-R53
+R60
 R3
 R4
 DEx4 work 2 mu 0 22 =XAUa97_k]6X<O;M46W312
@@ -470,33 +490,33 @@ VnghYRdG>_lKYSHLG216Qz0
 !s100 I8b71YFnWfRR_mMT^[5GV1
 R7
 32
-R76
+R83
 !i10b 1
-R77
-R78
-R79
+R84
+R85
+R86
 !i113 0
 R12
 R13
 Emux21
-R60
+R67
 R3
 R4
 !i122 118
 R0
-Z80 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/mux21.vhd
-Z81 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/mux21.vhd
+Z87 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/mux21.vhd
+Z88 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/mux21.vhd
 l0
 L6 1
 VJZ:ogdoZJ>SBA6gzRA6PV1
 !s100 mn5[<aX3h;ZWW^]eDjWIA3
 R7
 32
-Z82 !s110 1728140323
+Z89 !s110 1728140323
 !i10b 1
-Z83 !s108 1728140323.000000
-Z84 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/mux21.vhd|
-Z85 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/mux21.vhd|
+Z90 !s108 1728140323.000000
+Z91 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/mux21.vhd|
+Z92 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/mux21.vhd|
 !i113 0
 R12
 R13
@@ -511,33 +531,33 @@ VZYN;z:=`i<inONOcNCU@J1
 !s100 Vb74`@MnZiS58=JOaeD1G3
 R7
 32
-R82
+R89
 !i10b 1
-R83
-R84
-R85
+R90
+R91
+R92
 !i113 0
 R12
 R13
 Ereg
-Z86 w1726654910
+Z93 w1726654910
 R3
 R4
 !i122 116
 R0
-Z87 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/reg.vhd
-Z88 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/reg.vhd
+Z94 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/reg.vhd
+Z95 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/reg.vhd
 l0
 L4 1
 VZQ9chdOG61hTj:lHI3nWh2
 !s100 h7:OhJkekZTm7T]Y;Z0:C3
 R7
 32
-Z89 !s110 1728140317
+Z96 !s110 1728140317
 !i10b 1
-Z90 !s108 1728140317.000000
-Z91 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/reg.vhd|
-Z92 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/reg.vhd|
+Z97 !s108 1728140317.000000
+Z98 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/reg.vhd|
+Z99 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/reg.vhd|
 !i113 0
 R12
 R13
@@ -552,37 +572,37 @@ Va;Mb?E:5eaW9AK14P?[nm0
 !s100 PAj[K]P`[:z<1gXD_Af]_2
 R7
 32
-R89
+R96
 !i10b 1
-R90
-R91
-R92
+R97
+R98
+R99
 !i113 0
 R12
 R13
 Ereg_file
-Z93 w1727449845
+Z100 w1727449845
 R16
 R17
 R2
-Z94 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z101 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
 R3
 R4
 !i122 91
 R0
-Z95 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/reg_file.vhd
-Z96 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/reg_file.vhd
+Z102 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/reg_file.vhd
+Z103 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/reg_file.vhd
 l0
 L7 1
 VbdZ]eJGg44<eK9`29oj;L3
 !s100 GaAYjRge[T46S]LGB^ZNU3
 R7
 32
-Z97 !s110 1728138771
+Z104 !s110 1728138771
 !i10b 1
-Z98 !s108 1728138770.000000
-Z99 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/reg_file.vhd|
-Z100 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/reg_file.vhd|
+Z105 !s108 1728138770.000000
+Z106 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/reg_file.vhd|
+Z107 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/reg_file.vhd|
 !i113 0
 R12
 R13
@@ -590,7 +610,7 @@ Abeh
 R16
 R17
 R2
-R94
+R101
 R3
 R4
 DEx4 work 8 reg_file 0 22 bdZ]eJGg44<eK9`29oj;L3
@@ -601,40 +621,40 @@ Vem<<ndeD0EJgiibYWUfJ[2
 !s100 QZQWdG665l9744Mm4J3[g0
 R7
 32
-R97
+R104
 !i10b 1
-R98
-R99
-R100
+R105
+R106
+R107
 !i113 0
 R12
 R13
 Erwmem
-Z101 w1727621470
-R53
+Z108 w1727621470
+R60
 R2
 R3
 R4
 !i122 79
 R0
-Z102 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-Z103 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
+Z109 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
+Z110 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
 l0
 L8 1
 V0`C0l0UTDn@@lQ5YT=U?@1
 !s100 :iXZP4ZD4gaFMX=XJ=?We3
 R7
 32
-Z104 !s110 1727621545
+Z111 !s110 1727621545
 !i10b 1
-Z105 !s108 1727621545.000000
-Z106 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd|
-Z107 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd|
+Z112 !s108 1727621545.000000
+Z113 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd|
+Z114 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd|
 !i113 0
 R12
 R13
 Abeh
-R53
+R60
 R2
 R3
 R4
@@ -646,34 +666,34 @@ VeS[@]hJ<B8CJA9>L89Bie1
 !s100 Xe;CFoJXUJgl:C4Ia`1mj2
 R7
 32
-R104
+R111
 !i10b 1
-R105
-R106
-R107
+R112
+R113
+R114
 !i113 0
 R12
 R13
 Eshift2
-Z108 w1727543464
+Z115 w1727543464
 R2
 R3
 R4
 !i122 105
 R0
-Z109 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd
-Z110 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd
+Z116 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd
+Z117 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd
 l0
 L5 1
 VlKLnYB1fHjofH;fMH6]@n0
 !s100 c=PfoJ?dCLFOK0JgUeo2e2
 R7
 32
-Z111 !s110 1728138921
+Z118 !s110 1728138921
 !i10b 1
-Z112 !s108 1728138921.000000
-Z113 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd|
-Z114 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd|
+Z119 !s108 1728138921.000000
+Z120 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd|
+Z121 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd|
 !i113 0
 R12
 R13
@@ -689,33 +709,33 @@ VoL4<ICIJIKP[YZ[WP7h8j0
 !s100 KdiO;W1a2AWP_RSDhMnz`2
 R7
 32
-R111
+R118
 !i10b 1
-R112
-R113
-R114
+R119
+R120
+R121
 !i113 0
 R12
 R13
 Esign_extend
-Z115 w1726662834
+Z122 w1726662834
 R3
 R4
 !i122 92
 R0
-Z116 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/sign_extend.vhd
-Z117 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/sign_extend.vhd
+Z123 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/sign_extend.vhd
+Z124 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/sign_extend.vhd
 l0
 L5 1
 VYI`E<]7iN`MU7F_[>eK@73
 !s100 =W6cb`_NTZ@30J<kHKQVk0
 R7
 32
-R97
+R104
 !i10b 1
-Z118 !s108 1728138771.000000
-Z119 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/sign_extend.vhd|
-Z120 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/sign_extend.vhd|
+Z125 !s108 1728138771.000000
+Z126 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/sign_extend.vhd|
+Z127 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/sign_extend.vhd|
 !i113 0
 R12
 R13
@@ -730,33 +750,33 @@ VNzzb^k6meZQLeoH8Ycb@o1
 !s100 lnB`14I]<ez<RlC6];Y<W3
 R7
 32
-R97
+R104
 !i10b 1
-R118
-R119
-R120
+R125
+R126
+R127
 !i113 0
 R12
 R13
 Ewbu
-R60
+R67
 R3
 R4
 !i122 119
 R0
-Z121 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/WBU.vhd
-Z122 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/WBU.vhd
+Z128 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/WBU.vhd
+Z129 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/WBU.vhd
 l0
 L6 1
 VK24]g^zE?EcnMfeB:kfCA0
 !s100 aOz`09fn]kaHVSf<?Oj[a1
 R7
 32
-Z123 !s110 1728140324
+Z130 !s110 1728140324
 !i10b 1
-Z124 !s108 1728140324.000000
-Z125 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/WBU.vhd|
-Z126 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/WBU.vhd|
+Z131 !s108 1728140324.000000
+Z132 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/WBU.vhd|
+Z133 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/WBU.vhd|
 !i113 0
 R12
 R13
@@ -771,11 +791,11 @@ VF=0P[`e3FDTO[0^KBa<Y72
 !s100 bEZn:J4J?Pi<Og_c`hCa?3
 R7
 32
-R123
+R130
 !i10b 1
-R124
-R125
-R126
+R131
+R132
+R133
 !i113 0
 R12
 R13

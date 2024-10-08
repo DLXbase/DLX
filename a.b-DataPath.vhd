@@ -60,7 +60,7 @@ component EXU
 	generic (N: integer := 32);
 	Port(CLK : in std_logic;
 		RST : in std_logic;
-		CW : in std_logic_vector(3 downto 0);
+		CW : in std_logic_vector(6 downto 0);
 		ALU_FUNC : in aluOp;
 		NPC_REG : in std_logic_vector(N-1 downto 0);
 		A_REG : in std_logic_vector(N-1 downto 0);
@@ -105,22 +105,26 @@ Port (ALU_OUT:	In	std_logic_vector(N-1 downto 0);
 	  );
 end component;
 
-signal cw_FU: std_logic_vector(3 downto 0); 
-signal cw_DU: std_logic_vector(6 downto 0);
+signal cw_FU: std_logic_vector(2 downto 0); 
+--signal cw_DU: std_logic_vector(6 downto 0);
 signal cw_EXU: std_logic_vector(6 downto 0);
-signal cw_MU: std_logic_vector();
-signal cw_WBU: std_logic_vector();
+signal cw_MU: std_logic_vector(2 downto 0);
+signal cw_WBU: std_logic_vector(1 downto 0);
  
 
 begin
-
+	cw_FU <= '1' & CW(17) & CW(16); --PC & IR & NPC
+	cw_EXU <= CW(12) & CW(7) & CW(16) & CW(6) & CW(8) & CW(9) & CW(5); --RT & ALU_OUT & NPC & BEQZ/BENZ & B & A & SH2EN
+	cw_MU <= CW(3) & CW(7) & CW(12); --LMD & ALU_OUT & RT
+	cw_WBU <= CW(2) & CW(1);
+	
 --port map
 	F_STAGE : FU
 		generic map(N => N)
 		port map(
 			CLK => CLK,
 			RST => RST,
-			CW => '1' & CW(17) & CW(16), --PC & IR & NPC
+			CW => cw_FU, --PC & IR & NPC
 			IN_ID => pc_nxt_s,
 			from_IRAM => from_IRAM,
 			to_IRAM => to_IRAM,
@@ -160,7 +164,7 @@ begin
 		port map(
 			CLK => CLK,
 			RST => RST,
-			CW => CW(12) & CW(7) & CW(16) & CW(6) & CW(8) & CW(9) & CW(5), --RT & ALU_OUT & NPC & BEQZ/BENZ & B & A & SH2EN
+			CW => cw_EXU, --RT & ALU_OUT & NPC & BEQZ/BENZ & B & A & SH2EN
 			ALU_FUNC => ALU_FUNC,
 			NPC_REG => npc_reg2_s,
 			A_REG => a_reg_s,
@@ -180,7 +184,7 @@ begin
 		port map (
 			CLK => CLK,
 			RST => RST,
-			CW => CW(3) & CW(7) & CW(12), --LMD & ALU_OUT & RT
+			CW => cw_MU, --LMD & ALU_OUT & RT
 			ALU_RESULT => alu_out_s,
 			RT_REG_in => rt_reg2_s,
 			NPC_REG_in => npc_reg3_s,
@@ -198,7 +202,7 @@ begin
 			LOAD => lmd_out_s,
 			NPC_REG_in => npc_reg4_s,
 			RT_REG_in => rt_reg3_s,
-			CW => CW(2) & CW(1), --JAL_EN & WBMUX
+			CW => cw_WBU, --JAL_EN & WBMUX
 			RF_ADDR => wb_addr_s,
 			RF_DATA => wb_data_s
 		);
