@@ -45,7 +45,7 @@ entity DATAPATH is
 		addr_to_DRAM : out std_logic_vector(N-1 downto 0); --input address for dram
 		data_to_DRAM : out std_logic_vector(N-1 downto 0); --input data for dram
 		to_IRAM : out std_logic_vector(N-1 downto 0); --input for iram (PC)
-		IR: out std_logic_vector(N-1 downto 0);
+		IR: out std_logic_vector(N-1 downto 0)
 		--PC_to_IRAM : out std_logic_vector(N-1 downto 0)
 	);
 end DATAPATH;

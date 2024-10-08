@@ -1,11 +1,13 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use work.myTypes.all;
+use work.constants.all;
+use work.alu_type.all;
 
 entity DLX is
   generic (
         IR_SIZE      : integer := 32;       -- Instruction Register Size
-        PC_SIZE      : integer := 32       -- Program Counter Size
+        PC_SIZE      : integer := 32;       -- Program Counter Size
 		N : integer := 32    
 	);       -- ALU_OPC_SIZE if explicit ALU Op Code Word Size
   port (
@@ -58,7 +60,7 @@ architecture dlx_rtl of DLX is
       IN_DATA 		: in std_logic_vector((2*WORD_SIZE) - 1 downto 0);
       OUT_DATA 		: out std_logic_vector((2*WORD_SIZE) - 1 downto 0)
     );
-  end entity RWMEM;
+  end component;
 
   -- Datapath (MISSING!You must include it in your final project!)
 	component DATAPATH
@@ -103,7 +105,7 @@ architecture dlx_rtl of DLX is
 		addr_to_DRAM : out std_logic_vector(N-1 downto 0); --input address for dram
 		data_to_DRAM : out std_logic_vector(N-1 downto 0); --input data for dram
 		to_IRAM : out std_logic_vector(N-1 downto 0); --input for iram (PC)
-		IR: out std_logic_vector(N-1 downto 0);
+		IR: out std_logic_vector(N-1 downto 0)
 		--PC_to_IRAM : out std_logic_vector(N-1 downto 0) --c'è già (to_IRAM)
 	);
 	end component;
@@ -249,21 +251,23 @@ architecture dlx_rtl of DLX is
       port map (
           Clk             => Clk,
           Rst             => Rst,
-          IR_IN           => IR,
-          IR_LATCH_EN     => IR_LATCH_EN_i,
-          NPC_LATCH_EN    => NPC_LATCH_EN_i,
-          RegA_LATCH_EN   => RegA_LATCH_EN_i,
-          RegB_LATCH_EN   => RegB_LATCH_EN_i,
-          RegIMM_LATCH_EN => RegIMM_LATCH_EN_i,
+          IR_IN           => IR_s,
+          IR_EN     => IR_EN_i,
+          NPC_EN    => NPC_EN_i,
+          RegA_EN   => RegA_EN_i,
+          RegB_EN   => RegB_EN_i,
+          RegIMM_EN => RegIMM_EN_i,
+          RT_REG_EN => RT_REG_EN_i,
+          IS_R_TYPE => IS_R_TYPE_i,
+          J_EN => J_EN_i,
           MUXA_SEL        => MUXA_SEL_i,
           MUXB_SEL        => MUXB_SEL_i,
           ALU_OUTREG_EN   => ALU_OUTREG_EN_i,
-          EQ_COND         => EQ_COND_i,
+          BEQZ_OR_BNEZ    => BEQZ_OR_BNEZ_i,
+          SH2_EN          => SH2_EN_i,
           ALU_OPCODE      => ALU_OPCODE_i,
           DRAM_WE         => DRAM_WE_i,
-          LMD_LATCH_EN    => LMD_LATCH_EN_i,
-          JUMP_EN         => JUMP_EN_i,
-          PC_LATCH_EN     => PC_LATCH_EN_i,
+          LMD_EN    => LMD_EN_i,
           WB_MUX_SEL      => WB_MUX_SEL_i,
           RF_WE           => RF_WE_i,
           JAL_EN          => JAL_EN_i,

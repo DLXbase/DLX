@@ -106,7 +106,7 @@ architecture dlx_cu_hw of dlx_cu is
   -- control word is shifted to the correct stage
   signal cw_FU_DU : std_logic_vector(CW_SIZE - 1  downto 0); -- IF+ID
   signal cw_EXU : std_logic_vector(CW_SIZE - 1 - 2 - 6  downto 0); -- EX
-  signal cw_MEM : std_logic_vector(CW_SIZE - 1 - 2 - 6 -5 downto 0); -- MEM
+  signal cw_M : std_logic_vector(CW_SIZE - 1 - 2 - 6 -5 downto 0); -- MEM
   signal cw_WB : std_logic_vector(CW_SIZE - 1 - 2 - 6 - 5 -2 downto 0); -- WB
 
   signal aluOpcode_i: aluOp := aluNOP; -- ALUOP defined in package
@@ -143,8 +143,8 @@ begin  -- dlx_cu_rtl
   SH2_EN        <= cw_EXU(CW_SIZE - 13);
   
   -- stage four control signals
-  DRAM_WE      <= cw_MEM(CW_SIZE - 14);
-  LMD_EN       <= cw_MEM(CW_SIZE - 15);
+  DRAM_WE      <= cw_M(CW_SIZE - 14);
+  LMD_EN       <= cw_M(CW_SIZE - 15);
 
   
   -- stage five control signals
@@ -163,7 +163,7 @@ begin  -- dlx_cu_rtl
     if Rst = '1' then                   -- asynchronous reset (active low)
       cw_FU_DU <= (others => '0');
       cw_EXU <= (others => '0');
-      cw_MEM <= (others => '0');
+      cw_M <= (others => '0');
       cw_WB <= (others => '0');
       aluOpcode1 <= aluNOP;
       aluOpcode2 <= aluNOP;
@@ -171,8 +171,8 @@ begin  -- dlx_cu_rtl
     elsif Clk'event and Clk = '1' then  -- rising clock edge
       cw_FU_DU <= cw;
       cw_EXU <= cw_FU_DU(CW_SIZE - 1 - 2 -6 downto 0);
-      cw_MEM <= cw_EXU(CW_SIZE - 1 - 2 -6 -5 downto 0);
-      cw_WB <= cw_MEM(CW_SIZE - 1 - 2 -6 -5 -2 downto 0);
+      cw_M <= cw_EXU(CW_SIZE - 1 - 2 -6 -5 downto 0);
+      cw_WB <= cw_M(CW_SIZE - 1 - 2 -6 -5 -2 downto 0);
       
       aluOpcode1 <= aluOpcode_i;
       aluOpcode2 <= aluOpcode1;
