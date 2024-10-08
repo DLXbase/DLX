@@ -281,8 +281,8 @@ architecture dlx_rtl of DLX is
           Addr => PC_s,
           Dout => IRam_DOut);
 
-    DRAM_I : DRAM
-      generic map(FILE_PATH_INIT => )
+    DRAM_I : RWMEM
+      generic map(FILE_PATH_INIT => "test_mem.asm.mem")
       port map(
         CLK => CLK,
         RST => RST,
