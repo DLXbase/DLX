@@ -3,6 +3,7 @@ use IEEE.std_logic_1164.all;
 use work.alu_type.all;
 use work.myTypes.all;
 use ieee.numeric_std.all;
+use work.constants.all; 
 
 entity TBEXU is
 end TBEXU;
@@ -12,10 +13,11 @@ architecture TEST of TBEXU is
     constant N: integer := 32; 
     
     component EXU
-        generic (N: integer := 32);
+        generic (N: integer := WORD_SIZE);
         Port(CLK : in std_logic;
             RST : in std_logic;
-            CW : in std_logic_vector(6 downto 0);
+            MUXA_SEL,MUXB_SEL,ZERO_SEL,ALUOUT_EN,SHIFT2_EN: in std_logic; 
+            --CW : in std_logic_vector(6 downto 0);
             ALU_FUNC : in work.alu_type.aluOp;
             NPC_REG : in std_logic_vector(N-1 downto 0);
             A_REG : in std_logic_vector(N-1 downto 0);
@@ -34,7 +36,7 @@ architecture TEST of TBEXU is
         -- Declare internal signals for all inputs to the DUT
         signal CLK_S        : std_logic;
         signal RST_S        : std_logic;
-        signal CW_S         : std_logic_vector(6 downto 0);
+        signal MUXA_SEL_S,MUXB_SEL_S,ZERO_SEL_S,ALUOUT_EN_S,SHIFT2_EN_S: std_logic; 
         signal ALU_FUNC_S   : work.alu_type.aluOp;
         signal NPC_REG_S    : std_logic_vector(N-1 downto 0);
         signal A_REG_S      : std_logic_vector(N-1 downto 0);
@@ -59,7 +61,11 @@ begin
          -- Inputs
          CLK         => CLK_S,
          RST         => RST_S,
-         CW          => CW_S,
+         MUXA_SEL => MUXA_SEL_S,
+         MUXB_SEL=> MUXB_SEL_S,
+         ZERO_SEL=> ZERO_SEL_S,
+         ALUOUT_EN=> ALUOUT_EN_S,
+         SHIFT2_EN => SHIFT2_EN_S,
          ALU_FUNC    => ALU_FUNC_S,
          NPC_REG     => NPC_REG_S,
          A_REG       => A_REG_S,
@@ -90,8 +96,8 @@ begin
 	RST_S <= '1' after 2 ns, '0' after 10 ns;
 
     --operands value
-    A_REG_S <= std_logic_vector(to_unsigned(10, 32));
-    B_REG_S <= std_logic_vector(to_unsigned(20, 32));
+    A_REG_S <= std_logic_vector(to_unsigned(3, 32));
+    B_REG_S <= std_logic_vector(to_unsigned(1, 32));
     IMM_REG_S <= std_logic_vector(to_unsigned(50, 32));
 
     --NPC value (must check it is simply transfered to output with 1 cc delay)
@@ -105,10 +111,26 @@ begin
     --instruction
 	process
 	begin
-	    --Control word for RTYPE. 
-		CW_S <= "11100";	
+	    --Control word for RTYPE => "11100"
+        MUXA_SEL_S <= '1'; MUXB_SEL_S <= '1'; ALUOUT_EN_S <= '1'; ZERO_SEL_S <= '0';  SHIFT2_EN_S <= '0'; 	
         ALU_FUNC_S <= ADD; 		
-        wait for 2 ns; 
+        wait for 13 ns;   --expected: ALUOUT = A+B=30;
+
+        MUXA_SEL_S <= '1'; MUXB_SEL_S <= '1'; ALUOUT_EN_S <= '1'; ZERO_SEL_S <= '0';  SHIFT2_EN_S <= '0'; 	
+        ALU_FUNC_S <= SUB; 		
+        wait for 2 ns;   --expected: ALUOUT = A-B=10; 
+
+        MUXA_SEL_S <= '1'; MUXB_SEL_S <= '1'; ALUOUT_EN_S <= '1'; ZERO_SEL_S <= '0';  SHIFT2_EN_S <= '0'; 	
+        ALU_FUNC_S <= MULT; 		
+        wait for 2 ns;   --expected: ALUOUT = A*B=300;
+
+        MUXA_SEL_S <= '1'; MUXB_SEL_S <= '1'; ALUOUT_EN_S <= '1'; ZERO_SEL_S <= '0';  SHIFT2_EN_S <= '0'; 	
+        ALU_FUNC_S <= SGE; 		
+        wait for 2 ns;   --expected: ALUOUT = 0;
+
+        MUXA_SEL_S <= '1'; MUXB_SEL_S <= '1'; ALUOUT_EN_S <= '1'; ZERO_SEL_S <= '0';  SHIFT2_EN_S <= '0'; 	
+        ALU_FUNC_S <= SLE; 		
+        wait for 2 ns;   --expected: ALUOUT = 1; 
 		wait; 
 	end process;
 end TEST;
