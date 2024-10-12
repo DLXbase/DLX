@@ -9,148 +9,165 @@ z2
 !i10f 100
 cModel Technology
 Z0 d/home/ms24.11/Desktop/DLX/DLX(HW_CU)
-Eadd4
-Z1 w1727104066
-Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 84
+T_opt
+!s110 1728668971
+VI<a3HoagSHTi7R7M^>98P2
+04 5 4 work dlxtb test 1
+=1-000ae431a4f1-6709652b-10418-6c08
+Z1 o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2020.4;71
+T_opt1
+!s110 1728641749
+Vh8;XeT8Oani@@iQ_X<ZoM2
+04 2 6 work du struct 1
+=1-000ae431a4f1-6708fad4-d355c-1979
+R1
+R2
+n@_opt1
+R3
 R0
-Z5 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/add4.vhd
-Z6 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/add4.vhd
+Eadd4
+Z4 w1728399434
+Z5 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 194
+R0
+Z8 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/add4.vhd
+Z9 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/add4.vhd
 l0
 L6 1
 V>>CL@RIa:13RQ=Mk3TSGm0
 !s100 z`jV9WZGKl^8FIj:c?T]B2
-Z7 OL;C;2020.4;71
+Z10 OL;C;2020.4;71
 32
-Z8 !s110 1728138753
+Z11 !s110 1728661662
 !i10b 1
-Z9 !s108 1728138753.000000
-Z10 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/add4.vhd|
-Z11 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/add4.vhd|
+Z12 !s108 1728661662.000000
+Z13 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/add4.vhd|
+Z14 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/add4.vhd|
 !i113 0
-Z12 o-work work
-Z13 tExplicit 1 CvgOpt 0
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
 Abeh
-R2
-R3
-R4
+R5
+R6
+R7
 DEx4 work 4 add4 0 22 >>CL@RIa:13RQ=Mk3TSGm0
-!i122 84
+!i122 194
 l15
 L13 7
 V2Q?<FiCa_c3Q4``F?lcSd3
 !s100 6O6DhY`gCO<V^c8ZceRe:1
-R7
-32
-R8
-!i10b 1
-R9
 R10
-R11
-!i113 0
-R12
-R13
-Ealu
-Z14 w1727629946
-Z15 DPx4 work 8 alu_type 0 22 hQPPi6OknmlAj]iY0?05z0
-Z16 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z17 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-R3
-R4
-!i122 101
-R0
-Z18 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd
-Z19 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd
-l0
-L7 1
-Vaje@KA7_::@IQ46_NfFZ_1
-!s100 X;=C9=^=`ZF[G4jR8M0Ea2
-R7
 32
-Z20 !s110 1728138915
+R11
 !i10b 1
-Z21 !s108 1728138915.000000
-Z22 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd|
-Z23 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu.vhd|
-!i113 0
 R12
 R13
-Abehavior
+R14
+!i113 0
 R15
 R16
-R17
-R3
-R4
-DEx4 work 3 alu 0 22 aje@KA7_::@IQ46_NfFZ_1
-!i122 101
-l19
-L14 52
-VIJo_0JiPm6@@D]7REbNlD1
-!s100 O`I@48gc=hkce`IjJJnG63
+Ealu
+Z17 w1728412434
+Z18 DPx4 work 8 alu_type 0 22 OboP>T?Oo8bKao:hA8dE^3
+R5
+R6
 R7
+!i122 219
+R0
+Z19 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu.vhd
+Z20 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu.vhd
+l0
+L8 1
+VbS[8b4X8C@9f84Gjm;OVM2
+!s100 <?4b?_Xlb7^`Tn6n=MPP]1
+R10
 32
-R20
+Z21 !s110 1728661815
 !i10b 1
+Z22 !s108 1728661815.000000
+Z23 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu.vhd|
+Z24 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu.vhd|
+!i113 0
+R15
+R16
+Abehavior
+R18
+R5
+R6
+R7
+DEx4 work 3 alu 0 22 bS[8b4X8C@9f84Gjm;OVM2
+!i122 219
+l22
+L15 51
+V40RXi?97kjd8J=>ZH;P530
+!s100 bWKSI:KBR8=jh;P?jf@dz1
+R10
+32
 R21
+!i10b 1
 R22
 R23
+R24
 !i113 0
-R12
-R13
+R15
+R16
 Palu_type
-!i122 100
-w1728138903
+!i122 218
+R4
 R0
-8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu_type.vhd
-F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu_type.vhd
+8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu_type.vhd
+F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu_type.vhd
 l0
 L1 1
-VhQPPi6OknmlAj]iY0?05z0
-!s100 :iff`7dlnT9`81hI7]Rh10
-R7
+VOboP>T?Oo8bKao:hA8dE^3
+!s100 0L;K[bXRoQ2nN2[Z6TgNK0
+R10
 32
-!s110 1728138907
+!s110 1728661814
 !i10b 1
-!s108 1728138907.000000
-!s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu_type.vhd|
-!s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/alu_type.vhd|
+!s108 1728661813.000000
+!s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu_type.vhd|
+!s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu_type.vhd|
 !i113 0
-R12
-R13
+R15
+R16
 Eand2
-Z24 w1727540355
-R3
 R4
-!i122 89
+R6
+R7
+!i122 200
 R0
-Z25 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/ND2.vhd
-Z26 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/ND2.vhd
+Z25 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/ND2.vhd
+Z26 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/ND2.vhd
 l0
 L4 1
 VVhQzzO?3>9Q>j@::3XJ<h1
 !s100 EPY`8meDC5@YmzHDFC2aW0
-R7
+R10
 32
-Z27 !s110 1728138768
+Z27 !s110 1728661669
 !i10b 1
-Z28 !s108 1728138768.000000
-Z29 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/ND2.vhd|
-Z30 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/ND2.vhd|
+Z28 !s108 1728661669.000000
+Z29 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/ND2.vhd|
+Z30 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/ND2.vhd|
 !i113 0
-R12
-R13
+R15
+R16
 Abehavioral
-R3
-R4
+R6
+R7
 DEx4 work 4 and2 0 22 VhQzzO?3>9Q>j@::3XJ<h1
-!i122 89
+!i122 200
 l12
 L10 5
 VR2Qe>HaQ02<B5MlgWDTH@2
 !s100 A_Bz:<l1^D<;2AnfI[_o>1
-R7
+R10
 32
 R27
 !i10b 1
@@ -158,644 +175,986 @@ R28
 R29
 R30
 !i113 0
-R12
-R13
-Edatapath
-Z31 w1728332684
 R15
-R3
-R4
-!i122 132
-R0
-Z32 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
-Z33 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
-l0
-L5 1
-VDfQe`UN[R:`7oGm6WT<6e2
-!s100 QDbYS77akGmG=JlBhQ^O<1
-R7
-32
-Z34 !s110 1728332693
-!i10b 1
-Z35 !s108 1728332692.000000
-Z36 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd|
-!s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd|
-!i113 0
-R12
-R13
-Astructural
-R15
-R3
-R4
-DEx4 work 8 datapath 0 22 DfQe`UN[R:`7oGm6WT<6e2
-!i122 132
-l115
-L22 189
-VB`c_04`>@U^dB9EMl7:Zb1
-!s100 ^jTkc>Tdg]<4nn2D?SCle1
-R7
-32
-R34
-!i10b 1
-R35
-R36
-Z37 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd|
-!i113 0
-R12
-R13
-Edu
-Z38 w1727694093
-R3
-R4
-!i122 93
-R0
-Z39 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/DU.vhd
-Z40 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/DU.vhd
-l0
-L5 1
-V?UMR1N=KaT>>EEna_XJH_2
-!s100 z7GbmWoaho:ohkH@oeGe50
-R7
-32
-Z41 !s110 1728138773
-!i10b 1
-Z42 !s108 1728138772.000000
-Z43 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/DU.vhd|
-Z44 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/DU.vhd|
-!i113 0
-R12
-R13
-Astruct
-R3
-R4
-DEx4 work 2 du 0 22 ?UMR1N=KaT>>EEna_XJH_2
-!i122 93
-l71
-L15 129
-VfUJDMzLIOnHT;K]CBmF:l2
-!s100 bhUl=5mOiC51hKV9MX_AX1
-R7
-32
-R41
-!i10b 1
-R42
-R43
-R44
-!i113 0
-R12
-R13
-Eexu
-Z45 w1728140660
-R15
-R3
-R4
-!i122 125
-R0
-Z46 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
-Z47 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd
-l0
-L5 1
-V77jiD^HjCMh;LPj>W@[?13
-!s100 n2eKnAV9]eLf_7X7m0<Q]3
-R7
-32
-Z48 !s110 1728140673
-!i10b 1
-Z49 !s108 1728140673.000000
-Z50 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd|
-Z51 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/EXU.vhd|
-!i113 0
-R12
-R13
-Astructural
-R15
-R3
-R4
-DEx4 work 3 exu 0 22 77jiD^HjCMh;LPj>W@[?13
-!i122 125
-l66
-L25 106
-VPCF8C57N]NAcF9EN2N[AO3
-!s100 6@i9jz[5IRLif;?21jH6S3
-R7
-32
-R48
-!i10b 1
-R49
-R50
-R51
-!i113 0
-R12
-R13
-Efu
-Z52 w1727692907
-R3
-R4
-!i122 87
-R0
-Z53 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/FU.vhd
-Z54 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/FU.vhd
-l0
-L4 1
-V;Ic]Gk4U?Dn[:1mXANfG=3
-!s100 mThm=fnXD3B930h2XL=WR2
-R7
-32
-Z55 !s110 1728138757
-!i10b 1
-Z56 !s108 1728138757.000000
-Z57 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/FU.vhd|
-Z58 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/FU.vhd|
-!i113 0
-R12
-R13
-Astructural
-R3
-R4
-DEx4 work 2 fu 0 22 ;Ic]Gk4U?Dn[:1mXANfG=3
-!i122 87
-l45
-L16 78
-VFRb2<cbJS]KC_:36kjJ]d1
-!s100 ]T?4Yikh`VM_U0MQ2nJN]0
-R7
-32
-R55
-!i10b 1
-R56
-R57
-R58
-!i113 0
-R12
-R13
-Eiram
-Z59 w1726481706
-Z60 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
 R16
-R3
-R4
-!i122 85
+Pconstants
+R6
+R7
+!i122 191
+w1728658895
 R0
-Z61 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/a.c-IRAM.vhd
-Z62 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/a.c-IRAM.vhd
+8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/constants.vhd
+F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/constants.vhd
+l0
+L5 1
+V[Y:FSJhBNJXgKLXG1ICLi2
+!s100 fgOeYS39YR]nTmMbSkhE:0
+R10
+32
+!s110 1728661655
+!i10b 1
+!s108 1728661655.000000
+!s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/constants.vhd|
+!s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/constants.vhd|
+!i113 0
+R15
+R16
+Edatapath
+Z31 w1728657866
+Z32 DPx4 work 9 constants 0 22 [Y:FSJhBNJXgKLXG1ICLi2
+R18
+R6
+R7
+!i122 223
+R0
+Z33 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
+Z34 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd
+l0
+L6 1
+VaJW@8S`PmePY71z6n1hnH2
+!s100 GgnMlBLRU0hofjnoVP;CW2
+R10
+32
+Z35 !s110 1728664078
+!i10b 1
+Z36 !s108 1728664078.000000
+Z37 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd|
+Z38 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd|
+!i113 0
+R15
+R16
+Astructural
+R32
+R18
+R6
+R7
+DEx4 work 8 datapath 0 22 aJW@8S`PmePY71z6n1hnH2
+!i122 223
+l142
+L56 193
+V0RS]Dff6>feOeHCWG>[`93
+!s100 `8ST6an:o;;`i9^`XiE<Y1
+R10
+32
+R35
+!i10b 1
+R36
+R37
+R38
+!i113 0
+R15
+R16
+Edlx
+w1728568127
+R18
+Z39 DPx4 work 9 constants 0 22 6Ci3WoPB73He;_l2YmMKI1
+Z40 DPx4 work 7 mytypes 0 22 2BP72`Af8=ThK6?NnJ7z41
+R6
+R7
+!i122 164
+R0
+8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a-DLX.vhd
+F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a-DLX.vhd
+l0
+L7 1
+VM>CcljZ`l6XSZ9hgGL1Dl3
+!s100 1lzCe[kCkT:0S5PI?ji6Y2
+R10
+32
+!s110 1728595805
+!i10b 1
+!s108 1728595804.000000
+!s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.d-DRAMv2.vhd|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.a-CU_HW.vhd|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a-DLX.vhd|
+!s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a-DLX.vhd|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.a-CU_HW.vhd|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b-DataPath.vhd|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.d-DRAMv2.vhd|
+!i113 0
+R15
+R16
+Edlx_cu
+Z41 w1728668478
+R40
+R32
+R18
+R5
+R6
+R7
+!i122 234
+R0
+Z42 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.a-CU_HW.vhd
+Z43 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.a-CU_HW.vhd
+l0
+L13 1
+VoN[67NblYk;FgW>BeU69`2
+!s100 ^Od5k8e:5N9Ji5BW5<9OR2
+R10
+32
+Z44 !s110 1728668834
+!i10b 1
+Z45 !s108 1728668834.000000
+Z46 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.a-CU_HW.vhd|
+Z47 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.a-CU_HW.vhd|
+!i113 0
+R15
+R16
+Adlx_cu_hw
+R40
+R32
+R18
+R5
+R6
+R7
+DEx4 work 6 dlx_cu 0 22 oN[67NblYk;FgW>BeU69`2
+!i122 234
+l79
+L58 194
+V:CR33kLhQL<aLBTfYUUmC3
+!s100 U:BhO^gJ?>CKKBo@nBm770
+R10
+32
+R44
+!i10b 1
+R45
+R46
+R47
+!i113 0
+R15
+R16
+Edlxtb
+Z48 w1728668925
+R18
+R32
+R40
+R6
+R7
+!i122 236
+R0
+Z49 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/DLX_TB_V2.vhd
+Z50 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/DLX_TB_V2.vhd
+l0
+L7 1
+VdMk0YYo<o8S05=daR;UJ]2
+!s100 oZXkiPVK<?cV6:dH7FD4T3
+R10
+32
+Z51 !s110 1728668958
+!i10b 1
+Z52 !s108 1728668958.000000
+Z53 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/DLX_TB_V2.vhd|
+Z54 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/DLX_TB_V2.vhd|
+!i113 0
+R15
+R16
+Atest
+R18
+R32
+R40
+R6
+R7
+DEx4 work 5 dlxtb 0 22 dMk0YYo<o8S05=daR;UJ]2
+!i122 236
+l199
+L10 294
+V;KIBJC5JSCd8Dd4eo@eCe3
+!s100 NQ>0bgG=0;hU]AC>15AMF2
+R10
+32
+R51
+!i10b 1
+R52
+R53
+R54
+!i113 0
+R15
+R16
+Edu
+Z55 w1728595419
+R32
+R6
+R7
+!i122 222
+R0
+Z56 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/DU.vhd
+Z57 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/DU.vhd
+l0
+L7 1
+VVbQmj0cLn9n?<YNo:fC>C0
+!s100 Hnc]IW9hIzb0?l0RDMNo:0
+R10
+32
+Z58 !s110 1728664068
+!i10b 1
+Z59 !s108 1728664067.000000
+Z60 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/DU.vhd|
+Z61 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/DU.vhd|
+!i113 0
+R15
+R16
+Astruct
+R32
+R6
+R7
+DEx4 work 2 du 0 22 VbQmj0cLn9n?<YNo:fC>C0
+!i122 222
+l74
+L17 133
+VmUSBJRZl=>0T2QNIW1_T53
+!s100 k04ZFM^FK:8m;S50o>GaN3
+R10
+32
+R58
+!i10b 1
+R59
+R60
+R61
+!i113 0
+R15
+R16
+Eexu
+Z62 w1728656914
+R32
+R18
+R6
+R7
+!i122 216
+R0
+Z63 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/EXU.vhd
+Z64 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/EXU.vhd
+l0
+L6 1
+VUC7U26Uh`ISG07[2;Z9:72
+!s100 kDnjTIBd=o0Q5[cg4?bEP3
+R10
+32
+Z65 !s110 1728661797
+!i10b 1
+Z66 !s108 1728661797.000000
+Z67 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/EXU.vhd|
+Z68 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/EXU.vhd|
+!i113 0
+R15
+R16
+Astructural
+R32
+R18
+R6
+R7
+DEx4 work 3 exu 0 22 UC7U26Uh`ISG07[2;Z9:72
+!i122 216
+l68
+L26 112
+Vzn8^_HVHiQKOUi2M;8QlY0
+!s100 e;CE0`ojkd8a?Pb;eSCT11
+R10
+32
+R65
+!i10b 1
+R66
+R67
+R68
+!i113 0
+R15
+R16
+Efu
+R4
+R32
+R6
+R7
+!i122 207
+R0
+Z69 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/FU.vhd
+Z70 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/FU.vhd
+l0
+L6 1
+VB`m:G=BA5`T:3@GC>Ql=l2
+!s100 `PFZ2jn:FD`UT=RgE[?i@0
+R10
+32
+Z71 !s110 1728661680
+!i10b 1
+Z72 !s108 1728661680.000000
+Z73 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/FU.vhd|
+Z74 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/FU.vhd|
+!i113 0
+R15
+R16
+Astructural
+R32
+R6
+R7
+DEx4 work 2 fu 0 22 B`m:G=BA5`T:3@GC>Ql=l2
+!i122 207
+l49
+L20 78
+Vc<4;^MO4TVP4Ek_cB6GZ30
+!s100 8=[U5Eh]FjP>Pk1ne@eOz1
+R10
+32
+R71
+!i10b 1
+R72
+R73
+R74
+!i113 0
+R15
+R16
+Eiram
+Z75 w1728658917
+Z76 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+Z77 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R6
+R7
+!i122 212
+R0
+Z78 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd
+Z79 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd
 l0
 L11 1
 VP=6f>F`M_a[G`RL:2H[L;0
 !s100 lCk^O12_GA:9f080R9PQ?1
-R7
+R10
 32
-Z63 !s110 1728138754
+Z80 !s110 1728661690
 !i10b 1
-Z64 !s108 1728138754.000000
-Z65 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/a.c-IRAM.vhd|
-Z66 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/IF/a.c-IRAM.vhd|
+Z81 !s108 1728661690.000000
+Z82 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd|
+Z83 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd|
 !i113 0
-R12
-R13
-Airam_bhe
-R60
+R15
 R16
-R3
-R4
-DEx4 work 4 iram 0 22 P=6f>F`M_a[G`RL:2H[L;0
-!i122 85
-l29
-L23 32
-V17dAVg2PQoWYm:<20L`^e1
-!s100 7;ioSOeO^<F?oXo00Na]X1
+Airam_bhe
+R76
+R77
+R6
 R7
+DEx4 work 4 iram 0 22 P=6f>F`M_a[G`RL:2H[L;0
+!i122 212
+l29
+L23 33
+V:782oA2`4^UWYM@af7TX23
+!s100 fBaka[BeR:L:ACN]XUzoX3
+R10
 32
-R63
+R80
 !i10b 1
-R64
-R65
-R66
+R81
+R82
+R83
 !i113 0
-R12
-R13
+R15
+R16
 Eis_zero
-Z67 w1728139393
-R3
-R4
-!i122 112
+Z84 w1728656888
+R6
+R7
+!i122 197
 R0
-Z68 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd
-Z69 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd
+Z85 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/is_zero.vhd
+Z86 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/is_zero.vhd
 l0
 L5 1
-VN^:TaJMT1bMGWBS^C?FGR2
-!s100 JPQ@OaFUYKmJ=8N_On4?:1
-R7
+V_F5z@3f^Bn6:6O^X26J[:0
+!s100 21BTm<DRA[FNET4RFI<<31
+R10
 32
-Z70 !s110 1728140166
+Z87 !s110 1728661666
 !i10b 1
-Z71 !s108 1728140165.000000
-Z72 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd|
-Z73 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/is_zero.vhd|
+Z88 !s108 1728661666.000000
+Z89 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/is_zero.vhd|
+Z90 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/is_zero.vhd|
 !i113 0
-R12
-R13
+R15
+R16
 Abeh
-R3
-R4
-DEx4 work 7 is_zero 0 22 N^:TaJMT1bMGWBS^C?FGR2
-!i122 112
-l16
-L13 21
-VhKhm5la=CH^[SNO?n3Bb^1
-!s100 m?egnBOb2>_]jFfL;bXgZ2
+R6
 R7
+DEx4 work 7 is_zero 0 22 _F5z@3f^Bn6:6O^X26J[:0
+!i122 197
+l17
+L14 24
+VfJ5HH4>g>GU192c5eL7df1
+!s100 VCiRJGb<d5<Bn[D`8hD:73
+R10
 32
-R70
+R87
 !i10b 1
-R71
-R72
-R73
+R88
+R89
+R90
 !i113 0
-R12
-R13
+R15
+R16
 Eiv
-Z74 w1727534045
-R3
 R4
-!i122 88
+R6
+R7
+!i122 198
 R0
-Z75 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/iv.vhd
-Z76 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/iv.vhd
+Z91 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/iv.vhd
+Z92 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/iv.vhd
 l0
 L5 1
 V7f4c?QORFEE`z0dJU>ef92
 !s100 XFe=EZ6>ohg7V9@b6Vf:M0
-R7
+R10
 32
-Z77 !s110 1728138767
+Z93 !s110 1728661667
 !i10b 1
-Z78 !s108 1728138767.000000
-Z79 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/iv.vhd|
-Z80 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/iv.vhd|
+Z94 !s108 1728661667.000000
+Z95 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/iv.vhd|
+Z96 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/iv.vhd|
 !i113 0
-R12
-R13
+R15
+R16
 Abehavioral
-R3
-R4
+R6
+R7
 DEx4 work 2 iv 0 22 7f4c?QORFEE`z0dJU>ef92
-!i122 88
+!i122 198
 l13
 L11 7
 VeSk=`lcP0DEGdC4hmi8R_1
 !s100 ;J^zC_0h[fL`g;]S_6Z:S1
-R7
+R10
 32
-R77
+R93
 !i10b 1
-R78
-R79
-R80
+R94
+R95
+R96
 !i113 0
-R12
-R13
+R15
+R16
 Emu
-R67
-R60
-R3
 R4
-!i122 117
+R32
+R6
+R7
+!i122 208
 R0
-Z81 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
-Z82 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd
+Z97 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/MU.vhd
+Z98 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/MU.vhd
 l0
-L6 1
-V=XAUa97_k]6X<O;M46W312
-!s100 9KYKiLg?Y<O0cQIB9FTfc1
-R7
+L7 1
+V<S8^S?Q`?h_0T_ez`J`z73
+!s100 Aghc>T8Gj3aXf598zObjb2
+R10
 32
-Z83 !s110 1728140318
+Z99 !s110 1728661681
 !i10b 1
-Z84 !s108 1728140318.000000
-Z85 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd|
-Z86 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/MU.vhd|
+Z100 !s108 1728661681.000000
+Z101 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/MU.vhd|
+Z102 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/MU.vhd|
 !i113 0
-R12
-R13
+R15
+R16
 Astructural
-R60
-R3
-R4
-DEx4 work 2 mu 0 22 =XAUa97_k]6X<O;M46W312
-!i122 117
-l58
-L25 89
-VnghYRdG>_lKYSHLG216Qz0
-!s100 I8b71YFnWfRR_mMT^[5GV1
+R32
+R6
 R7
+DEx4 work 2 mu 0 22 <S8^S?Q`?h_0T_ez`J`z73
+!i122 208
+l59
+L26 89
+V3]RQFNdLg;_]Fg0Zk=H<F2
+!s100 ??_0bb5bNK4RlD3EU8k?f2
+R10
 32
-R83
+R99
 !i10b 1
-R84
-R85
-R86
+R100
+R101
+R102
 !i113 0
-R12
-R13
+R15
+R16
 Emux21
-R67
-R3
 R4
-!i122 118
+R6
+R7
+!i122 199
 R0
-Z87 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/mux21.vhd
-Z88 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/mux21.vhd
+Z103 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/mux21.vhd
+Z104 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/mux21.vhd
 l0
 L6 1
 VJZ:ogdoZJ>SBA6gzRA6PV1
 !s100 mn5[<aX3h;ZWW^]eDjWIA3
-R7
+R10
 32
-Z89 !s110 1728140323
+Z105 !s110 1728661668
 !i10b 1
-Z90 !s108 1728140323.000000
-Z91 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/mux21.vhd|
-Z92 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/mux21.vhd|
+Z106 !s108 1728661668.000000
+Z107 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/mux21.vhd|
+Z108 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/mux21.vhd|
 !i113 0
-R12
-R13
+R15
+R16
 Abeh
-R3
-R4
+R6
+R7
 DEx4 work 5 mux21 0 22 JZ:ogdoZJ>SBA6gzRA6PV1
-!i122 118
+!i122 199
 l17
 L15 6
 VZYN;z:=`i<inONOcNCU@J1
 !s100 Vb74`@MnZiS58=JOaeD1G3
-R7
+R10
 32
-R89
+R105
 !i10b 1
-R90
-R91
-R92
+R106
+R107
+R108
 !i113 0
-R12
-R13
-Ereg
-Z93 w1726654910
-R3
-R4
-!i122 116
+R15
+R16
+Pmytypes
+R6
+R7
+!i122 192
+w1728483184
 R0
-Z94 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/reg.vhd
-Z95 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/reg.vhd
+8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/myTypes.vhd
+F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/myTypes.vhd
+l0
+L4 1
+V2BP72`Af8=ThK6?NnJ7z41
+!s100 BWHd6g>gkb62F8:QmPiM_0
+R10
+32
+!s110 1728661656
+!i10b 1
+!s108 1728661656.000000
+!s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/myTypes.vhd|
+!s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/myTypes.vhd|
+!i113 0
+R15
+R16
+Ereg
+Z109 w1728594282
+R6
+R7
+!i122 204
+R0
+Z110 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg.vhd
+Z111 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg.vhd
 l0
 L4 1
 VZQ9chdOG61hTj:lHI3nWh2
 !s100 h7:OhJkekZTm7T]Y;Z0:C3
-R7
+R10
 32
-Z96 !s110 1728140317
+Z112 !s110 1728661674
 !i10b 1
-Z97 !s108 1728140317.000000
-Z98 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/reg.vhd|
-Z99 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/reg.vhd|
+Z113 !s108 1728661673.000000
+Z114 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg.vhd|
+Z115 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg.vhd|
 !i113 0
-R12
-R13
+R15
+R16
 Abeh
-R3
-R4
+R6
+R7
 DEx4 work 3 reg 0 22 ZQ9chdOG61hTj:lHI3nWh2
-!i122 116
+!i122 204
 l12
 L11 15
 Va;Mb?E:5eaW9AK14P?[nm0
 !s100 PAj[K]P`[:z<1gXD_Af]_2
-R7
+R10
 32
-R96
-!i10b 1
-R97
-R98
-R99
-!i113 0
-R12
-R13
-Ereg_file
-Z100 w1727449845
-R16
-R17
-R2
-Z101 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
-R3
-R4
-!i122 91
-R0
-Z102 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/reg_file.vhd
-Z103 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/reg_file.vhd
-l0
-L7 1
-VbdZ]eJGg44<eK9`29oj;L3
-!s100 GaAYjRge[T46S]LGB^ZNU3
-R7
-32
-Z104 !s110 1728138771
-!i10b 1
-Z105 !s108 1728138770.000000
-Z106 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/reg_file.vhd|
-Z107 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/reg_file.vhd|
-!i113 0
-R12
-R13
-Abeh
-R16
-R17
-R2
-R101
-R3
-R4
-DEx4 work 8 reg_file 0 22 bdZ]eJGg44<eK9`29oj;L3
-!i122 91
-l25
-L20 30
-Vem<<ndeD0EJgiibYWUfJ[2
-!s100 QZQWdG665l9744Mm4J3[g0
-R7
-32
-R104
-!i10b 1
-R105
-R106
-R107
-!i113 0
-R12
-R13
-Erwmem
-Z108 w1727621470
-R60
-R2
-R3
-R4
-!i122 79
-R0
-Z109 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-Z110 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd
-l0
-L8 1
-V0`C0l0UTDn@@lQ5YT=U?@1
-!s100 :iXZP4ZD4gaFMX=XJ=?We3
-R7
-32
-Z111 !s110 1727621545
-!i10b 1
-Z112 !s108 1727621545.000000
-Z113 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd|
-Z114 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/MEM/DRAM.vhd|
-!i113 0
-R12
-R13
-Abeh
-R60
-R2
-R3
-R4
-DEx4 work 5 rwmem 0 22 0`C0l0UTDn@@lQ5YT=U?@1
-!i122 79
-l33
-L29 34
-VeS[@]hJ<B8CJA9>L89Bie1
-!s100 Xe;CFoJXUJgl:C4Ia`1mj2
-R7
-32
-R111
-!i10b 1
 R112
+!i10b 1
 R113
 R114
+R115
 !i113 0
-R12
-R13
-Eshift2
-Z115 w1727543464
-R2
-R3
-R4
-!i122 105
+R15
+R16
+Ereg_file
+Z116 w1728665886
+R32
+R77
+Z117 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R5
+Z118 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+R6
+R7
+!i122 225
 R0
-Z116 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd
-Z117 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd
+Z119 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg_file.vhd
+Z120 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg_file.vhd
+l0
+L8 1
+VTk0hj=Ym4kKOUcXTOZ2I60
+!s100 g?=TgUgVb@O]bP`EOP0Sh3
+R10
+32
+Z121 !s110 1728665898
+!i10b 1
+Z122 !s108 1728665898.000000
+Z123 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg_file.vhd|
+Z124 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg_file.vhd|
+!i113 0
+R15
+R16
+Abeh
+R32
+R77
+R117
+R5
+R118
+R6
+R7
+DEx4 work 8 reg_file 0 22 Tk0hj=Ym4kKOUcXTOZ2I60
+!i122 225
+l26
+L21 34
+V[c>8^5AiEIm5?`WmHh0];1
+!s100 z6JoP;V85N2CbF`HWG4^o0
+R10
+32
+R121
+!i10b 1
+R122
+R123
+R124
+!i113 0
+R15
+R16
+Erwmem
+Z125 w1728668828
+R76
+R5
+R6
+R7
+!i122 235
+R0
+Z126 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.d-DRAMv2.vhd
+Z127 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.d-DRAMv2.vhd
+l0
+L9 1
+VWIa>]NX7G72TggODT=:h[1
+!s100 <D54U0<z?P1@=@?[g943S1
+R10
+32
+Z128 !s110 1728668934
+!i10b 1
+Z129 !s108 1728668934.000000
+Z130 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.d-DRAMv2.vhd|
+Z131 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.d-DRAMv2.vhd|
+!i113 0
+R15
+R16
+Abeh
+R76
+R5
+R6
+R7
+DEx4 work 5 rwmem 0 22 WIa>]NX7G72TggODT=:h[1
+!i122 235
+l53
+L30 83
+VC15>b4_X7`dSeBX89X8393
+!s100 YP:BCPZSMNN6a2W@EcFLL2
+R10
+32
+R128
+!i10b 1
+R129
+R130
+R131
+!i113 0
+R15
+R16
+Erwmemv1
+Z132 w1728567547
+R76
+R5
+R6
+R7
+!i122 70
+R0
+Z133 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.d-DRAM.vhd
+Z134 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.d-DRAM.vhd
+l0
+L8 1
+V`VNW^hLToLJbRo7_gh3lf0
+!s100 HGL0ZUd;VR]]:X466AJ<V1
+R10
+32
+Z135 !s110 1728590394
+!i10b 1
+Z136 !s108 1728590394.000000
+Z137 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.d-DRAM.vhd|
+Z138 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.d-DRAM.vhd|
+!i113 0
+R15
+R16
+Abeh
+R76
+R5
+R6
+R7
+DEx4 work 7 rwmemv1 0 22 `VNW^hLToLJbRo7_gh3lf0
+!i122 70
+l33
+L29 34
+V;VcdKKnogLdKT2JzjVU<G3
+!s100 a?73^Y8ZG9=<FSGLA`YP=2
+R10
+32
+R135
+!i10b 1
+R136
+R137
+R138
+!i113 0
+R15
+R16
+Eshift2
+Z139 w1728414587
+R5
+R6
+R7
+!i122 202
+R0
+Z140 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/shift2.vhd
+Z141 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/shift2.vhd
 l0
 L5 1
 VlKLnYB1fHjofH;fMH6]@n0
 !s100 c=PfoJ?dCLFOK0JgUeo2e2
-R7
+R10
 32
-Z118 !s110 1728138921
+Z142 !s110 1728661671
 !i10b 1
-Z119 !s108 1728138921.000000
-Z120 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd|
-Z121 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/EX/shift2.vhd|
+Z143 !s108 1728661671.000000
+Z144 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/shift2.vhd|
+Z145 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/shift2.vhd|
 !i113 0
-R12
-R13
+R15
+R16
 Abehavioral
-R2
-R3
-R4
+R5
+R6
+R7
 DEx4 work 6 shift2 0 22 lKLnYB1fHjofH;fMH6]@n0
-!i122 105
+!i122 202
 l14
-L13 10
-VoL4<ICIJIKP[YZ[WP7h8j0
-!s100 KdiO;W1a2AWP_RSDhMnz`2
-R7
+L13 12
+VB^XQanT:[[>7;ClG?O>`S0
+!s100 AaNc^AI>PXSGUF[ICN<Lk0
+R10
 32
-R118
+R142
 !i10b 1
-R119
-R120
-R121
+R143
+R144
+R145
 !i113 0
-R12
-R13
-Esign_extend
-Z122 w1726662834
-R3
+R15
+R16
+Eshifter_generic
 R4
-!i122 92
+R117
+R77
+R6
+R7
+!i122 193
 R0
-Z123 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/sign_extend.vhd
-Z124 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/sign_extend.vhd
+Z146 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/01-generic_shifter.vhd
+Z147 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/01-generic_shifter.vhd
 l0
-L5 1
-VYI`E<]7iN`MU7F_[>eK@73
-!s100 =W6cb`_NTZ@30J<kHKQVk0
-R7
+L10 1
+Vo30e@[]ZY=3mOnhd7Oaa60
+!s100 MkJJNcIQ[8YDbZ;8X2>ZR1
+R10
 32
-R104
+Z148 !s110 1728661661
 !i10b 1
-Z125 !s108 1728138771.000000
-Z126 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/sign_extend.vhd|
-Z127 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/ID/sign_extend.vhd|
+Z149 !s108 1728661661.000000
+Z150 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/01-generic_shifter.vhd|
+Z151 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/01-generic_shifter.vhd|
 !i113 0
-R12
-R13
-Abeh
-R3
-R4
-DEx4 work 11 sign_extend 0 22 YI`E<]7iN`MU7F_[>eK@73
-!i122 92
-l16
-L12 8
-VNzzb^k6meZQLeoH8Ycb@o1
-!s100 lnB`14I]<ez<RlC6];Y<W3
+R15
+R16
+Abehavioral
+R117
+R77
+R6
 R7
+DEx4 work 15 shifter_generic 0 22 o30e@[]ZY=3mOnhd7Oaa60
+!i122 193
+l25
+L23 32
+V2PMNPbA;TVOSH`b1l;knI1
+!s100 h7UNAYc5TT14zmEN]D<lj3
+R10
 32
-R104
+R148
 !i10b 1
-R125
-R126
-R127
+R149
+R150
+R151
 !i113 0
-R12
-R13
-Ewbu
-R67
-R3
-R4
-!i122 119
+R15
+R16
+Esign_extend
+Z152 w1728409617
+R32
+R6
+R7
+!i122 201
 R0
-Z128 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/WBU.vhd
-Z129 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/WBU.vhd
+Z153 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/sign_extend.vhd
+Z154 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/sign_extend.vhd
 l0
 L6 1
-VK24]g^zE?EcnMfeB:kfCA0
-!s100 aOz`09fn]kaHVSf<?Oj[a1
-R7
+VXEETIjVS6:3a6f`D2elNK3
+!s100 eXAjFNz3eGzkVa=Ec=_Xa2
+R10
 32
-Z130 !s110 1728140324
+Z155 !s110 1728661670
 !i10b 1
-Z131 !s108 1728140324.000000
-Z132 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/WBU.vhd|
-Z133 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/WB/WBU.vhd|
+Z156 !s108 1728661670.000000
+Z157 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/sign_extend.vhd|
+Z158 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/sign_extend.vhd|
 !i113 0
-R12
-R13
+R15
+R16
+Abeh
+R32
+R6
+R7
+DEx4 work 11 sign_extend 0 22 XEETIjVS6:3a6f`D2elNK3
+!i122 201
+l17
+L13 8
+VXlMP3[=]z]TEKIaFIfa1Y3
+!s100 Ve3YXH>IzB31LmkE>V94m2
+R10
+32
+R155
+!i10b 1
+R156
+R157
+R158
+!i113 0
+R15
+R16
+Etbcu
+Z159 w1728486352
+R40
+R39
+R18
+R6
+R7
+!i122 165
+R0
+Z160 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/CU_TB.vhd
+Z161 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/CU_TB.vhd
+l0
+L7 1
+V7m2nF_]kBjNab]=X4mAQG1
+!s100 >>jzX1T60<0Y84n^YliK11
+R10
+32
+Z162 !s110 1728595829
+!i10b 1
+Z163 !s108 1728595828.000000
+Z164 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/CU_TB.vhd|
+Z165 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/CU_TB.vhd|
+!i113 0
+R15
+R16
+Atest
+R40
+R39
+R18
+R6
+R7
+DEx4 work 4 tbcu 0 22 7m2nF_]kBjNab]=X4mAQG1
+!i122 165
+l89
+L10 144
+V5UfYN`4IdVD[LER82FRE22
+!s100 zU]E]8abG:f@JETaT6Y3A3
+R10
+32
+R162
+!i10b 1
+R163
+R164
+R165
+!i113 0
+R15
+R16
+Etbduwb
+w1728584290
+R39
+R40
+R18
+R5
+R6
+R7
+!i122 166
+R0
+8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/DU_TB.vhd
+F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/DU_TB.vhd
+l0
+L9 1
+Vi[>jJcm?N39RQfaMfjED82
+!s100 cflEoZGS>6lk;PUofAYnl0
+R10
+32
+!s110 1728595837
+!i10b 1
+!s108 1728595836.000000
+!s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/DU_TB.vhd|
+!s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/DU_TB.vhd|
+!i113 0
+R15
+R16
+Ewbu
+Z166 w1728591520
+R32
+R6
+R7
+!i122 209
+R0
+Z167 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/WBU.vhd
+Z168 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/WBU.vhd
+l0
+L7 1
+V0]kTLbIJGMZZlR`7Z=B3G0
+!s100 iE?=ABUS5NIa<2IAjG^bl0
+R10
+32
+Z169 !s110 1728661682
+!i10b 1
+Z170 !s108 1728661682.000000
+Z171 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/WBU.vhd|
+Z172 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/WBU.vhd|
+!i113 0
+R15
+R16
 Astructural
-R3
-R4
-DEx4 work 3 wbu 0 22 K24]g^zE?EcnMfeB:kfCA0
-!i122 119
-l29
-L18 40
-VF=0P[`e3FDTO[0^KBa<Y72
-!s100 bEZn:J4J?Pi<Og_c`hCa?3
+R32
+R6
 R7
+DEx4 work 3 wbu 0 22 0]kTLbIJGMZZlR`7Z=B3G0
+!i122 209
+l30
+L19 40
+VYWV1J2@j3[?5zjRkmIKlK3
+!s100 X;HIS@W04XFP;_V0JImlQ2
+R10
 32
-R130
+R169
 !i10b 1
-R131
-R132
-R133
+R170
+R171
+R172
 !i113 0
-R12
-R13
+R15
+R16

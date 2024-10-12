@@ -49,9 +49,10 @@ begin
     variable addr_value : integer := 0;
   begin
     -- Apply reset
-    Rst <= '0';
-    wait for 10 ns;
+	wait for 5 ns;
     Rst <= '1';
+    wait for 10 ns;
+    Rst <= '0';
     wait for 10 ns;
 
     -- Test read addresses

@@ -16,6 +16,8 @@ begin
 		begin
 			if en = '1' then
 				Y <= std_logic_vector(shift_left(signed(A),2));
+			else 
+				Y <= A;
 			end if;
 	end process sh2;
 

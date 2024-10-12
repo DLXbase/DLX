@@ -2,6 +2,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use work.constants.all; 
 
+
 -- inputs and outputs are on N bits, defined through generic map
 entity DU is
 	generic (N: integer := WORD_SIZE); 
@@ -31,7 +32,7 @@ architecture struct of DU is
     Port (clk,rst,wr_en: in std_logic; 
         add_rd1: in std_logic_vector(NADDR-1 downto 0);
         add_rd2: in std_logic_vector(NADDR-1 downto 0);
-        add_wr: in std_logic_vector(NADDR-1 downto 0);
+        add_wr: in std_logic_vector(NBIT-1 downto 0);
         datain: in std_logic_vector(NBIT-1 downto 0);
         out2: out std_logic_vector(NBIT-1 downto 0);
         out1: out std_logic_vector(NBIT-1 downto 0));
@@ -66,13 +67,14 @@ architecture struct of DU is
 
 --internal signals
 	signal A_nxt, B_nxt, IMM_nxt, JTA: std_logic_vector (N-1 downto 0); 
-	signal RT_nxt: std_logic_vector (RF_ADDR_SIZE-1 downto 0); 
+	signal RT_nxt: std_logic_vector (WORD_SIZE-1 downto 0); 
 	signal BR_EN_NEG, J_SEL: std_logic; 
+	signal RT_A, RT_B : std_logic_vector(WORD_SIZE-1 downto 0);
 
 begin 
 
 	RF_instance: reg_file
-	generic map(NBIT => 32)
+	generic map(NBIT => WORD_SIZE)
 	port map(clk=> clk ,rst=>rst, wr_en=>wr_en,
 			add_rd1 => IR(25 downto 21), add_rd2 =>IR (20 downto 16), add_wr => ADDR_IN, datain => DATAIN, 
 			out1=>A_nxt, out2 => B_nxt);
@@ -102,15 +104,18 @@ begin
 			 A => IMM_nxt, -- A_nxt is the output read of the reg_file
 			 Y => IMM);    
 
+	RT_A <= "000000000000000000000000000"&IR(15 downto 11);
+	RT_B <= "000000000000000000000000000"&IR(20 downto 16);
+
 	RT_source_mux: mux21 --this mux decides which bits of IR determine the Target Register (for Rtype it's 15:11, for I type it's 20:16)
-	generic map(NBIT=>RF_ADDR_SIZE) --5 bits
-	port map(A => IR(15 downto 11),    --R_type (sel = 1)
-			 B => IR (20 downto 16),   --I_type (sel = 0)
+	generic map(NBIT=>WORD_SIZE) --5 bits
+	port map(A => RT_A,    --R_type (sel = 1)
+			 B => RT_B,   --I_type (sel = 0)
 			 sel => is_R_type, 
 			 muxout => RT_nxt);
 
 	RT_reg_inst: reg 
-	generic map(N=>RF_ADDR_SIZE) --5 bits
+	generic map(N=>WORD_SIZE) --5 bits
 	port map(clk => clk ,rst => rst, en => RT_EN,
 			 A => RT_nxt, 
 			 Y => RT_out); 
@@ -122,7 +127,7 @@ begin
 	AND2_instance:  AND2 
 	port map(a => BR_EN_NEG,
 			 b => J_EN,  
-			 Y => BR_EN_NEG);
+			 Y => J_SEL);
 
 	--compute JTA
 	JTA <= NPC_IN(31 downto 28) & IR(25 downto 0) & "00"; 

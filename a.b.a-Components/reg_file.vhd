@@ -12,7 +12,7 @@ entity reg_file is
   Port (clk,rst,wr_en: in std_logic; 
         add_rd1: in std_logic_vector(NADDR-1 downto 0);
         add_rd2: in std_logic_vector(NADDR-1 downto 0);
-        add_wr: in std_logic_vector(NADDR-1 downto 0);
+        add_wr: in std_logic_vector(NBIT-1 downto 0);
         datain: in std_logic_vector(NBIT-1 downto 0);
         out2: out std_logic_vector(NBIT-1 downto 0);
         out1: out std_logic_vector(NBIT-1 downto 0));
@@ -30,8 +30,11 @@ begin
   process (clk,rst)
           begin 
             if clk'event and clk = '1' then
-		if rst = '1' then regs <= (others => (others =>'0'));
-                else regs <= regs_nxt;
+		        if rst = '1' then 
+					regs <= (others => (others =>'0'));
+                    regs_nxt <= (others => (others =>'0'));
+                else 
+					regs <= regs_nxt;
                 end if;
             end if; 
           end process;
@@ -39,6 +42,7 @@ begin
 -- comb process;
    process(wr_en,add_wr,add_rd1,add_rd2,datain)
      begin
+		regs_nxt <= regs;
        if wr_en = '1' then regs_nxt(to_integer(unsigned(add_wr))) <= datain;
        end if; 
     end process; 

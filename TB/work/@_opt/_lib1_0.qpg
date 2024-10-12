@@ -1,0 +1,961 @@
+m255
+K4
+z2
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB
+T_opt
+!s110 1728552968
+V7<Izz^HG1kWg<391boL?>3
+04 4 4 work tbif test 1
+=1-000ae431a4f1-6707a007-cfbac-2666
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+Eadd4
+Z1 w1728399434
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 9
+R0
+Z5 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/add4.vhd
+Z6 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/add4.vhd
+l0
+L6 1
+V>>CL@RIa:13RQ=Mk3TSGm0
+!s100 z`jV9WZGKl^8FIj:c?T]B2
+Z7 OL;C;2020.4;71
+32
+Z8 !s110 1728551180
+!i10b 1
+Z9 !s108 1728551179.000000
+Z10 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/add4.vhd|
+Z11 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/add4.vhd|
+!i113 0
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Abeh
+R2
+R3
+R4
+DEx4 work 4 add4 0 22 >>CL@RIa:13RQ=Mk3TSGm0
+!i122 9
+l15
+L13 7
+V2Q?<FiCa_c3Q4``F?lcSd3
+!s100 6O6DhY`gCO<V^c8ZceRe:1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Ealu
+Z14 w1728412434
+Z15 DPx4 work 8 alu_type 0 22 OboP>T?Oo8bKao:hA8dE^3
+R2
+R3
+R4
+!i122 8
+R0
+Z16 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu.vhd
+Z17 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu.vhd
+l0
+L8 1
+VbS[8b4X8C@9f84Gjm;OVM2
+!s100 <?4b?_Xlb7^`Tn6n=MPP]1
+R7
+32
+Z18 !s110 1728551179
+!i10b 1
+R9
+Z19 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu.vhd|
+Z20 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu.vhd|
+!i113 0
+R12
+R13
+Abehavior
+R15
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 bS[8b4X8C@9f84Gjm;OVM2
+!i122 8
+l22
+L15 51
+V40RXi?97kjd8J=>ZH;P530
+!s100 bWKSI:KBR8=jh;P?jf@dz1
+R7
+32
+R18
+!i10b 1
+R9
+R19
+R20
+!i113 0
+R12
+R13
+Palu_type
+!i122 7
+R1
+R0
+8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu_type.vhd
+F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu_type.vhd
+l0
+L1 1
+VOboP>T?Oo8bKao:hA8dE^3
+!s100 0L;K[bXRoQ2nN2[Z6TgNK0
+R7
+32
+R18
+!i10b 1
+R9
+!s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu_type.vhd|
+!s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu_type.vhd|
+!i113 0
+R12
+R13
+Eand2
+R1
+R3
+R4
+!i122 4
+R0
+Z21 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/ND2.vhd
+Z22 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/ND2.vhd
+l0
+L4 1
+VVhQzzO?3>9Q>j@::3XJ<h1
+!s100 EPY`8meDC5@YmzHDFC2aW0
+R7
+32
+R18
+!i10b 1
+R9
+Z23 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/ND2.vhd|
+Z24 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/ND2.vhd|
+!i113 0
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 4 and2 0 22 VhQzzO?3>9Q>j@::3XJ<h1
+!i122 4
+l12
+L10 5
+VR2Qe>HaQ02<B5MlgWDTH@2
+!s100 A_Bz:<l1^D<;2AnfI[_o>1
+R7
+32
+R18
+!i10b 1
+R9
+R23
+R24
+!i113 0
+R12
+R13
+Pconstants
+R3
+R4
+!i122 18
+R1
+R0
+8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/constants.vhd
+F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/constants.vhd
+l0
+L5 1
+V=Pe]NANN?>XcVoMA[TTzE0
+!s100 QeYgj@15`Zz9`L[8V[EM^2
+R7
+32
+!s110 1728551217
+!i10b 1
+!s108 1728551217.000000
+!s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/constants.vhd|
+!s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/constants.vhd|
+!i113 0
+R12
+R13
+Efu
+R1
+Z25 DPx4 work 9 constants 0 22 =Pe]NANN?>XcVoMA[TTzE0
+R3
+R4
+!i122 15
+R0
+Z26 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/FU.vhd
+Z27 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/FU.vhd
+l0
+L6 1
+VB`m:G=BA5`T:3@GC>Ql=l2
+!s100 `PFZ2jn:FD`UT=RgE[?i@0
+R7
+32
+Z28 !s110 1728551190
+!i10b 1
+Z29 !s108 1728551190.000000
+Z30 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/FU.vhd|
+Z31 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/FU.vhd|
+!i113 0
+R12
+R13
+Astructural
+R25
+R3
+R4
+DEx4 work 2 fu 0 22 B`m:G=BA5`T:3@GC>Ql=l2
+!i122 15
+l49
+L20 78
+Vc<4;^MO4TVP4Ek_cB6GZ30
+!s100 8=[U5Eh]FjP>Pk1ne@eOz1
+R7
+32
+R28
+!i10b 1
+R29
+R30
+R31
+!i113 0
+R12
+R13
+Eiram
+Z32 w1728464559
+Z33 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+Z34 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R3
+R4
+!i122 16
+R0
+Z35 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd
+Z36 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd
+l0
+L11 1
+VP=6f>F`M_a[G`RL:2H[L;0
+!s100 lCk^O12_GA:9f080R9PQ?1
+R7
+32
+Z37 !s110 1728551196
+!i10b 1
+Z38 !s108 1728551196.000000
+Z39 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd|
+Z40 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd|
+!i113 0
+R12
+R13
+Airam_bhe
+R33
+R34
+R3
+R4
+DEx4 work 4 iram 0 22 P=6f>F`M_a[G`RL:2H[L;0
+!i122 16
+l29
+Z41 L23 32
+VDADcU3cnHiGN:a:JbM;JZ3
+!s100 @iQijz93DVl:NjE=UgV<O0
+R7
+32
+R37
+!i10b 1
+R38
+R39
+R40
+!i113 0
+R12
+R13
+Eis_zero
+R1
+R3
+R4
+!i122 6
+R0
+Z42 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/is_zero.vhd
+Z43 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/is_zero.vhd
+l0
+L5 1
+VN^:TaJMT1bMGWBS^C?FGR2
+!s100 JPQ@OaFUYKmJ=8N_On4?:1
+R7
+32
+R18
+!i10b 1
+R9
+Z44 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/is_zero.vhd|
+Z45 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/is_zero.vhd|
+!i113 0
+R12
+R13
+Abeh
+R3
+R4
+DEx4 work 7 is_zero 0 22 N^:TaJMT1bMGWBS^C?FGR2
+!i122 6
+l16
+L13 21
+VhKhm5la=CH^[SNO?n3Bb^1
+!s100 m?egnBOb2>_]jFfL;bXgZ2
+R7
+32
+R18
+!i10b 1
+R9
+R44
+R45
+!i113 0
+R12
+R13
+Eiv
+R1
+R3
+R4
+!i122 3
+R0
+Z46 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/iv.vhd
+Z47 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/iv.vhd
+l0
+L5 1
+V7f4c?QORFEE`z0dJU>ef92
+!s100 XFe=EZ6>ohg7V9@b6Vf:M0
+R7
+32
+Z48 !s110 1728551178
+!i10b 1
+Z49 !s108 1728551178.000000
+Z50 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/iv.vhd|
+Z51 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/iv.vhd|
+!i113 0
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 2 iv 0 22 7f4c?QORFEE`z0dJU>ef92
+!i122 3
+l13
+L11 7
+VeSk=`lcP0DEGdC4hmi8R_1
+!s100 ;J^zC_0h[fL`g;]S_6Z:S1
+R7
+32
+R48
+!i10b 1
+R49
+R50
+R51
+!i113 0
+R12
+R13
+Emux21
+R1
+R3
+R4
+!i122 5
+R0
+Z52 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/mux21.vhd
+Z53 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/mux21.vhd
+l0
+L6 1
+VJZ:ogdoZJ>SBA6gzRA6PV1
+!s100 mn5[<aX3h;ZWW^]eDjWIA3
+R7
+32
+R18
+!i10b 1
+R9
+Z54 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/mux21.vhd|
+Z55 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/mux21.vhd|
+!i113 0
+R12
+R13
+Abeh
+R3
+R4
+DEx4 work 5 mux21 0 22 JZ:ogdoZJ>SBA6gzRA6PV1
+!i122 5
+l17
+L15 6
+VZYN;z:=`i<inONOcNCU@J1
+!s100 Vb74`@MnZiS58=JOaeD1G3
+R7
+32
+R18
+!i10b 1
+R9
+R54
+R55
+!i113 0
+R12
+R13
+Pmytypes
+R3
+R4
+!i122 0
+w1728483184
+R0
+8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/myTypes.vhd
+F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/myTypes.vhd
+l0
+L4 1
+V2BP72`Af8=ThK6?NnJ7z41
+!s100 BWHd6g>gkb62F8:QmPiM_0
+R7
+32
+!s110 1728551146
+!i10b 1
+!s108 1728551146.000000
+!s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/myTypes.vhd|
+!s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/myTypes.vhd|
+!i113 0
+R12
+R13
+Ereg
+R1
+R3
+R4
+!i122 11
+R0
+Z56 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg.vhd
+Z57 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg.vhd
+l0
+L4 1
+VZQ9chdOG61hTj:lHI3nWh2
+!s100 h7:OhJkekZTm7T]Y;Z0:C3
+R7
+32
+R8
+!i10b 1
+Z58 !s108 1728551180.000000
+Z59 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg.vhd|
+Z60 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg.vhd|
+!i113 0
+R12
+R13
+Abeh
+R3
+R4
+DEx4 work 3 reg 0 22 ZQ9chdOG61hTj:lHI3nWh2
+!i122 11
+l12
+L11 15
+Va;Mb?E:5eaW9AK14P?[nm0
+!s100 PAj[K]P`[:z<1gXD_Af]_2
+R7
+32
+R8
+!i10b 1
+R58
+R59
+R60
+!i113 0
+R12
+R13
+Ereg_file
+R1
+R25
+R34
+Z61 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+Z62 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+R3
+R4
+!i122 12
+R0
+Z63 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg_file.vhd
+Z64 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg_file.vhd
+l0
+L8 1
+V]B[?dVS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                m255
+K4
+z2
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB
+T_opt
+!s110 1728551463
+VOa237Yd[mb530^ASe^9592
+04 4 4 work tbif test 1
+=1-000ae431a4f1-67079a27-4a0c9-5eba
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+Eadd4
+Z1 w1728399434
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 9
+R0
+Z5 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/add4.vhd
+Z6 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/add4.vhd
+l0
+L6 1
+V>>CL@RIa:13RQ=Mk3TSGm0
+!s100 z`jV9WZGKl^8FIj:c?T]B2
+Z7 OL;C;2020.4;71
+32
+Z8 !s110 1728551180
+!i10b 1
+Z9 !s108 1728551179.000000
+Z10 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/add4.vhd|
+Z11 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/add4.vhd|
+!i113 0
+Z12 o-work work
+Z13 tExplicit 1 CvgOpt 0
+Abeh
+R2
+R3
+R4
+DEx4 work 4 add4 0 22 >>CL@RIa:13RQ=Mk3TSGm0
+!i122 9
+l15
+L13 7
+V2Q?<FiCa_c3Q4``F?lcSd3
+!s100 6O6DhY`gCO<V^c8ZceRe:1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Ealu
+Z14 w1728412434
+Z15 DPx4 work 8 alu_type 0 22 OboP>T?Oo8bKao:hA8dE^3
+R2
+R3
+R4
+!i122 8
+R0
+Z16 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu.vhd
+Z17 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu.vhd
+l0
+L8 1
+VbS[8b4X8C@9f84Gjm;OVM2
+!s100 <?4b?_Xlb7^`Tn6n=MPP]1
+R7
+32
+Z18 !s110 1728551179
+!i10b 1
+R9
+Z19 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu.vhd|
+Z20 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu.vhd|
+!i113 0
+R12
+R13
+Abehavior
+R15
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 bS[8b4X8C@9f84Gjm;OVM2
+!i122 8
+l22
+L15 51
+V40RXi?97kjd8J=>ZH;P530
+!s100 bWKSI:KBR8=jh;P?jf@dz1
+R7
+32
+R18
+!i10b 1
+R9
+R19
+R20
+!i113 0
+R12
+R13
+Palu_type
+!i122 7
+R1
+R0
+8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu_type.vhd
+F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu_type.vhd
+l0
+L1 1
+VOboP>T?Oo8bKao:hA8dE^3
+!s100 0L;K[bXRoQ2nN2[Z6TgNK0
+R7
+32
+R18
+!i10b 1
+R9
+!s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu_type.vhd|
+!s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu_type.vhd|
+!i113 0
+R12
+R13
+Eand2
+R1
+R3
+R4
+!i122 4
+R0
+Z21 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/ND2.vhd
+Z22 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/ND2.vhd
+l0
+L4 1
+VVhQzzO?3>9Q>j@::3XJ<h1
+!s100 EPY`8meDC5@YmzHDFC2aW0
+R7
+32
+R18
+!i10b 1
+R9
+Z23 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/ND2.vhd|
+Z24 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/ND2.vhd|
+!i113 0
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 4 and2 0 22 VhQzzO?3>9Q>j@::3XJ<h1
+!i122 4
+l12
+L10 5
+VR2Qe>HaQ02<B5MlgWDTH@2
+!s100 A_Bz:<l1^D<;2AnfI[_o>1
+R7
+32
+R18
+!i10b 1
+R9
+R23
+R24
+!i113 0
+R12
+R13
+Pconstants
+R3
+R4
+!i122 18
+R1
+R0
+8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/constants.vhd
+F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/constants.vhd
+l0
+L5 1
+V=Pe]NANN?>XcVoMA[TTzE0
+!s100 QeYgj@15`Zz9`L[8V[EM^2
+R7
+32
+!s110 1728551217
+!i10b 1
+!s108 1728551217.000000
+!s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/constants.vhd|
+!s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/constants.vhd|
+!i113 0
+R12
+R13
+Efu
+R1
+Z25 DPx4 work 9 constants 0 22 =Pe]NANN?>XcVoMA[TTzE0
+R3
+R4
+!i122 15
+R0
+Z26 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/FU.vhd
+Z27 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/FU.vhd
+l0
+L6 1
+VB`m:G=BA5`T:3@GC>Ql=l2
+!s100 `PFZ2jn:FD`UT=RgE[?i@0
+R7
+32
+Z28 !s110 1728551190
+!i10b 1
+Z29 !s108 1728551190.000000
+Z30 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/FU.vhd|
+Z31 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/FU.vhd|
+!i113 0
+R12
+R13
+Astructural
+R25
+R3
+R4
+DEx4 work 2 fu 0 22 B`m:G=BA5`T:3@GC>Ql=l2
+!i122 15
+l49
+L20 78
+Vc<4;^MO4TVP4Ek_cB6GZ30
+!s100 8=[U5Eh]FjP>Pk1ne@eOz1
+R7
+32
+R28
+!i10b 1
+R29
+R30
+R31
+!i113 0
+R12
+R13
+Eiram
+Z32 w1728464559
+Z33 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+Z34 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R3
+R4
+!i122 16
+R0
+Z35 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd
+Z36 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd
+l0
+L11 1
+VP=6f>F`M_a[G`RL:2H[L;0
+!s100 lCk^O12_GA:9f080R9PQ?1
+R7
+32
+Z37 !s110 1728551196
+!i10b 1
+Z38 !s108 1728551196.000000
+Z39 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd|
+Z40 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd|
+!i113 0
+R12
+R13
+Airam_bhe
+R33
+R34
+R3
+R4
+DEx4 work 4 iram 0 22 P=6f>F`M_a[G`RL:2H[L;0
+!i122 16
+l29
+Z41 L23 32
+VDADcU3cnHiGN:a:JbM;JZ3
+!s100 @iQijz93DVl:NjE=UgV<O0
+R7
+32
+R37
+!i10b 1
+R38
+R39
+R40
+!i113 0
+R12
+R13
+Eis_zero
+R1
+R3
+R4
+!i122 6
+R0
+Z42 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/is_zero.vhd
+Z43 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/is_zero.vhd
+l0
+L5 1
+VN^:TaJMT1bMGWBS^C?FGR2
+!s100 JPQ@OaFUYKmJ=8N_On4?:1
+R7
+32
+R18
+!i10b 1
+R9
+Z44 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/is_zero.vhd|
+Z45 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/is_zero.vhd|
+!i113 0
+R12
+R13
+Abeh
+R3
+R4
+DEx4 work 7 is_zero 0 22 N^:TaJMT1bMGWBS^C?FGR2
+!i122 6
+l16
+L13 21
+VhKhm5la=CH^[SNO?n3Bb^1
+!s100 m?egnBOb2>_]jFfL;bXgZ2
+R7
+32
+R18
+!i10b 1
+R9
+R44
+R45
+!i113 0
+R12
+R13
+Eiv
+R1
+R3
+R4
+!i122 3
+R0
+Z46 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/iv.vhd
+Z47 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/iv.vhd
+l0
+L5 1
+V7f4c?QORFEE`z0dJU>ef92
+!s100 XFe=EZ6>ohg7V9@b6Vf:M0
+R7
+32
+Z48 !s110 1728551178
+!i10b 1
+Z49 !s108 1728551178.000000
+Z50 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/iv.vhd|
+Z51 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/iv.vhd|
+!i113 0
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 2 iv 0 22 7f4c?QORFEE`z0dJU>ef92
+!i122 3
+l13
+L11 7
+VeSk=`lcP0DEGdC4hmi8R_1
+!s100 ;J^zC_0h[fL`g;]S_6Z:S1
+R7
+32
+R48
+!i10b 1
+R49
+R50
+R51
+!i113 0
+R12
+R13
+Emux21
+R1
+R3
+R4
+!i122 5
+R0
+Z52 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/mux21.vhd
+Z53 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/mux21.vhd
+l0
+L6 1
+VJZ:ogdoZJ>SBA6gzRA6PV1
+!s100 mn5[<aX3h;ZWW^]eDjWIA3
+R7
+32
+R18
+!i10b 1
+R9
+Z54 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/mux21.vhd|
+Z55 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/mux21.vhd|
+!i113 0
+R12
+R13
+Abeh
+R3
+R4
+DEx4 work 5 mux21 0 22 JZ:ogdoZJ>SBA6gzRA6PV1
+!i122 5
+l17
+L15 6
+VZYN;z:=`i<inONOcNCU@J1
+!s100 Vb74`@MnZiS58=JOaeD1G3
+R7
+32
+R18
+!i10b 1
+R9
+R54
+R55
+!i113 0
+R12
+R13
+Pmytypes
+R3
+R4
+!i122 0
+w1728483184
+R0
+8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/myTypes.vhd
+F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/myTypes.vhd
+l0
+L4 1
+V2BP72`Af8=ThK6?NnJ7z41
+!s100 BWHd6g>gkb62F8:QmPiM_0
+R7
+32
+!s110 1728551146
+!i10b 1
+!s108 1728551146.000000
+!s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/myTypes.vhd|
+!s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/myTypes.vhd|
+!i113 0
+R12
+R13
+Ereg
+R1
+R3
+R4
+!i122 11
+R0
+Z56 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg.vhd
+Z57 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg.vhd
+l0
+L4 1
+VZQ9chdOG61hTj:lHI3nWh2
+!s100 h7:OhJkekZTm7T]Y;Z0:C3
+R7
+32
+R8
+!i10b 1
+Z58 !s108 1728551180.000000
+Z59 !s90 -reportprogress|300|-work|work|/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg.vhd|
+Z60 !s107 /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg.vhd|
+!i113 0
+R12
+R13
+Abeh
+R3
+R4
+DEx4 work 3 reg 0 22 ZQ9chdOG61hTj:lHI3nWh2
+!i122 11
+l12
+L11 15
+Va;Mb?E:5eaW9AK14P?[nm0
+!s100 PAj[K]P`[:z<1gXD_Af]_2
+R7
+32
+R8
+!i10b 1
+R58
+R59
+R60
+!i113 0
+R12
+R13
+Ereg_file
+R1
+R25
+R34
+Z61 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+Z62 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+R3
+R4
+!i122 12
+R0
+Z63 8/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg_file.vhd
+Z64 F/home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg_file.vhd
+l0
+L8 1
+V]B[?dVS

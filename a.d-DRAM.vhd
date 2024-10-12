@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 use std.textio.all;
 use ieee.std_logic_textio.all;
 
-entity RWMEM is
+entity RWMEMv1 is
   generic(
     --FILE_PATH: string;           -- RAM output data file
     FILE_PATH_INIT: string;      -- RAM initialization data file
@@ -24,9 +24,9 @@ entity RWMEM is
 	IN_DATA 		: in std_logic_vector((2*WORD_SIZE) - 1 downto 0);
     OUT_DATA 		: out std_logic_vector((2*WORD_SIZE) - 1 downto 0)
   );
-end entity RWMEM;
+end entity RWMEMv1;
 
-architecture beh of RWMEM is 
+architecture beh of RWMEMv1 is 
   type DRAMtype is array (0 to ENTRIES - 1) of integer; --SIZE(INTEGER) < 2*WORDSIZE-1 check
   signal DRAM_mem : DRAMtype;   
 
@@ -45,7 +45,7 @@ architecture beh of RWMEM is
         		readline(mem_fp,file_line);
         		hread(file_line,tmp_data_u);
         		DRAM_mem(index) <= to_integer(unsigned(tmp_data_u));       
-        		index := index + 1;
+        		index := index + 4;
       		end loop;
 			file_close(mem_fp);
 		elsif CLK = '1' and CLK'event then

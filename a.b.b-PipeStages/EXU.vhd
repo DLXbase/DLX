@@ -7,7 +7,7 @@ entity EXU is
 	generic (N: integer := WORD_SIZE);
 	Port(CLK : in std_logic;
 		RST : in std_logic;
-		MUXA_SEL,MUXB_SEL,ZERO_SEL,ALUOUT_EN,SHIFT2_EN: in std_logic; 
+		MUXA_SEL,MUXB_SEL,ZERO_EN,ZERO_SEL,ALUOUT_EN,SHIFT2_EN: in std_logic; 
 		ALU_FUNC : in aluOp;
 		NPC_REG : in std_logic_vector(N-1 downto 0);
 		A_REG : in std_logic_vector(N-1 downto 0);
@@ -47,6 +47,7 @@ architecture structural of EXU is
 		generic ( NBIT: integer:= 32);           
 		Port (A:	In	std_logic_vector(NBIT-1 downto 0);
 				BEQZ_OR_BNEZ : in std_logic;
+				EN: in std_logic; 
 				res:  out std_logic);     
 	end component;
 
@@ -78,7 +79,7 @@ begin
 
 	MUXB: mux21
 			generic map(NBIT=>N)
-			port map(A=>B_REG, B=>IMM_REG, sel=>MUXA_SEL, muxout=>op_2_s);
+			port map(A=>B_REG, B=>out_shift_s, sel=>MUXB_SEL, muxout=>op_2_s);
 
 
 	MUX3: mux21
@@ -91,9 +92,14 @@ begin
            DATA1=>op_1_s, DATA2=>op_2_s,
            OUTALU=>alu_out_s);
 
+	ZERO <= out_cmp_s;
+
 	EXU_CMPZ: is_zero
 			generic map(NBIT=>N)
-			port map(A=>A_REG, BEQZ_OR_BNEZ => ZERO_SEL, res=>out_cmp_s
+			port map(A=>A_REG,
+				     BEQZ_OR_BNEZ => ZERO_SEL, 
+					 EN => ZERO_EN,
+					 res=>out_cmp_s
 			);
 
 	NPC_REG_3: reg --JAL NPC reg

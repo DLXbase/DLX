@@ -41,7 +41,7 @@ begin
     addr_mux : mux21
         generic map (NBIT => N)
         port map (
-            A => x"1F", --31 in hexadecimal
+            A => x"0000001F", --31 in hexadecimal
             B => RT_REG_in,
             sel => IS_JAL,
             muxout => RF_ADDR

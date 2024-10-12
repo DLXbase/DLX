@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 --use IEEE.std_logic_unsigned.all;
-use IEEE.std_logic_arith.all;
+--use IEEE.std_logic_arith.all;
 use ieee.numeric_std.all; 
 use WORK.alu_type.all;
 
@@ -14,21 +14,23 @@ end ALU;
 
 architecture BEHAVIOR of ALU is
 
-	--signal shift_vec:  std_logic_vector (5 downto 0); 
+	--signal shift_vec:  std_logic_vector (5 downto 0);
+	signal tmp_sub : signed (N-1 downto 0);
+	signal  zero: std_logic;
 	
 
 begin
 
 P_ALU: process (FUNC, DATA1, DATA2)
   -- complete all the requested function
-  variable tmp_sub : integer;
-  variable zero: integer;
+  --variable tmp_sub : signed (31 downto 0);
+  --variable zero: std_logic;
   begin
-	tmp_sub := to_integer (sigend(DATA1)-signed(DATA2));
-	if (tmp_sub = 0) then
-		zero := 1;
+	tmp_sub <= signed(DATA1)-signed(DATA2);
+	if (unsigned (tmp_sub)  = 0) then
+		zero <= '1';
 	else
-		zero := 0;
+		zero <= '0';
 	end if;
     case FUNC is
 	when ADD 	=> OUTALU <= std_logic_vector(signed(DATA1) + signed (DATA2)); 
@@ -42,20 +44,16 @@ P_ALU: process (FUNC, DATA1, DATA2)
 	when FUNCLSR 	=> OUTALU <= ("0"&DATA1(N-1 DOWNTO 1)) ;-- logical shift right
 	
 	when SGE 		=> 
-						if tmp_sub < 0 then
-							OUTALU <= OUTALU <= std_logic_vector(to_unsigned(1, N));
+						if (tmp_sub(N-1) = '0')  or (zero = '1') then
+							OUTALU <= std_logic_vector(to_unsigned(1, N));
 						else
 							OUTALU <= (others => '0');
 						end if;
 	when SLE		=> 
-						if tmp_sub(N-1) = '1' then
-							if zero = '0' then OUTALU <= std_logic_vector(to_unsigned(1, N));
-								OUTALU <= (others => '0');
-							else
-								OUTALU <= x"1";					
-							end if;
+						if (tmp_sub (N-1) = '1')  or (zero = '1') then
+							OUTALU <= std_logic_vector(to_unsigned(1, N));
 						else
-							OUTALU <= x"1";
+							OUTALU <= (others => '0');
 						end if;
 	--when FUNCRL 	=> OUTALU <= (DATA1(N-2 DOWNTO 0)&DATA1(N-1)); -- rotate left
 	--when FUNCRR 	=> OUTALU <= (DATA1(0)&DATA1(N-1 DOWNTO 1)); -- roate right

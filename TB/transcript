@@ -1,0 +1,700 @@
+# //  Questa Sim-64
+# //  Version 2020.4 linux_x86_64 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vlib work
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:05:32 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.alu_type.
+# ** Error (suppressible): /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(3): (vcom-1195) Cannot find expanded name "work.alu_type".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(3): Unknown expanded name.
+# ** Error: (vcom-11) Could not find work.mytypes.
+# ** Error (suppressible): /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(4): (vcom-1195) Cannot find expanded name "work.myTypes".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(4): Unknown expanded name.
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(6): VHDL Compiler exiting
+# End time: 11:05:32 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/myTypes.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:05:46 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/myTypes.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package myTypes
+# End time: 11:05:46 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/constants.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:05:49 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/constants.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package constants
+# End time: 11:05:49 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/alu_type.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:05:51 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/alu_type.vhd 
+# -- Loading package STANDARD
+# -- Compiling package alu_type
+# End time: 11:05:51 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/iv.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:06:18 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/iv.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity IV
+# -- Compiling architecture BEHAVIORAL of IV
+# End time: 11:06:18 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/ND2.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:06:19 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/ND2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity AND2
+# -- Compiling architecture BEHAVIORAL of AND2
+# End time: 11:06:19 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/mux21.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:06:19 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/mux21.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux21
+# -- Compiling architecture beh of mux21
+# End time: 11:06:19 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/is_zero.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:06:19 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/is_zero.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity is_zero
+# -- Compiling architecture beh of is_zero
+# End time: 11:06:19 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu_type.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:06:19 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu_type.vhd 
+# -- Loading package STANDARD
+# -- Compiling package alu_type
+# End time: 11:06:19 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:06:19 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package alu_type
+# -- Compiling entity ALU
+# -- Compiling architecture BEHAVIOR of ALU
+# End time: 11:06:19 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/add4.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:06:19 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/add4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity add4
+# -- Compiling architecture beh of add4
+# End time: 11:06:20 on Oct 10,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/01-generic_shifter.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:06:20 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/01-generic_shifter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity SHIFTER_GENERIC
+# -- Compiling architecture BEHAVIORAL of SHIFTER_GENERIC
+# End time: 11:06:20 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:06:20 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg
+# -- Compiling architecture beh of reg
+# End time: 11:06:20 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg_file.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:06:20 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/reg_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MATH_REAL
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package constants
+# -- Compiling entity reg_file
+# -- Compiling architecture beh of reg_file
+# End time: 11:06:20 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/shift2.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:06:20 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/shift2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SHIFT2
+# -- Compiling architecture behavioral of SHIFT2
+# End time: 11:06:20 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/sign_extend.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:06:20 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.a-Components/sign_extend.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package constants
+# -- Compiling entity sign_extend
+# -- Compiling architecture beh of sign_extend
+# End time: 11:06:21 on Oct 10,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/FU.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:06:30 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.b.b-PipeStages/FU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package constants
+# -- Compiling entity FU
+# -- Compiling architecture structural of FU
+# End time: 11:06:30 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:06:36 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_textio
+# -- Compiling entity IRAM
+# -- Compiling architecture IRam_Bhe of IRAM
+# End time: 11:06:36 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:06:43 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Loading package myTypes
+# -- Compiling entity TBIF
+# -- Compiling architecture TEST of TBIF
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(12): (vcom-1136) Unknown identifier "WORD_SIZE".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(38): (vcom-1136) Unknown identifier "WORD_SIZE".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(38): (vcom-1591) Bad expression in left bound of range expression.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(38): Type error in range expression.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(39): (vcom-1136) Unknown identifier "WORD_SIZE".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(39): (vcom-1591) Bad expression in left bound of range expression.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(39): Type error in range expression.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(40): (vcom-1136) Unknown identifier "WORD_SIZE".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(40): (vcom-1591) Bad expression in left bound of range expression.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(40): Type error in range expression.
+# ** Error (suppressible): /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(45): (vcom-1141) Identifier "FU" does not identify a component declaration.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(74): Illegal target for signal assignment.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(74): (vcom-1136) Unknown identifier "CLK".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(75): (vcom-1136) Unknown identifier "CLK_PERIOD".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(75): Type error resolving infix expression "/" as type std.STANDARD.TIME.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(76): Illegal target for signal assignment.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(76): (vcom-1136) Unknown identifier "CLK".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(77): (vcom-1136) Unknown identifier "CLK_PERIOD".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(77): Type error resolving infix expression "/" as type std.STANDARD.TIME.
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(113): VHDL Compiler exiting
+# End time: 11:06:43 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 19, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/constants.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:06:57 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/000-globals/constants.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package constants
+# End time: 11:06:57 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:07:02 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Loading package myTypes
+# -- Compiling entity TBIF
+# -- Compiling architecture TEST of TBIF
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(12): (vcom-1136) Unknown identifier "WORD_SIZE".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(38): (vcom-1136) Unknown identifier "WORD_SIZE".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(38): (vcom-1591) Bad expression in left bound of range expression.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(38): Type error in range expression.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(39): (vcom-1136) Unknown identifier "WORD_SIZE".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(39): (vcom-1591) Bad expression in left bound of range expression.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(39): Type error in range expression.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(40): (vcom-1136) Unknown identifier "WORD_SIZE".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(40): (vcom-1591) Bad expression in left bound of range expression.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(40): Type error in range expression.
+# ** Error (suppressible): /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(45): (vcom-1141) Identifier "FU" does not identify a component declaration.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(74): Illegal target for signal assignment.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(74): (vcom-1136) Unknown identifier "CLK".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(75): (vcom-1136) Unknown identifier "CLK_PERIOD".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(75): Type error resolving infix expression "/" as type std.STANDARD.TIME.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(76): Illegal target for signal assignment.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(76): (vcom-1136) Unknown identifier "CLK".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(77): (vcom-1136) Unknown identifier "CLK_PERIOD".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(77): Type error resolving infix expression "/" as type std.STANDARD.TIME.
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(113): VHDL Compiler exiting
+# End time: 11:07:02 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 19, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:07:42 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Loading package myTypes
+# -- Loading package constants
+# -- Compiling entity TBIF
+# -- Compiling architecture TEST of TBIF
+# ** Error (suppressible): /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(47): (vcom-1141) Identifier "FU" does not identify a component declaration.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(76): Illegal target for signal assignment.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(76): (vcom-1136) Unknown identifier "CLK".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(77): (vcom-1136) Unknown identifier "CLK_PERIOD".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(77): Type error resolving infix expression "/" as type std.STANDARD.TIME.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(78): Illegal target for signal assignment.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(78): (vcom-1136) Unknown identifier "CLK".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(79): (vcom-1136) Unknown identifier "CLK_PERIOD".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(79): Type error resolving infix expression "/" as type std.STANDARD.TIME.
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(115): VHDL Compiler exiting
+# End time: 11:07:42 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 9, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:08:49 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Loading package myTypes
+# -- Loading package constants
+# -- Compiling entity TBIF
+# -- Compiling architecture TEST of TBIF
+# ** Error (suppressible): /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(49): (vcom-1141) Identifier "FU" does not identify a component declaration.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(78): Illegal target for signal assignment.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(78): (vcom-1136) Unknown identifier "CLK".
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(80): Illegal target for signal assignment.
+# ** Error: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(80): (vcom-1136) Unknown identifier "CLK".
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(117): VHDL Compiler exiting
+# End time: 11:08:49 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:09:24 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Loading package myTypes
+# -- Loading package constants
+# -- Compiling entity TBIF
+# -- Compiling architecture TEST of TBIF
+# ** Error (suppressible): /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(49): (vcom-1141) Identifier "FU" does not identify a component declaration.
+# ** Note: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd(117): VHDL Compiler exiting
+# End time: 11:09:24 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:10:07 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Loading package myTypes
+# -- Loading package constants
+# -- Compiling entity TBIF
+# -- Compiling architecture TEST of TBIF
+# End time: 11:10:07 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tbif(test) -t ns -voptargs=+acc
+# vsim work.tbif(test) -t ns -voptargs="+acc" 
+# Start time: 11:11:02 on Oct 10,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alu_type
+# Loading work.mytypes
+# Loading work.constants
+# Loading work.tbif(test)#1
+# Loading work.fu(structural)#1
+# Loading work.reg(beh)#1
+# Loading ieee.numeric_std(body)
+# Loading work.add4(beh)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.iram(iram_bhe)#1
+add wave -position insertpoint sim:/tbif/*
+add wave -position insertpoint  \
+sim:/tbif/DUT_M/IRAM_mem
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Error: (vsim-3953) STD_LOGIC_1164.HREAD End of string encountered
+#    Time: 5 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 5 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 1  Instance: /tbif/DUT_M
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 5 ns  Iteration: 1  Instance: /tbif/DUT_M
+# Causality operation skipped due to absence of debug database file
+vsim -t ns -voptargs=+acc work.tbif(test)
+# End time: 11:21:41 on Oct 10,2024, Elapsed time: 0:10:39
+# Errors: 1, Warnings: 6
+# vsim -t ns -voptargs="+acc" work.tbif(test) 
+# Start time: 11:21:41 on Oct 10,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alu_type
+# Loading work.mytypes
+# Loading work.constants
+# Loading work.tbif(test)#1
+# Loading work.fu(structural)#1
+# Loading work.reg(beh)#1
+# Loading ieee.numeric_std(body)
+# Loading work.add4(beh)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.iram(iram_bhe)#1
+add wave *
+vsim -t ns -voptargs=+acc work.tbif(test)
+# End time: 11:23:24 on Oct 10,2024, Elapsed time: 0:01:43
+# Errors: 0, Warnings: 0
+# vsim -t ns -voptargs="+acc" work.tbif(test) 
+# Start time: 11:23:24 on Oct 10,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alu_type
+# Loading work.mytypes
+# Loading work.constants
+# Loading work.tbif(test)#1
+# Loading work.fu(structural)#1
+# Loading work.reg(beh)#1
+# Loading ieee.numeric_std(body)
+# Loading work.add4(beh)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.iram(iram_bhe)#1
+add wave -position insertpoint sim:/tbif/*
+add wave -position insertpoint sim:/tbif/*
+add wave -position insertpoint  \
+sim:/tbif/DUT_M/IRAM_mem
+run 1000ns
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Error: (vsim-3953) STD_LOGIC_1164.HREAD End of string encountered
+#    Time: 5 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 5 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 1  Instance: /tbif/DUT_M
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 5 ns  Iteration: 1  Instance: /tbif/DUT_M
+# ** Fatal: (vsim-3421) Value 48 is out of range 0 to 47.
+#    Time: 135 ns  Iteration: 3  Process: /tbif/DUT_M/line__31 File: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd Line: 31
+# Fatal error in Architecture IRam_Bhe at /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd line 31
+# 
+# HDL call sequence:
+# Stopped at /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd 31 Architecture IRam_Bhe
+# 
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:26:37 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Loading package myTypes
+# -- Loading package constants
+# -- Compiling entity TBIF
+# -- Compiling architecture TEST of TBIF
+# End time: 11:26:38 on Oct 10,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -t ns -voptargs=+acc work.tbif(test)
+# End time: 11:26:58 on Oct 10,2024, Elapsed time: 0:03:34
+# Errors: 2, Warnings: 6
+# vsim -t ns -voptargs="+acc" work.tbif(test) 
+# Start time: 11:26:58 on Oct 10,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alu_type
+# Loading work.mytypes
+# Loading work.constants
+# Loading work.tbif(test)#1
+# Loading work.fu(structural)#1
+# Loading work.reg(beh)#1
+# Loading ieee.numeric_std(body)
+# Loading work.add4(beh)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.iram(iram_bhe)#1
+add wave -position insertpoint sim:/tbif/*
+add wave -position insertpoint  \
+sim:/tbif/DUT_M/IRAM_mem
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Error: (vsim-3953) STD_LOGIC_1164.HREAD End of string encountered
+#    Time: 5 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 5 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 1  Instance: /tbif/DUT_M
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 5 ns  Iteration: 1  Instance: /tbif/DUT_M
+vsim -t ns -voptargs=+acc work.tbif(test)
+# End time: 11:28:25 on Oct 10,2024, Elapsed time: 0:01:27
+# Errors: 1, Warnings: 6
+# vsim -t ns -voptargs="+acc" work.tbif(test) 
+# Start time: 11:28:25 on Oct 10,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alu_type
+# Loading work.mytypes
+# Loading work.constants
+# Loading work.tbif(test)#1
+# Loading work.fu(structural)#1
+# Loading work.reg(beh)#1
+# Loading ieee.numeric_std(body)
+# Loading work.add4(beh)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.iram(iram_bhe)#1
+add wave -position insertpoint sim:/tbif/*
+add wave -position insertpoint  \
+sim:/tbif/DUT_M/IRAM_mem
+run 1000ns
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Error: (vsim-3953) STD_LOGIC_1164.HREAD End of string encountered
+#    Time: 5 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 5 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 1  Instance: /tbif/DUT_M
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 5 ns  Iteration: 1  Instance: /tbif/DUT_M
+# ** Fatal: (vsim-3421) Value 48 is out of range 0 to 47.
+#    Time: 135 ns  Iteration: 3  Process: /tbif/DUT_M/line__31 File: /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd Line: 31
+# Fatal error in Architecture IRam_Bhe at /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd line 31
+# 
+# HDL call sequence:
+# Stopped at /home/ms24.11/Desktop/DLX/DLX(HW_CU)/a.c-IRAM.vhd 31 Architecture IRam_Bhe
+# 
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:30:06 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Loading package myTypes
+# -- Loading package constants
+# -- Compiling entity TBIF
+# -- Compiling architecture TEST of TBIF
+# End time: 11:30:06 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -t ns -voptargs=+acc work.tbif(test)
+# End time: 11:30:29 on Oct 10,2024, Elapsed time: 0:02:04
+# Errors: 2, Warnings: 6
+# vsim -t ns -voptargs="+acc" work.tbif(test) 
+# Start time: 11:30:29 on Oct 10,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alu_type
+# Loading work.mytypes
+# Loading work.constants
+# Loading work.tbif(test)#1
+# Loading work.fu(structural)#1
+# Loading work.reg(beh)#1
+# Loading ieee.numeric_std(body)
+# Loading work.add4(beh)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.iram(iram_bhe)#1
+add wave -position insertpoint sim:/tbif/*
+add wave -position insertpoint  \
+sim:/tbif/DUT_M/IRAM_mem
+run 1000ns
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Error: (vsim-3953) STD_LOGIC_1164.HREAD End of string encountered
+#    Time: 5 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 5 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 1  Instance: /tbif/DUT_M
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 5 ns  Iteration: 1  Instance: /tbif/DUT_M
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:35:46 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Loading package myTypes
+# -- Loading package constants
+# -- Compiling entity TBIF
+# -- Compiling architecture TEST of TBIF
+# End time: 11:35:46 on Oct 10,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd
+# QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:35:47 on Oct 10,2024
+# vcom -reportprogress 300 -work work /home/ms24.11/Desktop/DLX/DLX(HW_CU)/TB/IF_TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package alu_type
+# -- Loading package myTypes
+# -- Loading package constants
+# -- Compiling entity TBIF
+# -- Compiling architecture TEST of TBIF
+# End time: 11:35:48 on Oct 10,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -t ns -voptargs=+acc work.tbif(test)
+# End time: 11:36:07 on Oct 10,2024, Elapsed time: 0:05:38
+# Errors: 1, Warnings: 6
+# vsim -t ns -voptargs="+acc" work.tbif(test) 
+# Start time: 11:36:07 on Oct 10,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alu_type
+# Loading work.mytypes
+# Loading work.constants
+# Loading work.tbif(test)#1
+# Loading work.fu(structural)#1
+# Loading work.reg(beh)#1
+# Loading ieee.numeric_std(body)
+# Loading work.add4(beh)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.iram(iram_bhe)#1
+add wave -position insertpoint sim:/tbif/*
+add wave -position insertpoint  \
+sim:/tbif/DUT_M/IRAM_mem
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Error: (vsim-3953) STD_LOGIC_1164.HREAD End of string encountered
+#    Time: 5 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 5 ns  Iteration: 0  Instance: /tbif/DUT_M
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 5 ns  Iteration: 1  Instance: /tbif/DUT_M
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 5 ns  Iteration: 1  Instance: /tbif/DUT_M
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# End time: 18:15:48 on Oct 10,2024, Elapsed time: 6:39:41
+# Errors: 1, Warnings: 6

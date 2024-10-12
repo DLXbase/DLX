@@ -42,24 +42,24 @@ architecture dlx_rtl of DLX is
 
   -- Data Ram 
     component RWMEM 
-    generic(
-      --FILE_PATH: string;           -- RAM output data file
-      FILE_PATH_INIT: string;      -- RAM initialization data file
-      WORD_SIZE: natural := 32;    -- Number of bits per word
-      ENTRIES: natural := 128     -- Number of lines in the ROM
-      --DATA_DELAY: natural := 2     -- Delay (in # of clock cycles)
-    );
-    
+      generic(
+        file_path: string;
+        file_path_init: string;
+        Data_size : natural := 32;
+        Instr_size: natural := 32;
+        RAM_DEPTH: 	natural := 128;
+        data_delay: natural := 0
+      );
     port (
-      CLK             : in std_logic;
-      RST             : in std_logic;
-      ADDRESS         : in std_logic_vector(WORD_SIZE - 1 downto 0);
-      --ENABLE          : in std_logic;
-      READNOTWRITE    : in std_logic;
-      --DATA_READY      : out std_logic;
-      IN_DATA 		: in std_logic_vector((2*WORD_SIZE) - 1 downto 0);
-      OUT_DATA 		: out std_logic_vector((2*WORD_SIZE) - 1 downto 0)
-    );
+        CLK   				: in std_logic;
+        RST					: in std_logic;
+        ADDR				: in std_logic_vector(Instr_size - 1 downto 0);
+        ENABLE				: in std_logic;
+        READNOTWRITE		: in std_logic;
+        IN_DATA				: in std_logic_vector(Data_size-1 downto 0);
+        DATA_READY			: out std_logic;
+        OUT_DATA			: out std_logic_vector(Data_size-1 downto 0)
+      );
   end component;
 
   -- Datapath (MISSING!You must include it in your final project!)
@@ -124,6 +124,7 @@ architecture dlx_rtl of DLX is
     Rst                : in  std_logic;  -- Reset:Active-Low
     -- Instruction Register
     IR_IN              : in  std_logic_vector(IR_SIZE - 1 downto 0);   --IR must be taken from the IRAM and not the IR_REG for timing reasons. 
+    branch_taken       : in  std_logic;
     -- IF Control Signal
     IR_EN        : out std_logic;  -- Instruction Register Enable
     NPC_EN       : out std_logic;                                       -- NextProgramCounter Register Latch Enable
@@ -196,6 +197,7 @@ architecture dlx_rtl of DLX is
   signal JAL_EN_i : std_logic;
 
   signal PC_EN_i : std_logic;
+  signal branch_taken_i : std_logic;
 
 
   -- Data Ram Bus signals
@@ -240,6 +242,7 @@ architecture dlx_rtl of DLX is
       RF_WE => RF_WE_i,
       JAL_EN => JAL_EN_i,
       PC_EN => PC_EN_i,
+      branch_taken => branch_taken_i,
       addr_to_DRAM => DRAM_addr,
       data_to_DRAM => DRAM_data,
       to_IRAM => PC_s,

@@ -10,7 +10,7 @@ use ieee.std_logic_textio.all;
 -- file name is "test.asm.mem"
 entity IRAM is
   generic (
-    RAM_DEPTH : integer := 48;
+    RAM_DEPTH : integer := 256;
     I_SIZE : integer := 32);
   port (
     Rst  : in  std_logic;
@@ -28,7 +28,7 @@ architecture IRam_Bhe of IRAM is
 
 begin  -- IRam_Bhe
 
-  Dout <= conv_std_logic_vector(IRAM_mem(conv_integer(unsigned(Addr))),I_SIZE);
+  Dout <= conv_std_logic_vector(IRAM_mem(conv_integer(unsigned(Addr))/4),I_SIZE) when Rst = '0';
 
   -- purpose: This process is in charge of filling the Instruction RAM with the firmware
   -- type   : combinational
@@ -40,14 +40,15 @@ begin  -- IRam_Bhe
     variable index : integer := 0;
     variable tmp_data_u : std_logic_vector(I_SIZE-1 downto 0);
   begin  -- process FILL_MEM_P
-    if (Rst = '0') then
-      file_open(mem_fp,"test.asm.mem",READ_MODE);
+    if (Rst = '1') then
+      file_open(mem_fp,"/home/ms24.11/Desktop/DLX/DLX(HW_CU)/test.asm.mem",READ_MODE);
       while (not endfile(mem_fp)) loop
         readline(mem_fp,file_line);
         hread(file_line,tmp_data_u);
         IRAM_mem(index) <= conv_integer(unsigned(tmp_data_u));       
         index := index + 1;
       end loop;
+	index := 0;
     end if;
   end process FILL_MEM_P;
 

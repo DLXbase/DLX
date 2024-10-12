@@ -93,12 +93,12 @@ begin
 	end process;
 
     --reset 
-	RST_S <= '1' after 2 ns, '0' after 10 ns;
+	RST_S <= '1' after 2 ns, '0' after 5 ns;
 
     --operands value
     A_REG_S <= std_logic_vector(to_unsigned(3, 32));
     B_REG_S <= std_logic_vector(to_unsigned(1, 32));
-    IMM_REG_S <= std_logic_vector(to_unsigned(50, 32));
+    IMM_REG_S <= std_logic_vector(to_unsigned(5, 32));
 
     --NPC value (must check it is simply transfered to output with 1 cc delay)
     NPC_REG_S <= std_logic_vector(to_unsigned(8, 32));
@@ -114,23 +114,35 @@ begin
 	    --Control word for RTYPE => "11100"
         MUXA_SEL_S <= '1'; MUXB_SEL_S <= '1'; ALUOUT_EN_S <= '1'; ZERO_SEL_S <= '0';  SHIFT2_EN_S <= '0'; 	
         ALU_FUNC_S <= ADD; 		
-        wait for 13 ns;   --expected: ALUOUT = A+B=30;
+        wait for 13 ns;   --expected: ALUOUT = A+B=4;
 
         MUXA_SEL_S <= '1'; MUXB_SEL_S <= '1'; ALUOUT_EN_S <= '1'; ZERO_SEL_S <= '0';  SHIFT2_EN_S <= '0'; 	
         ALU_FUNC_S <= SUB; 		
-        wait for 2 ns;   --expected: ALUOUT = A-B=10; 
+        wait for 2 ns;   --expected: ALUOUT = A-B=2; 
 
         MUXA_SEL_S <= '1'; MUXB_SEL_S <= '1'; ALUOUT_EN_S <= '1'; ZERO_SEL_S <= '0';  SHIFT2_EN_S <= '0'; 	
         ALU_FUNC_S <= MULT; 		
-        wait for 2 ns;   --expected: ALUOUT = A*B=300;
+        wait for 2 ns;   --expected: ALUOUT = A*B=3;
 
         MUXA_SEL_S <= '1'; MUXB_SEL_S <= '1'; ALUOUT_EN_S <= '1'; ZERO_SEL_S <= '0';  SHIFT2_EN_S <= '0'; 	
         ALU_FUNC_S <= SGE; 		
-        wait for 2 ns;   --expected: ALUOUT = 0;
+        wait for 2 ns;   --expected: ALUOUT = 1;
 
         MUXA_SEL_S <= '1'; MUXB_SEL_S <= '1'; ALUOUT_EN_S <= '1'; ZERO_SEL_S <= '0';  SHIFT2_EN_S <= '0'; 	
         ALU_FUNC_S <= SLE; 		
-        wait for 2 ns;   --expected: ALUOUT = 1; 
+        wait for 2 ns;   --expected: ALUOUT = 0;
+        
+        --Control word for LW => "10100"
+        MUXA_SEL_S <= '1'; MUXB_SEL_S <= '0'; ALUOUT_EN_S <= '1'; ZERO_SEL_S <= '0';  SHIFT2_EN_S <= '0'; 	
+        ALU_FUNC_S <= ADD; 		
+        wait for 2 ns;   --expected: ALUOUT = A+IMM=8;
+
+        --Control word for BNEZ => "00101"
+        MUXA_SEL_S <= '0'; MUXB_SEL_S <= '0'; ALUOUT_EN_S <= '1'; ZERO_SEL_S <= '0';  SHIFT2_EN_S <= '1'; 	
+        ALU_FUNC_S <= ADD; 		
+        wait for 2 ns;   --expected: ALUOUT = NPC + IMM *4 = 8 + 20 = 28
+                         --expected: ZERO_S = 1; 
+        
 		wait; 
 	end process;
 end TEST;
