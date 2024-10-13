@@ -7,7 +7,7 @@ use work.alu_type.all;
 entity DLXTB is
 end DLXTB;
 
-architecture TEST of DLXTB is
+architecture TEST_G of DLXTB is
 
 component DATAPATH is
 	generic(N : integer := WORD_SIZE);
@@ -279,7 +279,7 @@ DATAPATH_I : DATAPATH
     -- Instruction Ram Instantiation
     IRAM_I: IRAM
       generic map(
-          FILE_PATH_INIT => "/home/ms24.11/Desktop/DLX/src/test.asm.mem",
+          FILE_PATH_INIT => "/home/ms24.11/Desktop/DLX/src/test_g.asm.mem",
           RAM_DEPTH => 48,
           I_SIZE => WORD_SIZE)
       port map (
@@ -290,7 +290,7 @@ DATAPATH_I : DATAPATH
     DRAM_I : RWMEM
       generic map(
 		FILE_PATH => "/home/ms24.11/Desktop/DLX/src/output_file.mem",
-		FILE_PATH_INIT => "/home/ms24.11/Desktop/DLX/src/test.asm.mem")
+		FILE_PATH_INIT => "/home/ms24.11/Desktop/DLX/src/test_g.asm.mem")
       port map(
         CLK => CLK,
         RST => RST,
@@ -318,4 +318,4 @@ DATAPATH_I : DATAPATH
 
 
 
-end TEST;
+end TEST_G;

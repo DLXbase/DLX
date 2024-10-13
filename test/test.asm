@@ -28,17 +28,13 @@ addi r27, r27, #27
 addi r28, r28, #28
 addi r29, r29, #29
 addi r30, r30, #30
-sle r1, r2, r3
-sle r1, r3, r2
-sge r2, r4, r5
-sge r2, r5, r4
-subi r30, r30, #29
-andi r27, r27, #14829
-slli r25, r25, #2
-srli r25, r25, #2
-slei r16, r14, #255
-slei r16, r14, #2
-sgei r17, r13, #255
-sgei r17, r13, #2
-sw 10(r5), r6
+addi r31, r31, #31
+lw r19, 4(r8)
+sub r6,r12,r15 
+add r1,r2,r3
+addi r1,r2,#5
+j 12
+sub r5,r7,r2
+and r6,r8,r2
+beqz 32
 

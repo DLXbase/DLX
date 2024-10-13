@@ -28,17 +28,19 @@ addi r27, r27, #27
 addi r28, r28, #28
 addi r29, r29, #29
 addi r30, r30, #30
-sle r1, r2, r3
-sle r1, r3, r2
-sge r2, r4, r5
-sge r2, r5, r4
-subi r30, r30, #29
-andi r27, r27, #14829
-slli r25, r25, #2
-srli r25, r25, #2
-slei r16, r14, #255
-slei r16, r14, #2
-sgei r17, r13, #255
-sgei r17, r13, #2
-sw 10(r5), r6
+and r20, r19, r18
+xor r29, r7, r9
+or r5,r1, r2
+and r8, r12, r4
+sll r10, r9, #3
+srl r11, r9, #3
+beqz r0, ciao
+hello:
+addi r17, r17, #17
+addi r18, r18, #18
+sub r11, r11, r11
+ciao:
+addi r17, r17, #17
+addi r18, r18, #18
+bnez r11, hello
 

@@ -72,7 +72,7 @@ package myTypes is
     constant ITYPE_SGEI  : std_logic_vector(OP_CODE_SIZE - 1 downto 0) := "011101";  -- 0x1d
     --constant ITYPE_LB    : std_logic_vector(OP_CODE_SIZE - 1 downto 0) := "100000";  -- 0x20
     --constant ITYPE_LH    : std_logic_vector(OP_CODE_SIZE - 1 downto 0) := "100001";  -- 0x21
-    constant ITYPE_LW    : std_logic_vector(OP_CODE_SIZE - 1 downto 0) := "100010";  -- 0x23
+    constant ITYPE_LW    : std_logic_vector(OP_CODE_SIZE - 1 downto 0) := "100011";  -- 0x23
     --constant ITYPE_LBU   : std_logic_vector(OP_CODE_SIZE - 1 downto 0) := "100101";  -- 0x24
     --constant ITYPE_LHU   : std_logic_vector(OP_CODE_SIZE - 1 downto 0) := "100110";  -- 0x25
     --constant ITYPE_LF    : std_logic_vector(OP_CODE_SIZE - 1 downto 0) := "100111";  -- 0x26

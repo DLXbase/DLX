@@ -83,25 +83,30 @@ begin  -- beh
 			int_data_ready <= '0';
 			mem_ready <= '0';
 		--elsif CLK'event and CLK = '1' then  -- rising clock edge
-			if(ENABLE = '1') then
-				counter <= counter + 1;
-				if (counter = data_delay) then
-					counter <= 0;
-					if (WRITE_NOT_READ = '0') then
-						--DRAM_Mem(to_integer(unsigned(ADDR))+1) <= IN_DATA(Instr_size - 1 downto 0);
-						DRAM_Mem(to_integer(unsigned(ADDR))) <= IN_DATA(Data_size - 1 downto 0); 
-						mem_ready <= '1';
-					else
-						tmp_data <= DRAM_mem(to_integer(unsigned(ADDR)));
-						int_data_ready <= '1';
+		elsif(ENABLE = '1') then
+			counter <= counter + 1;
+			int_data_ready <= '0';
+			mem_ready <= '0';
+			if (counter = data_delay) then
+				counter <= 0;
+				if (WRITE_NOT_READ = '0') then
+					if to_integer(unsigned(ADDR)) > 0 then
+						if to_integer(unsigned(ADDR)) < RAM_DEPTH then
+							--DRAM_Mem(to_integer(unsigned(ADDR))+1) <= IN_DATA(Instr_size - 1 downto 0);
+							DRAM_Mem(to_integer(unsigned(ADDR))) <= IN_DATA(Data_size - 1 downto 0); 
+							mem_ready <= '1';
+						end if;
 					end if;
 				else
-					mem_ready <= '0';
-					int_data_ready <= '0';
+					tmp_data <= DRAM_mem(to_integer(unsigned(ADDR)));
+					int_data_ready <= '1';
 				end if;
 			else
-				counter <= 0;
+				mem_ready <= '0';
+				int_data_ready <= '0';
 			end if;
+		else
+			counter <= 0;
 		end if;
 	end process;
 

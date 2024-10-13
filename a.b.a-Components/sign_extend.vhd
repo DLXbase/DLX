@@ -4,15 +4,16 @@ use work.constants.all;
 
 -- EXTEND 16 BIT VECTOR TO 32 BIT WHILE MAINTAINING THE SIGN
 entity sign_extend is
-  	generic ( NBIT: integer:= WORD_SIZE/2);           
+  	generic ( NBIT: integer:= WORD_SIZE/2;
+				NBIT_F : integer := WORD_SIZE);           
 	Port (A:	In	std_logic_vector(NBIT-1 downto 0);	
-	      res:	Out	std_logic_vector ((2*NBIT)-1 downto 0));
+	      res:	Out	std_logic_vector (NBIT_F-1 downto 0));
 end sign_extend;
 
 
 architecture beh of sign_extend is
 
-signal tmp_msb : std_logic_vector(NBIT-1 downto 0); 
+signal tmp_msb : std_logic_vector(NBIT_F-NBIT-1 downto 0); 
 
 begin
   tmp_msb <= (others => A(NBIT-1)); 

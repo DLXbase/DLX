@@ -212,18 +212,15 @@ begin
                   end case; 
 
     when ITYPE_J    => cw                   <=  "11"   &        "101101"     &           "000000"                &   "00"   &     "000";  -- 21 |  I type: J
-    when ITYPE_JAL  => cw                   <=  "11"   &        "101101"     &           "000000"                &   "00"   &     "001";  -- 22 |  I type: JAL
+    when ITYPE_JAL  => cw                   <=  "11"   &        "101101"     &           "000000"                &   "00"   &     "011";  -- 22 |  I type: JAL
     when ITYPE_BEQZ => cw                   <=  "11"   &        "001000"     &           "001111"                &   "00"   &     "100";  -- 17 | I type: BEQZ
     when ITYPE_BNEZ => cw                   <=  "11"   &        "001000"     &           "001101"                &   "00"   &     "100";  -- 18 | I type: BNEZ
-    
     when ITYPE_ADDI => cw                   <=  "11"   &        "101100"     &           "101000"                &   "00"   &     "110";     -- 9 | I type: ADDI
     when ITYPE_SUBI => cw                   <=  "11"   &        "101100"     &           "101000"                &   "00"   &     "110";    -- 10 | I type: SUBI
     when ITYPE_ANDI => cw                   <=  "11"   &        "101100"     &           "101000"                &   "00"   &     "110";    -- 11 | I type: ANDI 
     when ITYPE_ORI  => cw                   <=  "11"   &        "101100"     &           "101000"                &   "00"   &     "110";    -- 12 | I type: ORI
     when ITYPE_XORI => cw                   <=  "11"   &        "101100"     &           "101000"                &   "00"   &     "110";    -- 12 | I type: XORI
-    
-    --slli da riscrivere
-    --when ITYPE_SLLI => cw                   <=  "11"   &        "101100"     &           "101000"                &   "00"   &     "110"; -- 13 | I type: 
+    when ITYPE_SLLI => cw                   <=  "11"   &        "101100"     &           "101000"                &   "00"   &     "110"; -- 13 | I type: 
     when ITYPE_NOP  => cw                   <=  "11"   &        "000000"     &           "000000"                &   "00"   &     "000";    --  | NOP
     when ITYPE_SRLI => cw                   <=  "11"   &        "101100"     &           "101000"                &   "00"   &     "110";    -- 16 | I type: SRLI
     when ITYPE_SLEI => cw                   <=  "11"   &        "101100"     &           "101000"                &   "00"   &     "110";    -- 14 | I type: SLEI

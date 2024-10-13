@@ -32,7 +32,6 @@ begin
             if clk'event and clk = '1' then
 		        if rst = '1' then 
 					regs <= (others => (others =>'0'));
-                    regs_nxt <= (others => (others =>'0'));
                 else 
 					regs <= regs_nxt;
                 end if;
@@ -40,11 +39,14 @@ begin
           end process;
           
 -- comb process;
-   process(wr_en,add_wr,add_rd1,add_rd2,datain)
+   process(wr_en,add_wr,datain,rst)
      begin
-		regs_nxt <= regs;
-       if wr_en = '1' then regs_nxt(to_integer(unsigned(add_wr))) <= datain;
-       end if; 
+		   --regs_nxt <= regs;
+       if rst = '1' then regs_nxt <= (others => (others =>'0'));
+       else
+        if wr_en = '1' then regs_nxt(to_integer(unsigned(add_wr))) <= datain;
+        end if; 
+      end if;
     end process; 
 
 out1 <= regs(to_integer(unsigned(add_rd1)));

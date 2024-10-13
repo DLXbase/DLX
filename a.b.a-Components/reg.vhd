@@ -12,7 +12,7 @@ architecture beh of reg is
 begin
   
 --ck proces 
-  process (clk,en,rst)
+  process (clk,en,rst,A)
           begin 
             if clk'event and clk = '1' then
               if en = '1' then

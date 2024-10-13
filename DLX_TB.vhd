@@ -128,6 +128,7 @@ end component;
 
 component IRAM is
   generic (
+    FILE_PATH => "/home/ms24.11/Desktop/DLX/src/test.asm.mem"; 
     RAM_DEPTH : integer := 48;
     I_SIZE : integer := 32);
   port (

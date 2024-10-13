@@ -40,7 +40,8 @@ architecture struct of DU is
 
 	--extend immediate from 16 to 32 bits
 	component sign_extend is
-	  	generic ( NBIT: integer:= WORD_SIZE/2);           
+	  	generic ( NBIT: integer:= WORD_SIZE/2;
+				  NBIT_F: integer:= WORD_SIZE);           
 		Port (A:	In	std_logic_vector(NBIT-1 downto 0);	
 			  res:	Out	std_logic_vector ((2*NBIT)-1 downto 0));
 	end component;
@@ -65,11 +66,19 @@ architecture struct of DU is
 		    y:	Out	std_logic);
 	end component;
 
+	component adder is
+		generic ( NBIT: integer:= 32);           
+		Port (A:	In	std_logic_vector(NBIT-1 downto 0);
+		  	B:	in std_logic_vector(NBIT-1 downto 0);	
+	      	res:	Out	std_logic_vector (NBIT-1 downto 0));
+	end component;
+
 --internal signals
 	signal A_nxt, B_nxt, IMM_nxt, JTA: std_logic_vector (N-1 downto 0); 
 	signal RT_nxt: std_logic_vector (WORD_SIZE-1 downto 0); 
 	signal BR_EN_NEG, J_SEL: std_logic; 
 	signal RT_A, RT_B : std_logic_vector(WORD_SIZE-1 downto 0);
+	signal J_OFFSET: std_logic_vector(WORD_SIZE-1 downto 0);
 
 begin 
 
@@ -93,7 +102,8 @@ begin
 			 Y => B);
 
 	Sign_extend_block: sign_extend   
-	generic map(NBIT=>N/2) --16 bits
+	generic map(NBIT=>N/2,
+				NBIT_F => N) --16 bits
 	port map(A => IR(15 downto 0),
 			 res => IMM_nxt);
 	--extends the Immediate field to 32 bits, holding the sign. 
@@ -130,7 +140,23 @@ begin
 			 Y => J_SEL);
 
 	--compute JTA
-	JTA <= NPC_IN(31 downto 28) & IR(25 downto 0) & "00"; 
+	addr_sign_extend: sign_extend
+		generic map(
+			NBIT => 26,
+			NBIT_F => N
+		)
+		port map (
+			A => IR(25 downto 0),
+			res => J_OFFSET
+		);
+	ADD_instance: adder
+		generic map (NBIT => N)
+		port map (
+			A => NPC_IN,
+			B => J_OFFSET,
+			res => JTA
+		);
+	--JTA <= NPC_IN(31 downto 28) & IR(25 downto 0) & "00"; 
 
 	--if the jump is enabled AND there is no branch taken in ex stage, this mux selects the JTA as the new PC value, else if there is a branch it will choose the BTA, else PC+4.
 	PC_source_MUX:  mux21 

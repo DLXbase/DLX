@@ -22,7 +22,7 @@ architecture TB of RWMEM_TB is
             RST            : in std_logic;
             ADDR           : in std_logic_vector(Instr_size - 1 downto 0);
             ENABLE         : in std_logic;
-            READNOTWRITE   : in std_logic;
+            WRITENOTREAD   : in std_logic;
             IN_DATA        : in std_logic_vector(Data_size-1 downto 0);
             DATA_READY     : out std_logic;
             OUT_DATA       : out std_logic_vector(Data_size-1 downto 0)
@@ -86,7 +86,7 @@ begin
 
         -- Write data to the DRAM
         ENABLE <= '1';
-        READNOTWRITE <= '0';  -- Write operation
+        WRITENOTREAD <= '1';  -- Write operation
         ADDR <= x"00000000";  -- Address 0
         IN_DATA <= x"01234567";
         wait for 40 ns;
@@ -97,7 +97,7 @@ begin
         wait for 40 ns;
 
         -- Read the first value from DRAM
-        READNOTWRITE <= '1';  -- Read operation
+        WRITENOTREAD <= '0';  -- Read operation
         ADDR <= x"00000000";  -- Address 0
         wait for 40 ns;
         
